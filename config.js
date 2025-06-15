@@ -1,9 +1,9 @@
 const stepLength = 1;
 
 const wagonLength = 19.16;
-const wagonCount = 5;
+const wagonCount = 6;
 
-const interval = 90;
+const interval = 3600/40;
 
 const trainHalf = wagonLength * wagonCount / 2;
 
