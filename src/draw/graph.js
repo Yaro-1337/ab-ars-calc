@@ -81,6 +81,12 @@ class DrawGraph extends Draw {
         this.two.makeText(`t=${this.interval}с.`, axisT + 6, this.graphY - this.interval * this.Ky - 6, { alignment: 'left' });
         this.two.makeLine(axisT, this.graphY - this.interval * this.Ky, this.offsetX + trainHalf * this.K, this.graphY - this.interval * this.Ky);
 
+        this.two.makeText(`Tст=${this.peregon.tStay}.`, axisT + 6, this.graphY - this.interval * this.Ky + 24, { alignment: 'left' });
+
+        this.two.makeText(`K=${this.peregon.K}.`, axisT + 6, this.graphY - this.interval * this.Ky + 84, { alignment: 'left' });
+
+        this.two.makeText(`П=${this.peregon.interval}/ч.`, axisT + 6, this.graphY - this.interval * this.Ky + 54, { alignment: 'left' });
+
         this.two.makeText(`T=${Math.round(tH)}+${this.peregon.tStay}=${tFull}с.`, axisT + 6, this.graphY - tFull * this.Ky - 6, { alignment: 'left' })
         this.two.makeLine(axisT, this.graphY - tFull * this.Ky, this.offsetX * this.K, this.graphY - tFull * this.Ky);
 
