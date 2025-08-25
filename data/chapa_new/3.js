@@ -43,7 +43,7 @@ lines['chapa_new']['3'] = [
         ],
         signals: [
             { joint: '3б', name: 'В1', lenses: 'YYG-Rw', autostop: 1, guard: 40, service: 35, autostop: 1, y: '3га', g: 'NEXT_y', shift: 0 },
-            { joint: '3г', name: 'В3', lenses: 'YYG-Rw', autostop: 1, guard: 60, service: 35, autostop: 1, y: '3дф', g: 'NEXT_y', shift: 0 },
+            { joint: '3г', name: 'В3', lenses: 'YYG-Rw', autostop: 1, guard: 60, service: 50, autostop: 1, y: '3дф', g: 'NEXT_y', shift: 0 },
             { joint: '3дф', name: 'Ч1', lenses: 'YG-Rw', autostop: 1, guard: 40, service: 35, autostop: 1, y: '3д', shift: 0 },
             { joint: '1СП', name: 'Б', lenses: 'WR-w', guard: 0 },
 
