@@ -133,6 +133,7 @@ class App {
         this.trackLength = trackLength;
         this.tStay = tStay;
         this.interval = Math.round(3600 / (interval || 40));
+        this.minInterval = Math.round(3600);
         this.curves = curves;
         this.slopes = slopes;
         this.modes = modes;

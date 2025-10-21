@@ -3,6 +3,7 @@ class Draw {
         this.two = two;
         this.peregon = peregon;
         this.interval = Math.round(3600 / (this.peregon.interval || 40));
+        this.minInterval = Math.round(3600);
         this.curvesWidth = 2;
         this.curvesY = two.height - 15;
         this.slopesWidth = 2;
