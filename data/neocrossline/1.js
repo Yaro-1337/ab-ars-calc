@@ -364,9 +364,14 @@ lines['neocrossline']['1'] = [
             { x: 2730 + 13 - 50 - 62.5, name: '375', limit: 60 },
             { x: 2730 + 13 - 50, name: '377', limit: 60 },
             { x: 2730 + 13, name: '379', limit: 60 },
-            { x: 2730 + 13 + 62.5, name: '381', limit: 60 },
+            { x: 2730 + 13 + 62.5, name: '381', limit: 40 },
+            { x: 2730 + 13 + 62.5 + 75, name: '383', limit: 0 },
+            { x: 2730 + 13 + 62.5 + 75 + 75, name: '383а', limit: 0 },
+            { x: 2730 + 13 + 62.5 + 75 + 75 + 75, name: '383б', limit: 0 },
         ],
         signals: [
+            { joint: '375', name: '381', lenses: 'YY-GR', guard: 65, autostop: 1, y: '381', g: '383а', shift: 0 },
+            { joint: '381', name: '383М', lenses: 'x', guard: 35, autostop: 1 },
         ],
         mks: [
             { x: 12.5 - 7 + 75 + 75 + 75 + 923.5, name: '9МК' },
