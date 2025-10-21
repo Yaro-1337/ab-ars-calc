@@ -158,6 +158,18 @@ function signals() {
                 signals[name].yy = '100100';
                 signals[name].yfy = '200100';
                 break;
+            case 'YYYGRW':
+            case 'YYYGRw':
+                signals[name].def = '00000';
+                signals[name].ro = '00001';
+                signals[name].ry = '01001';
+                signals[name].ya = '01000';
+                signals[name].yo = '10000';
+                signals[name].yg = '10010';
+                signals[name].go = '00010';
+                signals[name].yy = '01100';
+                signals[name].yfy = '20100';
+                break;
             case 'BYWRw':
                 signals[name].def = '0000';
                 signals[name].ro = '0001';

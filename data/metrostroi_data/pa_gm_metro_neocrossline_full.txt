@@ -1,0 +1,900 @@
+{
+	"1": [
+		[
+			{
+				"sensors": [],
+				"stations": [
+					{
+						"path": 1,
+						"dist_last_end": 1050.5114084978632,
+						"hasSwitches": true,
+						"name_last": "Молодежной",
+						"id": 118,
+						"pos": 26.51140849786321,
+						"name": "Молодежная",
+						"isLast": true
+					}
+				],
+				"signals": [],
+				"slopes": []
+			},
+			248.3730234942372
+		],
+		[
+			{
+				"slopes": [
+					[
+						-15,
+						447.32190178527827
+					],
+					[
+						0,
+						587.2082818817138
+					],
+					[
+						5,
+						607.4335927001953,
+						0
+					],
+					[
+						0,
+						697.2499627349854
+					],
+					[
+						-35,
+						1355.0460383422853
+					],
+					[
+						-45,
+						1454.7736429412842
+					],
+					[
+						0,
+						1603.6067385681156
+					],
+					[
+						5,
+						2286.512708239746,
+						0
+					],
+					[
+						0,
+						2326.6493025329587
+					],
+					[
+						-10,
+						2505.460493911743,
+						30
+					],
+					[
+						0,
+						2813.8418520538335
+					],
+					[
+						5,
+						3191.914851644899,
+						0
+					],
+					[
+						0,
+						3461.525873959352
+					],
+					[
+						30,
+						3741.1826575103764
+					],
+					[
+						-5,
+						3751.2775692352297
+					],
+					[
+						0,
+						3941.598151116944
+					],
+					[
+						10,
+						4632.19439208069
+					],
+					[
+						0,
+						4711.6607996795665
+					],
+					[
+						-45,
+						5018.8395219268805
+					],
+					[
+						0,
+						5218.842641867067
+					],
+					[
+						-10,
+						5428.139095715334,
+						0
+					],
+					[
+						0,
+						5628.500076370241
+					],
+					[
+						-10,
+						6116.078040156558
+					],
+					[
+						0,
+						6275.468039076235
+					],
+					[
+						-5,
+						6464.756559535219,
+						0
+					],
+					[
+						0,
+						6495.032384788515
+					],
+					[
+						-10,
+						6706.923610487367,
+						11
+					],
+					[
+						0,
+						6836.527899586488
+					],
+					[
+						-10,
+						6985.788878398132
+					],
+					[
+						0,
+						7045.224866770934
+					],
+					[
+						10,
+						7115.098487809752
+					],
+					[
+						0,
+						7264.246871168518
+					],
+					[
+						-10,
+						7492.421013441467,
+						0
+					],
+					[
+						0,
+						7701.716565019225
+					],
+					[
+						-25,
+						7791.43817572174
+					],
+					[
+						0,
+						8419.957090699772
+					],
+					[
+						-10,
+						8847.953277919009
+					],
+					[
+						0,
+						8966.898661811829
+					],
+					[
+						-45,
+						9166.662776573186
+					],
+					[
+						0,
+						9467.704314125069
+					],
+					[
+						5,
+						9718.019315409858,
+						0
+					],
+					[
+						0,
+						9948.085695671089
+					],
+					[
+						15,
+						10265.774846141063
+					],
+					[
+						0,
+						10584.87196415864
+					],
+					[
+						-15,
+						10795.518909992994
+					],
+					[
+						0,
+						10996.231573832718
+					],
+					[
+						-5,
+						11116.678276551836,
+						0
+					],
+					[
+						0,
+						11156.780635725421
+					],
+					[
+						-25,
+						11187.097956120318
+					],
+					[
+						0,
+						11436.119772386191
+					],
+					[
+						-25,
+						11692.84788105929
+					],
+					[
+						0,
+						11891.197433326743
+					],
+					[
+						30,
+						11911.392797135946
+					],
+					[
+						15,
+						11921.496422282431
+					],
+					[
+						0,
+						12129.169484523034
+					],
+					[
+						10,
+						12405.809063868737,
+						5
+					],
+					[
+						0,
+						12465.981542170739
+					],
+					[
+						-55,
+						12902.550235203575
+					],
+					[
+						-45,
+						13101.186923432944
+					],
+					[
+						5,
+						13151.176203538535
+					],
+					[
+						0,
+						13171.137378154013
+					],
+					[
+						-5,
+						13821.218766517657,
+						0
+					],
+					[
+						0,
+						13860.662091499347
+					],
+					[
+						-5,
+						13880.196082887287,
+						0
+					],
+					[
+						0,
+						13949.991125001545
+					],
+					[
+						-10,
+						13959.760500782795
+					],
+					[
+						-15,
+						13999.979413307208
+					],
+					[
+						-25,
+						14039.181303025836
+					],
+					[
+						-35,
+						14199.136359315507
+					],
+					[
+						0,
+						14328.774068467728
+					],
+					[
+						5,
+						14428.018567671223,
+						2
+					],
+					[
+						0,
+						14458.120550047322
+					],
+					[
+						-5,
+						14647.00109657137,
+						0
+					],
+					[
+						0,
+						14687.148226268024
+					],
+					[
+						-50,
+						15131.973826936359
+					],
+					[
+						-45,
+						15191.078287870809
+					],
+					[
+						0,
+						15369.957804148882
+					],
+					[
+						-5,
+						15705.606104924032,
+						1
+					],
+					[
+						0,
+						15923.320247291585
+					],
+					[
+						-5,
+						16192.394365168779,
+						0
+					],
+					[
+						0,
+						16242.206604917925
+					],
+					[
+						-35,
+						16400.37813867647
+					],
+					[
+						0,
+						16519.416813386553
+					],
+					[
+						-25,
+						16647.115012435937
+					],
+					[
+						0,
+						16787.518924896263
+					],
+					[
+						-5,
+						16968.740261022973,
+						0
+					],
+					[
+						0,
+						17008.47217304079
+					],
+					[
+						-5,
+						17164.722681614698,
+						2
+					],
+					[
+						0,
+						17234.551094947827
+					]
+				],
+				"slopeCurrent": 1790,
+				"signals": [],
+				"sensors": [],
+				"slope": [
+					[
+						17640.25675787201,
+						55.424961267867886
+					],
+					[
+						17650.029610185244,
+						-834.334258511777
+					]
+				],
+				"slopeLength": 9.976361021375656,
+				"stations": [
+					{
+						"path": 2,
+						"pos": 141.56093486022948,
+						"hasSwitches": false,
+						"id": 120,
+						"name": "Молодежная",
+						"isLast": false
+					},
+					{
+						"path": 2,
+						"pos": 2059.7847406299593,
+						"hasSwitches": false,
+						"id": 119,
+						"name": "Кировская",
+						"isLast": false
+					},
+					{
+						"path": 2,
+						"pos": 4090.9376065338147,
+						"hasSwitches": false,
+						"id": 118,
+						"name": "Олимпийская",
+						"isLast": false
+					},
+					{
+						"path": 2,
+						"pos": 6101.855810591128,
+						"hasSwitches": false,
+						"id": 117,
+						"name": "Пролетарская",
+						"isLast": false
+					},
+					{
+						"path": 2,
+						"pos": 8794.944022265627,
+						"hasSwitches": false,
+						"id": 116,
+						"name": "Речная",
+						"isLast": false
+					},
+					{
+						"path": 2,
+						"pos": 10744.201651062023,
+						"hasSwitches": false,
+						"id": 115,
+						"name": "Октябрьская",
+						"isLast": false
+					},
+					{
+						"path": 2,
+						"pos": 12265.412571885707,
+						"hasSwitches": false,
+						"id": 114,
+						"name": "Нахимовская",
+						"isLast": false
+					},
+					{
+						"path": 2,
+						"pos": 13747.202554151932,
+						"hasSwitches": false,
+						"id": 113,
+						"name": "Проспект Суворова",
+						"isLast": false
+					},
+					{
+						"path": 2,
+						"pos": 14874.508908004776,
+						"hasSwitches": false,
+						"id": 112,
+						"name": "Политехническая",
+						"isLast": false
+					},
+					{
+						"path": 2,
+						"pos": 16380.427505859392,
+						"hasSwitches": false,
+						"id": 111,
+						"name": "Парк Культуры",
+						"isLast": false
+					},
+					{
+						"path": 2,
+						"pos": 17351.168593606577,
+						"hasSwitches": true,
+						"id": 110,
+						"name_last": "Международной",
+						"name": "Международная",
+						"isLast": true
+					}
+				]
+			},
+			17650.233118893386
+		]
+	],
+	"markers": [
+		{
+			"TrackPath": 26,
+			"PAStationHasSwtiches": true,
+			"PADeadlockEnd": 1024,
+			"TrackX": 17790.55596086703,
+			"PALastStation": true,
+			"PAStationID": 120,
+			"PAStationPath": 1,
+			"Angles": "{0.0029 76.5063 0}",
+			"PAStationName": "Молодежная",
+			"Pos": "[-10629.3584 299.0941 -8283.3506]",
+			"PAType": 1,
+			"PALastStationName": "Молодежной"
+		},
+		{
+			"PAWrongPath": false,
+			"TrackPath": 37,
+			"PAStationHasSwtiches": false,
+			"PADeadlockEnd": false,
+			"TrackX": 302.2569781363053,
+			"PALastStation": false,
+			"PAStationID": 120,
+			"PADeadlockStart": false,
+			"PALineChangeStationID": false,
+			"PAStationPath": 2,
+			"Angles": "{359.9973 256.5182 0}",
+			"PAStationName": "Молодежная",
+			"Pos": "[-12569.5752 -4891.396 -8283.4434]",
+			"PAType": 1,
+			"PALineChange": false,
+			"PALineChangeStationPath": false
+		},
+		{
+			"PAWrongPath": false,
+			"TrackPath": 37,
+			"PAStationHasSwtiches": false,
+			"PADeadlockEnd": false,
+			"TrackX": 2220.4807758295015,
+			"PALastStation": false,
+			"PAStationID": 119,
+			"PADeadlockStart": false,
+			"PALineChangeStationID": false,
+			"PAStationPath": 2,
+			"Angles": "{359.9984 269.9909 0}",
+			"PAStationName": "Кировская",
+			"Pos": "[-13816.3438 -7458.7207 -8865.249]",
+			"PAType": 1,
+			"PALineChange": false,
+			"PALineChangeStationPath": false
+		},
+		{
+			"PAWrongPath": false,
+			"TrackPath": 26,
+			"PAStationHasSwtiches": false,
+			"PADeadlockEnd": false,
+			"TrackX": 15945.09771617043,
+			"PALastStation": false,
+			"PAStationID": 119,
+			"PADeadlockStart": false,
+			"PALineChangeStationID": false,
+			"PAStationPath": 1,
+			"Angles": "{0.0062 90.0702 0}",
+			"PAStationName": "Кировская",
+			"Pos": "[-13021.6865 -1683.2932 -8865.2891]",
+			"PAType": 1,
+			"PALineChange": false,
+			"PALineChangeStationPath": false
+		},
+		{
+			"PAWrongPath": false,
+			"TrackPath": 37,
+			"PAStationHasSwtiches": false,
+			"PADeadlockEnd": false,
+			"TrackX": 4251.633645624523,
+			"PALastStation": false,
+			"PAStationID": 118,
+			"PADeadlockStart": false,
+			"PALineChangeStationID": false,
+			"PAStationPath": 2,
+			"Angles": "{359.9565 129.7461 0}",
+			"PAStationName": "Олимпийская",
+			"Pos": "[-10557.1924 3792.6887 -9288.8125]",
+			"PAType": 1,
+			"PALineChange": false,
+			"PALineChangeStationPath": false
+		},
+		{
+			"PAWrongPath": false,
+			"TrackPath": 26,
+			"PAStationHasSwtiches": false,
+			"PADeadlockEnd": false,
+			"TrackX": 13876.22909827706,
+			"PALastStation": false,
+			"PAStationID": 118,
+			"PADeadlockStart": false,
+			"PALineChangeStationID": false,
+			"PAStationPath": 1,
+			"Angles": "{0.0085 310.043 0}",
+			"PAStationName": "Олимпийская",
+			"Pos": "[-7431.4248 -1046.2568 -9288.6416]",
+			"PAType": 1,
+			"PALineChange": false,
+			"PALineChangeStationPath": false
+		},
+		{
+			"PAWrongPath": false,
+			"TrackPath": 26,
+			"PAStationHasSwtiches": false,
+			"PADeadlockEnd": false,
+			"TrackX": 11750.012804413984,
+			"PALastStation": false,
+			"PAStationID": 117,
+			"PADeadlockStart": false,
+			"PALineChangeStationID": false,
+			"PAStationPath": 1,
+			"Angles": "{359.9943 269.9637 0}",
+			"PAStationName": "Пролетарская",
+			"Pos": "[-15548.9229 -5269.4375 -9729.4414]",
+			"PAType": 1,
+			"PALineChange": false,
+			"PALineChangeStationPath": false
+		},
+		{
+			"PAWrongPath": false,
+			"TrackPath": 37,
+			"PAStationHasSwtiches": false,
+			"PADeadlockEnd": false,
+			"TrackX": 6262.551834188925,
+			"PALastStation": false,
+			"PAStationID": 117,
+			"PADeadlockStart": false,
+			"PALineChangeStationID": false,
+			"PAStationPath": 2,
+			"Angles": "{359.9739 89.9992 0}",
+			"PAStationName": "Пролетарская",
+			"Pos": "[-14843.5029 631.3885 -9729.208]",
+			"PAType": 1,
+			"PALineChange": false,
+			"PALineChangeStationPath": false
+		},
+		{
+			"PAWrongPath": false,
+			"TrackPath": 37,
+			"PAStationHasSwtiches": false,
+			"PADeadlockEnd": false,
+			"TrackX": 8955.640044397458,
+			"PALastStation": false,
+			"PAStationID": 116,
+			"PADeadlockStart": false,
+			"PALineChangeStationID": false,
+			"PAStationPath": 2,
+			"Angles": "{359.9743 89.9513 0}",
+			"PAStationName": "Речная",
+			"Pos": "[14887.9404 774.163 -10770.3438]",
+			"PAType": 1,
+			"PALineChange": false,
+			"PALineChangeStationPath": false
+		},
+		{
+			"PAWrongPath": false,
+			"TrackPath": 26,
+			"PAStationHasSwtiches": false,
+			"PADeadlockEnd": false,
+			"TrackX": 9019.621293006272,
+			"PALastStation": false,
+			"PAStationID": 116,
+			"PADeadlockStart": false,
+			"PALineChangeStationID": false,
+			"PAStationPath": 1,
+			"Angles": "{0.0058 269.8728 0}",
+			"PAStationName": "Речная",
+			"Pos": "[14654.2236 -4947.6875 -10770.1914]",
+			"PAType": 1,
+			"PALineChange": false,
+			"PALineChangeStationPath": false
+		},
+		{
+			"PAWrongPath": false,
+			"TrackPath": 26,
+			"PAStationHasSwtiches": false,
+			"PADeadlockEnd": false,
+			"TrackX": 7208.458669111137,
+			"PALastStation": false,
+			"PAStationID": 115,
+			"PADeadlockStart": false,
+			"PALineChangeStationID": false,
+			"PAStationPath": 1,
+			"Angles": "{359.9961 223.1237 0}",
+			"PAStationName": "Октябрьская",
+			"Pos": "[4777.1069 -1263.4523 -12105.5039]",
+			"PAType": 1,
+			"PALineChange": false,
+			"PALineChangeStationPath": false
+		},
+		{
+			"PAWrongPath": false,
+			"TrackPath": 37,
+			"PAStationHasSwtiches": false,
+			"PADeadlockEnd": false,
+			"TrackX": 10904.897678104064,
+			"PALastStation": false,
+			"PAStationID": 115,
+			"PADeadlockStart": false,
+			"PALineChangeStationID": false,
+			"PAStationPath": 2,
+			"Angles": "{0.0737 43.0411 0}",
+			"PAStationName": "Октябрьская",
+			"Pos": "[9611.0361 1897.4895 -12105.4668]",
+			"PAType": 1,
+			"PALineChange": false,
+			"PALineChangeStationPath": false
+		},
+		{
+			"PAWrongPath": false,
+			"TrackPath": 37,
+			"PAStationHasSwtiches": false,
+			"PADeadlockEnd": false,
+			"TrackX": 12426.108597334378,
+			"PALastStation": false,
+			"PAStationID": 114,
+			"PADeadlockStart": false,
+			"PALineChangeStationID": false,
+			"PAStationPath": 2,
+			"Angles": "{0.004 0.0982 0}",
+			"PAStationName": "Нахимовская",
+			"Pos": "[-1413.1787 -10094.3242 -12511.71]",
+			"PAType": 1,
+			"PALineChange": false,
+			"PALineChangeStationPath": false
+		},
+		{
+			"PAWrongPath": false,
+			"TrackPath": 26,
+			"PAStationHasSwtiches": false,
+			"PADeadlockEnd": false,
+			"TrackX": 5791.980345614951,
+			"PALastStation": false,
+			"PAStationID": 114,
+			"PADeadlockStart": false,
+			"PALineChangeStationID": false,
+			"PAStationPath": 1,
+			"Angles": "{0.1314 179.8575 0}",
+			"PAStationName": "Нахимовская",
+			"Pos": "[-7554.0132 -9388.7871 -12511.8184]",
+			"PAType": 1,
+			"PALineChange": false,
+			"PALineChangeStationPath": false
+		},
+		{
+			"PAWrongPath": false,
+			"TrackPath": 37,
+			"PAStationHasSwtiches": false,
+			"PADeadlockEnd": false,
+			"TrackX": 13907.898574050769,
+			"PALastStation": false,
+			"PAStationID": 113,
+			"PADeadlockStart": false,
+			"PALineChangeStationID": false,
+			"PAStationPath": 2,
+			"Angles": "{359.9799 9.9701 0}",
+			"PAStationName": "Проспект Суворова",
+			"Pos": "[-3060.3564 13650.9482 -13107.8574]",
+			"PAType": 1,
+			"PALineChange": false,
+			"PALineChangeStationPath": false
+		},
+		{
+			"PAWrongPath": false,
+			"TrackPath": 26,
+			"PAStationHasSwtiches": false,
+			"PADeadlockEnd": false,
+			"TrackX": 4281.502570408938,
+			"PALastStation": false,
+			"PAStationID": 113,
+			"PADeadlockStart": false,
+			"PALineChangeStationID": false,
+			"PAStationPath": 1,
+			"Angles": "{359.9633 189.9493 0}",
+			"PAStationName": "Проспект Суворова",
+			"Pos": "[-8911.8369 13630.7852 -13107.1982]",
+			"PAType": 1,
+			"PALineChange": false,
+			"PALineChangeStationPath": false
+		},
+		{
+			"PAWrongPath": false,
+			"TrackPath": 26,
+			"PAStationHasSwtiches": false,
+			"PADeadlockEnd": false,
+			"TrackX": 3092.166845889755,
+			"PALastStation": false,
+			"PAStationID": 112,
+			"PADeadlockStart": false,
+			"PALineChangeStationID": false,
+			"PAStationPath": 1,
+			"Angles": "{0.0442 359.9495 0}",
+			"PAStationName": "Политехническая",
+			"Pos": "[2766.2881 -15217.4893 -13554.1367]",
+			"PAType": 1,
+			"PALineChange": false,
+			"PALineChangeStationPath": false
+		},
+		{
+			"PAWrongPath": false,
+			"TrackPath": 37,
+			"PAStationHasSwtiches": false,
+			"PADeadlockEnd": false,
+			"TrackX": 15035.204928509886,
+			"PALastStation": false,
+			"PAStationID": 112,
+			"PADeadlockStart": false,
+			"PALineChangeStationID": false,
+			"PAStationPath": 2,
+			"Angles": "{359.9604 180.0094 0}",
+			"PAStationName": "Политехническая",
+			"Pos": "[-2968.6787 -14491.0127 -13555.2422]",
+			"PAType": 1,
+			"PALineChange": false,
+			"PALineChangeStationPath": false
+		},
+		{
+			"PAWrongPath": false,
+			"TrackPath": 26,
+			"PAStationHasSwtiches": false,
+			"PADeadlockEnd": false,
+			"TrackX": 1491.7855875651303,
+			"PALastStation": false,
+			"PAStationID": 111,
+			"PADeadlockStart": false,
+			"PALineChangeStationID": false,
+			"PAStationPath": 1,
+			"Angles": "{359.9982 90.0486 0}",
+			"PAStationName": "Парк Культуры",
+			"Pos": "[15719.5146 2380.2007 -14153.2734]",
+			"PAType": 1,
+			"PALineChange": false,
+			"PALineChangeStationPath": false
+		},
+		{
+			"PAWrongPath": false,
+			"TrackPath": 37,
+			"PAStationHasSwtiches": false,
+			"PADeadlockEnd": false,
+			"TrackX": 16541.123537018688,
+			"PALastStation": false,
+			"PAStationID": 111,
+			"PADeadlockStart": false,
+			"PALineChangeStationID": false,
+			"PAStationPath": 2,
+			"Angles": "{0.0393 269.9516 0}",
+			"PAStationName": "Парк Культуры",
+			"Pos": "[14969.1738 -3512.9685 -14154.4619]",
+			"PAType": 1,
+			"PALineChange": false,
+			"PALineChangeStationPath": false
+		},
+		{
+			"TrackPath": 37,
+			"PAStationHasSwtiches": true,
+			"TrackX": 17511.864630138898,
+			"PALastStation": true,
+			"PAStationID": 110,
+			"PAStationPath": 2,
+			"Angles": "{0.016 43.9976 0}",
+			"PAStationName": "Международная",
+			"Pos": "[-2511.249 -2082.8911 -14469.1475]",
+			"PAType": 1,
+			"PALastStationName": "Международной"
+		},
+		{
+			"PAWrongPath": false,
+			"TrackPath": 26,
+			"PAStationHasSwtiches": false,
+			"PADeadlockEnd": false,
+			"TrackX": 388.8434701361123,
+			"PALastStation": false,
+			"PAStationID": 110,
+			"PADeadlockStart": false,
+			"PALineChangeStationID": false,
+			"PAStationPath": 1,
+			"Angles": "{359.9739 224.0165 0}",
+			"PAStationName": "Международная",
+			"Pos": "[-7348.7808 -5350.6865 -14469.168]",
+			"PAType": 1,
+			"PALineChange": false,
+			"PALineChangeStationPath": false
+		}
+	]
+}
