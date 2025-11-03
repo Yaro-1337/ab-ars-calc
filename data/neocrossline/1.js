@@ -403,7 +403,7 @@ lines['neocrossline']['1'] = [
             { joint: '327', name: '329М', lenses: 'RYY-GR', guard: 80, service: 70, autostop: 1, y: '329а', g: 'NEXT_y' },
             { joint: '329', name: '331М', lenses: 'RYY-GR', guard: 80, service: 70, autostop: 1, y: '331а', g: 'NEXT_y', macht: true },
             { joint: '331', name: '333М', lenses: 'RYY-GR', guard: 80, service: 70, autostop: 1, y: '333а', g: 'NEXT_y', macht: true },
-            { joint: '333', name: '335', lenses: 'YY-GR', guard: 80, service: 70, autostop: 1, y: '335а', g: 'NEXT_y' },
+            { joint: '333', name: '335', lenses: 'YY-GR', guard: 80, service: 70, autostop: 1, y: '335а', yg: 'NEXT_y', g: 'NEXT_yg' },
 
             { joint: '333а', name: '337', lenses: 'YY-GR', guard: 80, service: 35, autostop: 1, y: '337', yg: 'NEXT_y', g: '343', shift: 3 },
             { joint: '335', name: '339', lenses: 'YYG-Rz', guard: 70, service: 35, autostop: 1, y: '339', yg: 'NEXT_y', g: '345' },
