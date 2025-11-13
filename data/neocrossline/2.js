@@ -422,6 +422,26 @@ lines['neocrossline']['2'] = [
         minInterval: 44,
         modes: {
             0: 'H',
+            150: '0',
+            1010: 'T',
+        },
+        joints: [
+        ],
+        signals: [
+        ],
+        mks: [
+        ],
+    },
+    {
+        name: 'Политехническая',
+        arsDrawBreakpoint: 9,
+        arsAllSteps: false,
+        tStay: 25,
+        K: 1,
+        interval: 44,
+        minInterval: 44,
+        modes: {
+            0: 'H',
             100: '0',
         },
         joints: [
