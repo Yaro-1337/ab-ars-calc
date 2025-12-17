@@ -15,7 +15,7 @@ function sections() {
 
 }
 
-function signals() {
+function signals() { //Исправить это. Что исправить?
     let signals = {};
     peregon.signals.forEach(el => {
         let nm = el.name.replaceAll('-', '');
