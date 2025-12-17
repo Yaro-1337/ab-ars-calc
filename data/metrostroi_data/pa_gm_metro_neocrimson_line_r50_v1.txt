@@ -1,0 +1,847 @@
+{
+	"5": [
+		[
+			{
+				"slopes": [
+					[
+						-5,
+						769.269241534005,
+						0
+					],
+					[
+						0,
+						799.882398617571
+					],
+					[
+						5,
+						836.2436710843956,
+						2
+					],
+					[
+						0,
+						866.4417611729607
+					],
+					[
+						-5,
+						1123.326031473268,
+						0
+					],
+					[
+						0,
+						1183.9077310262978
+					],
+					[
+						-35,
+						0
+					],
+					[
+						-40,
+						1338.7661285646004
+					],
+					[
+						0,
+						1577.6526529487958
+					],
+					[
+						-35,
+						0
+					],
+					[
+						-45,
+						2536.625079074844
+					],
+					[
+						0,
+						2716.68835058508
+					],
+					[
+						-35,
+						3110.2372433471646
+					],
+					[
+						0,
+						3270.08166830181
+					],
+					[
+						-25,
+						0
+					],
+					[
+						0,
+						3616.2003082375104
+					],
+					[
+						-5,
+						3695.4958733819,
+						3
+					],
+					[
+						0,
+						3735.942975945096
+					],
+					[
+						-40,
+						3975.9910541072
+					],
+					[
+						-35,
+						3986.113308945404
+					],
+					[
+						0,
+						4145.199501631744
+					],
+					[
+						5,
+						4363.756630658704,
+						0
+					],
+					[
+						0,
+						4393.795731005675
+					],
+					[
+						-30,
+						0
+					],
+					[
+						-35,
+						4532.92507489144
+					],
+					[
+						5,
+						4693.234945670739
+					],
+					[
+						0,
+						4712.946508758948
+					],
+					[
+						-5,
+						4722.998296249896,
+						3
+					],
+					[
+						0,
+						4762.687427459107
+					],
+					[
+						5,
+						4769.765926882311,
+						4
+					],
+					[
+						0,
+						4819.420098456117
+					],
+					[
+						-45,
+						5826.1989940136855
+					],
+					[
+						-35,
+						5836.34995091667
+					],
+					[
+						5,
+						6047.340230629573
+					],
+					[
+						0,
+						6067.454228319365
+					],
+					[
+						-25,
+						0
+					],
+					[
+						-35,
+						6794.909221598487
+					],
+					[
+						5,
+						7014.707770672246
+					],
+					[
+						0,
+						7034.547179184511
+					]
+				],
+				"signals": [],
+				"sensors": [],
+				"slope": [
+					[
+						6794.909221598487,
+						-24.65054988062573
+					],
+					[
+						6804.703395605619,
+						-42.44176320541005
+					],
+					[
+						6814.544680471945,
+						-35.67802256790859
+					],
+					[
+						6824.468886930915,
+						-35.135071301184986
+					],
+					[
+						6834.518391958437,
+						-34.626785653101976
+					],
+					[
+						6844.69566916848,
+						-35.77333445577839
+					],
+					[
+						6854.453803918203,
+						-34.338319500663914
+					],
+					[
+						6864.257155396364,
+						-36.48150262096674
+					],
+					[
+						6874.540681817727,
+						-34.62913253816001
+					],
+					[
+						6884.759038267583,
+						-34.791720332399294
+					],
+					[
+						6894.908788821481,
+						-35.08379830074158
+					],
+					[
+						6904.991804846596,
+						-35.43631530332087
+					],
+					[
+						6915.005621343928,
+						-35.71658023832384
+					],
+					[
+						6924.943073960112,
+						-34.40192847476568
+					],
+					[
+						6934.806575489394,
+						-36.26899056126583
+					],
+					[
+						6944.59087623596,
+						-33.850361758667255
+					],
+					[
+						6954.806350446366,
+						-35.40840722349551
+					],
+					[
+						6964.938261885561,
+						-34.807392033536566
+					],
+					[
+						6974.978552822518,
+						-35.33045918576719
+					],
+					[
+						6984.929961604053,
+						-34.438213305285416
+					],
+					[
+						6994.7890129370335,
+						-35.640224548916024
+					],
+					[
+						7004.556710571315,
+						-33.193269633888974
+					],
+					[
+						7014.707770672246,
+						-18.50654438689467
+					],
+					[
+						7024.722221217989,
+						5.109124762283413
+					]
+				],
+				"slopeLength": 239.63795758602595,
+				"stations": [
+					{
+						"dist_last_start": 149.04138283548014,
+						"dist_last_end": 1123.04138283548,
+						"name_last": "Братеево",
+						"path": 1,
+						"isInWrong": true,
+						"hasSwitches": true,
+						"id": 551,
+						"pos": 99.04138283548014,
+						"rightDoors": false,
+						"name": "Братеево",
+						"isLast": false
+					},
+					{
+						"dist_last_start": 1109.2189628858073,
+						"dist_last_end": 1571.2189628858073,
+						"name_last": "Братеево",
+						"path": 1,
+						"isInWrong": false,
+						"hasSwitches": true,
+						"id": 552,
+						"pos": 1059.2189628858073,
+						"rightDoors": true,
+						"name": "Пионерская",
+						"isLast": true
+					},
+					{
+						"dist_last_start": 1815.69812073122,
+						"dist_last_end": 2277.69812073122,
+						"name_last": "Братеево",
+						"path": 1,
+						"isInWrong": true,
+						"hasSwitches": false,
+						"id": 553,
+						"pos": 1765.69812073122,
+						"rightDoors": false,
+						"name": "Литиевая",
+						"isLast": false
+					},
+					{
+						"dist_last_start": 3035.700999205095,
+						"dist_last_end": 3497.700999205095,
+						"name_last": "Метростроителей",
+						"path": 1,
+						"isInWrong": false,
+						"hasSwitches": true,
+						"id": 554,
+						"pos": 2985.700999205095,
+						"rightDoors": false,
+						"name": "Метростроителей",
+						"isLast": true
+					},
+					{
+						"dist_last_start": 4506.013273789586,
+						"dist_last_end": 5530.013273789586,
+						"name_last": "Славутича",
+						"path": 1,
+						"isInWrong": true,
+						"hasSwitches": true,
+						"id": 555,
+						"pos": 4506.013273789586,
+						"rightDoors": true,
+						"name": "Славутич",
+						"isLast": true
+					},
+					{
+						"dist_last_start": 6485.3560632031495,
+						"dist_last_end": 6947.3560632031495,
+						"name_last": "Фауны",
+						"path": 1,
+						"isInWrong": false,
+						"hasSwitches": true,
+						"id": 556,
+						"pos": 6435.3560632031495,
+						"rightDoors": false,
+						"name": "Фауна",
+						"isLast": true
+					},
+					{
+						"dist_last_start": 8267.9497556511,
+						"dist_last_end": 8729.9497556511,
+						"name_last": "Сталинской",
+						"path": 1,
+						"isInWrong": false,
+						"hasSwitches": true,
+						"id": 557,
+						"pos": 8217.9497556511,
+						"rightDoors": false,
+						"name": "Сталинская",
+						"isLast": true
+					}
+				]
+			},
+			8452.266580563844
+		],
+		[
+			{
+				"slopes": [
+					[
+						40,
+						1106.2275338194484
+					],
+					[
+						35,
+						1116.0399148651638
+					],
+					[
+						0,
+						1325.000484312154
+					],
+					[
+						0,
+						1354.9915569454838
+					],
+					[
+						40,
+						2022.3339165965133
+					],
+					[
+						35,
+						2032.1611714685864
+					],
+					[
+						30,
+						2241.328463342936
+					],
+					[
+						0,
+						2271.4261964751067
+					],
+					[
+						35,
+						3330.390976012356
+					],
+					[
+						-10,
+						3360.1637302318168
+					],
+					[
+						0,
+						3538.9727058420017
+					],
+					[
+						25,
+						3894.699749694754
+					],
+					[
+						35,
+						3924.1724635696696
+					],
+					[
+						0,
+						4083.127158405505
+					],
+					[
+						-5,
+						4470.8580619162485
+					],
+					[
+						0,
+						4709.746220044716
+					],
+					[
+						35,
+						4827.6778377571145
+					],
+					[
+						0,
+						4986.272584886529
+					],
+					[
+						30,
+						0
+					],
+					[
+						45,
+						5389.480787536938
+					],
+					[
+						-5,
+						5538.988963487149
+					],
+					[
+						0,
+						5578.76971231066
+					],
+					[
+						5,
+						5808.487289378147,
+						0
+					],
+					[
+						0,
+						5848.060192740094
+					],
+					[
+						45,
+						6583.6484144801925
+					],
+					[
+						35,
+						6593.836216047966
+					],
+					[
+						-10,
+						6803.081576568269
+					],
+					[
+						0,
+						6823.197295333424
+					],
+					[
+						-5,
+						6911.936954635522,
+						1
+					],
+					[
+						0,
+						7010.235405052188
+					]
+				],
+				"signals": [],
+				"sensors": [],
+				"slope": [
+					[
+						7925.609803386194,
+						-2.4360242357753967
+					]
+				],
+				"slopeLength": 10.156036207875378,
+				"stations": [
+					{
+						"dist_last_start": 149.33114891433104,
+						"dist_last_end": 611.331148914331,
+						"name_last": "Сталинской",
+						"path": 2,
+						"isInWrong": false,
+						"hasSwitches": true,
+						"id": 557,
+						"pos": 99.33114891433102,
+						"rightDoors": false,
+						"name": "Сталинская",
+						"isLast": false
+					},
+					{
+						"dist_last_start": 1778.621923021013,
+						"dist_last_end": 2240.6219230210127,
+						"name_last": "Фауны",
+						"path": 2,
+						"isInWrong": true,
+						"hasSwitches": true,
+						"id": 556,
+						"pos": 1728.621923021013,
+						"rightDoors": false,
+						"name": "Фауна",
+						"isLast": true
+					},
+					{
+						"dist_last_start": 3622.310274942746,
+						"dist_last_end": 4646.310274942747,
+						"name_last": "Славутича",
+						"path": 2,
+						"isInWrong": false,
+						"hasSwitches": true,
+						"id": 555,
+						"pos": 3622.310274942746,
+						"rightDoors": true,
+						"name": "Славутич",
+						"isLast": true
+					},
+					{
+						"dist_last_start": 5219.7066168647125,
+						"dist_last_end": 5681.7066168647125,
+						"name_last": "Метростроителей",
+						"path": 2,
+						"isInWrong": true,
+						"hasSwitches": true,
+						"id": 554,
+						"pos": 5169.7066168647125,
+						"rightDoors": false,
+						"name": "Метростроителей",
+						"isLast": true
+					},
+					{
+						"dist_last_start": 6492.770506874965,
+						"dist_last_end": 6954.770506874965,
+						"name_last": "Братеево",
+						"path": 2,
+						"isInWrong": true,
+						"hasSwitches": false,
+						"id": 553,
+						"pos": 6442.770506874965,
+						"rightDoors": false,
+						"name": "Литиевая",
+						"isLast": false
+					},
+					{
+						"dist_last_start": 7213.94301919253,
+						"dist_last_end": 7675.94301919253,
+						"name_last": "Братеево",
+						"path": 2,
+						"isInWrong": true,
+						"hasSwitches": true,
+						"id": 552,
+						"pos": 7163.94301919253,
+						"rightDoors": true,
+						"name": "Пионерская",
+						"isLast": true
+					},
+					{
+						"dist_last_start": 8191.573110445474,
+						"dist_last_end": 8653.573110445475,
+						"name_last": "Братеево",
+						"path": 2,
+						"isInWrong": true,
+						"hasSwitches": true,
+						"id": 551,
+						"pos": 8141.573110445474,
+						"rightDoors": true,
+						"name": "Братеево",
+						"isLast": true
+					}
+				]
+			},
+			8350.722536290552
+		]
+	],
+	"markers": [
+		{
+			"PAWrongPath": false,
+			"TrackPath": 1,
+			"PAStationHasSwtiches": true,
+			"PADeadlockEnd": false,
+			"TrackX": 238.4921372586616,
+			"PAStationRightDoors": false,
+			"PALastStation": false,
+			"PAStationID": 551,
+			"PADeadlockStart": false,
+			"PALineChangeStationID": false,
+			"PAStationPath": 1,
+			"Angles": "{359.9964 90.0938 0}",
+			"PAStationName": "Братеево",
+			"Pos": "[-14108.8184 -6631.436 -1423.9922]",
+			"PAType": 1,
+			"PALineChange": false,
+			"PALineChangeStationPath": false
+		},
+		{
+			"PAWrongPath": false,
+			"TrackPath": 1,
+			"PAStationHasSwtiches": true,
+			"PADeadlockEnd": 512,
+			"TrackX": 1198.669717308988,
+			"PAStationRightDoors": true,
+			"PALastStation": true,
+			"PAStationID": 552,
+			"PADeadlockStart": 50,
+			"PAStationPath": 1,
+			"Angles": "{359.9986 270.0114 0}",
+			"PAStationName": "Пионерская",
+			"Pos": "[11565.499 -3417.6453 -1423.7051]",
+			"PAType": 1,
+			"PALastStationName": "Братеево"
+		},
+		{
+			"PAWrongPath": true,
+			"TrackPath": 2,
+			"PAStationHasSwtiches": true,
+			"PADeadlockEnd": 512,
+			"TrackX": 8331.3941661356,
+			"PAStationRightDoors": true,
+			"PALastStation": true,
+			"PAStationID": 551,
+			"PADeadlockStart": 50,
+			"PAStationPath": 2,
+			"Angles": "{0.0033 269.9637 0}",
+			"PAStationName": "Братеево",
+			"Pos": "[-14716.0547 -10331.2627 -1424.1569]",
+			"PAType": 1,
+			"PALastStationName": "Братеево"
+		},
+		{
+			"PAWrongPath": true,
+			"TrackPath": 2,
+			"PAStationHasSwtiches": true,
+			"PADeadlockEnd": 512,
+			"TrackX": 7353.764074882657,
+			"PAStationRightDoors": true,
+			"PALastStation": true,
+			"PAStationID": 552,
+			"PADeadlockStart": 50,
+			"PAStationPath": 2,
+			"Angles": "{359.9756 90.0203 0}",
+			"PAStationName": "Пионерская",
+			"Pos": "[11830.8457 247.7141 -1423.9337]",
+			"PAType": 1,
+			"PALastStationName": "Братеево"
+		},
+		{
+			"PAWrongPath": false,
+			"TrackPath": 1,
+			"PAStationHasSwtiches": false,
+			"PADeadlockEnd": false,
+			"TrackX": 1905.1488751544005,
+			"PAStationRightDoors": false,
+			"PALastStation": false,
+			"PAStationID": 553,
+			"PADeadlockStart": false,
+			"PALineChangeStationID": false,
+			"PAStationPath": 1,
+			"Angles": "{359.9834 89.9998 0}",
+			"PAStationName": "Литиевая",
+			"Pos": "[-12333.9307 -1962.1323 -1833.1]",
+			"PAType": 1,
+			"PALineChange": false,
+			"PALineChangeStationPath": false
+		},
+		{
+			"PAWrongPath": false,
+			"TrackPath": 2,
+			"PAStationHasSwtiches": false,
+			"PADeadlockEnd": false,
+			"TrackX": 6632.591562565091,
+			"PAStationRightDoors": false,
+			"PALastStation": false,
+			"PAStationID": 553,
+			"PADeadlockStart": false,
+			"PALineChangeStationID": false,
+			"PAStationPath": 2,
+			"Angles": "{359.9934 269.9597 0}",
+			"PAStationName": "Литиевая",
+			"Pos": "[-13104.4258 -6063.1841 -1833.0194]",
+			"PAType": 1,
+			"PALineChange": false,
+			"PALineChangeStationPath": false
+		},
+		{
+			"PAWrongPath": true,
+			"TrackPath": 2,
+			"PAStationHasSwtiches": true,
+			"PADeadlockEnd": 512,
+			"TrackX": 5359.527672554838,
+			"PAStationRightDoors": false,
+			"PALastStation": true,
+			"PAStationID": 554,
+			"PADeadlockStart": 50,
+			"PAStationPath": 2,
+			"Angles": "{0.0116 359.963 0}",
+			"PAStationName": "Метростроителей",
+			"Pos": "[6953.0571 -13907.2441 -2209.1624]",
+			"PAType": 1,
+			"PALastStationName": "Метростроителей"
+		},
+		{
+			"PAWrongPath": false,
+			"TrackPath": 1,
+			"PAStationHasSwtiches": true,
+			"PADeadlockEnd": 512,
+			"TrackX": 3125.1517536282768,
+			"PAStationRightDoors": false,
+			"PALastStation": true,
+			"PAStationID": 554,
+			"PADeadlockStart": 50,
+			"PAStationPath": 1,
+			"Angles": "{0.0188 180.0577 0}",
+			"PAStationName": "Метростроителей",
+			"Pos": "[3355.2297 -13335.6182 -2209.123]",
+			"PAType": 1,
+			"PALastStationName": "Метростроителей"
+		},
+		{
+			"PAWrongPath": false,
+			"TrackPath": 2,
+			"PAStationHasSwtiches": true,
+			"PADeadlockEnd": 1024,
+			"TrackX": 3812.1313306328734,
+			"PAStationRightDoors": true,
+			"PALastStation": true,
+			"PAStationID": 555,
+			"PADeadlockStart": 0,
+			"PAStationPath": 2,
+			"Angles": "{359.9857 89.8981 0}",
+			"PAStationName": "Славутич",
+			"Pos": "[11668.6455 5024.7075 -2810.272]",
+			"PAType": 1,
+			"PALastStationName": "Славутича"
+		},
+		{
+			"PAWrongPath": true,
+			"TrackPath": 1,
+			"PAStationHasSwtiches": true,
+			"PADeadlockEnd": 1024,
+			"TrackX": 4645.464028212768,
+			"PAStationRightDoors": true,
+			"PALastStation": true,
+			"PAStationID": 555,
+			"PADeadlockStart": 0,
+			"PAStationPath": 1,
+			"Angles": "{0.0155 269.9 0}",
+			"PAStationName": "Славутич",
+			"Pos": "[11405.0518 1183.9241 -2810.1667]",
+			"PAType": 1,
+			"PALastStationName": "Славутича"
+		},
+		{
+			"PAWrongPath": false,
+			"TrackPath": 1,
+			"PAStationHasSwtiches": true,
+			"PADeadlockEnd": 512,
+			"TrackX": 6574.806817626331,
+			"PAStationRightDoors": false,
+			"PALastStation": true,
+			"PAStationID": 556,
+			"PADeadlockStart": 50,
+			"PAStationPath": 1,
+			"Angles": "{359.9859 0.0089 0}",
+			"PAStationName": "Фауна",
+			"Pos": "[-735.8177 -14413.6738 -3520.6653]",
+			"PAType": 1,
+			"PALastStationName": "Фауны"
+		},
+		{
+			"PAWrongPath": true,
+			"TrackPath": 2,
+			"PAStationHasSwtiches": true,
+			"PADeadlockEnd": 512,
+			"TrackX": 1918.4429787111408,
+			"PAStationRightDoors": false,
+			"PALastStation": true,
+			"PAStationID": 556,
+			"PADeadlockStart": 50,
+			"PAStationPath": 2,
+			"Angles": "{0.0003 179.8995 0}",
+			"PAStationName": "Фауна",
+			"Pos": "[-4414.418 -13659.085 -3520.7698]",
+			"PAType": 1,
+			"PALastStationName": "Фауны"
+		},
+		{
+			"PAWrongPath": false,
+			"TrackPath": 1,
+			"PAStationHasSwtiches": true,
+			"PADeadlockEnd": 512,
+			"TrackX": 8357.400510074282,
+			"PAStationRightDoors": false,
+			"PALastStation": true,
+			"PAStationID": 557,
+			"PADeadlockStart": 50,
+			"PAStationPath": 1,
+			"Angles": "{0.0073 0.019 0}",
+			"PAStationName": "Сталинская",
+			"Pos": "[-683.4099 -6249.1953 -3929.585]",
+			"PAType": 1,
+			"PALastStationName": "Сталинской"
+		},
+		{
+			"PAWrongPath": false,
+			"TrackPath": 2,
+			"PAStationHasSwtiches": true,
+			"PADeadlockEnd": false,
+			"TrackX": 289.15220460445914,
+			"PAStationRightDoors": false,
+			"PALastStation": false,
+			"PAStationID": 557,
+			"PADeadlockStart": false,
+			"PALineChangeStationID": false,
+			"PAStationPath": 2,
+			"Angles": "{359.9812 180.0101 0}",
+			"PAStationName": "Сталинская",
+			"Pos": "[-4435.8042 -5239.8013 -3929.8062]",
+			"PAType": 1,
+			"PALineChange": false,
+			"PALineChangeStationPath": false
+		}
+	]
+}

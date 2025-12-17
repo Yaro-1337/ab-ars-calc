@@ -1,6 +1,6 @@
 var lines = lines || {};
-lines['neocrossline'] = lines['neocrossline'] || {};
-lines['neocrossline']['2'] = [
+lines['neocrimson_new'] = lines['neocrimson_new'] || {};
+lines['neocrimson_new']['2'] = [
     {
         name: 'Молодежная',
         arsDrawBreakpoint: 12,
