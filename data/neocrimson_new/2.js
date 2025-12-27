@@ -286,6 +286,30 @@ lines['neocrimson_new']['2'] = [
             150: '0',
         },
         joints: [
+            { x: 0 + 11 + 62.5 - 75, name: '342', limit: 60 },
+            { x: 0 + 11 + 50, name: '340', limit: 60 },
+            { x: 0 + 11 + 50 + 62.5, name: '338', limit: 60 },
+            { x: 0 + 11 + 50 + 62.5 + 62.5, name: '336', limit: 60 },
+            { x: 0 + 11 + 50 + 62.5 + 62.5 + 62.5, name: '336а', limit: 60 },
+            { x: 0 + 11 + 50 + 62.5 + 62.5 + 62.5 + 34, name: '336б', limit: 60 },
+        ],
+        signals: [
+        ],
+        mks: [
+        ],
+    },
+    {
+        name: 'Братеево',
+        arsDrawBreakpoint: 9,
+        arsAllSteps: false,
+        tStay: 25,
+        K: 1.5,
+        interval: 44,
+        modes: {
+            0: 'H',
+            150: '0',
+        },
+        joints: [
         ],
         signals: [
         ],
