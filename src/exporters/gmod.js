@@ -393,7 +393,8 @@ function trackPeregon() {
         const Name = ('TC' + rtl(arr[i - 1].name)).toUpperCase();
         const ARSOnly = true;
         const LensesStr = '';
-        const SignalType = 0;
+        // const SignalType = el.point ? 6 : 0;
+        const SignalType = el.macht ? 1 : (el.point ? 6 : 0);
         const Routes = [
             {
                 NextSignal: '*',
