@@ -392,6 +392,7 @@ function trackPeregon() {
         const ARSCodes = ARSCode === 'N' ? '1' : ARSCode;
         const Name = ('TC' + rtl(arr[i - 1].name)).toUpperCase();
         const ARSOnly = true;
+        const Left = el.left ? true : false;
         const LensesStr = '';
         // const SignalType = el.point ? 6 : 0;
         const SignalType = el.macht ? 1 : (el.point ? 6 : 0);
@@ -402,7 +403,7 @@ function trackPeregon() {
             },
         ];
 
-        result[origName] = { x, Routes, Name, ARSOnly, LensesStr, SignalType };
+        result[origName] = { x, Routes, Name, ARSOnly, LensesStr, SignalType, Left };
 
         if (el.vksCalc && i) {
             result[origName + '_ray'] = {
@@ -432,7 +433,7 @@ function trackPeregon() {
                 Name: (`TC${rtl(el.name)}${isOdd ? 'CH' : 'N'}`).toUpperCase(),
                 ARSOnly: true,
                 LensesStr: '',
-                SignalType: 0,
+                SignalType: el.macht ? 1 : (el.point ? 6 : 0),
                 Back: true,
                 Left: !el.left,
             }

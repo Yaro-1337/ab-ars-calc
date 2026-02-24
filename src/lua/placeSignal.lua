@@ -1,6 +1,7 @@
 R50_MODE = true
 RAYS = true
 NEW_ERA = false
+TwoToSix_MODE = true
 
 function getSignalTrackRerailTrace(trackID, x, isBack)
     local downVector = Vector(0, 0, -300)
@@ -109,6 +110,10 @@ function placeSignal(position, angles, options)
     if R50_MODE then
         ent.IsolateSwitches.FrontArsName = options.FrontArsName
         ent.IsolateSwitches.SlowBlinking = true
+    end
+
+    if TwoToSix_MODE then
+        ent.TwoToSix = true
     end
 
     if R50_MODE and options.Invisible then
@@ -230,11 +235,6 @@ function importSignalData(fileName, trackID)
     Metrostroi.UpdateSignalEntities()
     Metrostroi.PostSignalInitialize()
 end
-
-concommand.Add( "metrostroi_signal_import", function(ply, args)
-    if IsValid(ply) and not ply:IsAdmin() then return end
-    importSignalData(args[1], tonumber(args[2]))
-end )
 
 importSignalData("signals-crossline-redux-1.json", 6)
 -- importSignalData("signals-crossline-redux-2.json", 7)
