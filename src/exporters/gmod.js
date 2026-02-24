@@ -453,7 +453,7 @@ function trackPeregon() {
                 Name: rtl(el.gmod?.name ?? el.name).replaceAll('-', '').toUpperCase(),
                 ARSOnly: false,
                 LensesStr: el.lenses.toUpperCase().replaceAll('Z', 'X'),
-                SignalType: el.macht ? 1 : 0,
+                SignalType: el.macht ? (el.assembl ? 2 : 1) : (el.assembl ? 5 : 0),
                 Left: !el.left ? true : false,
                 Back: true,
                 Routes: [
