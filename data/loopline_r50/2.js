@@ -55,7 +55,7 @@ lines['loopline_r50']['2'] = [
             { joint: '5072', name: 'ПР-5014', lenses: 'BGRw', assembl: true },
 
             { joint: '6012', name: '6012М', lenses: '', assembl: true },
-            { joint: '5078', name: 'ПР-Дм', lenses: 'ByWY-RwM', assembl: true, back: true, left: true },
+            { joint: '5078', name: 'Дм', gmod: { name: 'ПР-Дм' }, lenses: 'ByWY-RwM', assembl: true, back: true, left: true },
         ],
         mks: [
         ],
@@ -95,7 +95,7 @@ lines['loopline_r50']['2'] = [
             { x: 1825 - 75 - 75 - 75, name: '6074', limit: 80 },
             { x: 1825 - 75 - 75, name: '6076', limit: 70, point: true },
             { x: 1825 - 75, name: '6078', limit: 70, point: true },
-            { x: 1825, name: '6080', limit: 60, point: true },
+            { x: 1825, name: '6080', limit: 60, point: true, left: true  },
             { x: 1825 + 75, name: '1012', limit: 40 },
             { x: 1825 + 75 + 75, name: '1014', limit: 0, point: true },
             { x: 1825 + 75 + 75 + 75, name: '1016', limit: 0, point: true },
@@ -105,7 +105,7 @@ lines['loopline_r50']['2'] = [
             { joint: '6074', name: 'ПА-6014', lenses: 'BGRw', assembl: true },
 
             { joint: '1012', name: 'ПА-7012МГ', lenses: '', assembl: true },
-            { joint: '6074', name: 'ПА-ОП', lenses: 'R', assembl: true, back: true },
+            { joint: '6074', name: 'ОП', gmod: { name: 'ПА-ОП' }, lenses: 'R', assembl: true, back: true },
         ],
         mks: [
         ],
@@ -148,7 +148,7 @@ lines['loopline_r50']['2'] = [
             { x: 2066 - 6.5 - 75 - 75 - 75, name: '1074', limit: 60, point: true },
             { x: 2066 - 6.5 - 75 - 75, name: '1076', limit: 60, point: true },
             { x: 2066 - 6.5 - 75, name: '1078', limit: 60 },
-            { x: 2066 - 6.5, name: '1080', limit: 60, point: true },
+            { x: 2066 - 6.5, name: '1080', limit: 60, point: true, left: true  },
             { x: 2066 - 6.5 + 75, name: '2012', limit: 40 },
             { x: 2066 - 6.5 + 75 + 75, name: '2014', limit: 0 },
             { x: 2066 - 6.5 + 75 + 75 + 75, name: '2016', limit: 0, point: true },
@@ -158,8 +158,8 @@ lines['loopline_r50']['2'] = [
             { joint: '1070', name: 'ПИ-1014', lenses: 'BGRw', assembl: true },
 
             { joint: '2012', name: 'ПИ-2012Г', lenses: '', assembl: true },
-            { joint: '1014', name: 'ПА-ДОП', lenses: 'R', assembl: true, back: true, left: true },
-            { joint: '1078', name: 'ПИ-Д', lenses: 'BWR-wM', assembl: true, back: true, left: true },
+            { joint: '1014', name: 'ДОП', gmod: { name: 'ПА-ДОП' }, lenses: 'R', assembl: true, back: true, left: true },
+            { joint: '1078', name: 'Д', gmod: { name: 'ПИ-Д' }, lenses: 'BWR-wM', assembl: true, back: true, left: true },
 
         ],
         mks: [
@@ -201,7 +201,7 @@ lines['loopline_r50']['2'] = [
             { x: 2048 - 4.5 - 75 - 12.5 - 75 - 75, name: '2074', limit: 60, point: true },
             { x: 2048 - 4.5 - 75 - 12.5 - 75, name: '2076', limit: 60, point: true },
             { x: 2048 - 4.5 - 75 - 12.5, name: '2078', limit: 60, point: true },
-            { x: 2048 - 4.5, name: '2080', limit: 60, point: true },
+            { x: 2048 - 4.5, name: '2080', limit: 60, point: true, left: true  },
             { x: 2048 - 4.5 + 75, name: '3012', limit: 40 },
             { x: 2048 - 4.5 + 75 + 75, name: '3014', limit: 0, point: true },
             { x: 2048 - 4.5 + 75 + 75 + 75, name: '3016', limit: 0, point: true },
@@ -209,7 +209,7 @@ lines['loopline_r50']['2'] = [
         signals: [
             { joint: '2012', name: 'ПИ-2012Г', lenses: 'BWYG-RwM', assembl: true },
             { joint: '2018', name: 'ПИ-2014', lenses: 'BGRw', assembl: true },
-            { joint: '2014', name: 'ПИ-ДОП2', lenses: 'R', assembl: true, back: true, left: true },
+            { joint: '2014', name: 'ДОП2', gmod: { name: 'ПИ-ДО2' }, lenses: 'R', assembl: true, back: true, left: true },
 
             { joint: '3012', name: '3012М', lenses: '', assembl: true },
         ],
@@ -248,7 +248,7 @@ lines['loopline_r50']['2'] = [
             { x: 1474 - 3.5 - 75 - 75 - 75, name: '3074', limit: 40 },
             { x: 1474 - 3.5 - 75 - 75, name: '3076', limit: 40 },
             { x: 1474 - 3.5 - 75, name: '3078', limit: 40 },
-            { x: 1474 - 3.5, name: '3080', limit: 40, point: true },
+            { x: 1474 - 3.5, name: '3080', limit: 40, point: true, left: true },
             { x: 1474 - 3.5 + 75, name: '4012', limit: 40 },
             { x: 1474 - 3.5 + 75 + 75, name: '4014', limit: 0, point: true },
             { x: 1474 - 3.5 + 75 + 75 + 75, name: '4016', limit: 0, point: true },
@@ -259,8 +259,8 @@ lines['loopline_r50']['2'] = [
             { joint: '3072', name: 'МР-3016', lenses: 'BGRw', assembl: true },
 
             { joint: '4012', name: '4012М', lenses: '', assembl: true },
-            { joint: '3064', name: 'МР-ДОП2', lenses: 'R', assembl: true, back: true, row: -1.5 },
-            { joint: '3078', name: 'МР-Дм', lenses: 'ByWY-RwM', assembl: true, back: true },
+            { joint: '3064', name: 'ДОП2', gmod: { name: 'МР-ДОП2' }, lenses: 'R', assembl: true, back: true, row: -1.5 },
+            { joint: '3078', name: 'Дм', gmod: { name: 'МР-Дм' }, lenses: 'ByWY-RwM', assembl: true, back: true },
         ],
         mks: [
         ],
