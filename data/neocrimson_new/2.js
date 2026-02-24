@@ -313,8 +313,8 @@ lines['neocrimson_new']['2'] = [
             { x: 978 + 4.5 + 3.5 + 62.5 + 75 + 87.5 , name: '3016', limit: 0 },
         ],
         signals: [
-            { joint: '340', name: 'ПН-366М', lenses: 'YY-GR-M-w', autostop: 1, guard: 80, service: 25, y: '2966', yg: 'NEXT_y', g: 'NEXT_g', macht: true },
-            { joint: '336б', name: 'ПН-364М', lenses: 'yYY-YGR-M-w', autostop: 1, guard: 80, service: 25, y: '2970', g: 'NEXT_y', macht: true },
+            { joint: '340', name: 'ПН-336М', lenses: 'YY-GR-M-w', autostop: 1, guard: 80, service: 25, y: '2966', yg: 'NEXT_y', g: 'NEXT_g', macht: true },
+            { joint: '336б', name: 'ПН-334М', lenses: 'yYY-YGR-M-w', autostop: 1, guard: 80, service: 25, y: '2970', g: 'NEXT_y', macht: true },
             { joint: '2964', name: '2902', lenses: 'YYGR', autostop: 1, guard: 80, service: 60, y: '2972', g: 'NEXT_g', assembl: true, row: -1.5 },
             { joint: '2968', name: 'БР-2904', lenses: 'YYG-RW', autostop: 1, guard: 65, g: '3014', shift: 20, assembl: true },
             { joint: '2974', name: 'БР-2906', lenses: 'YYYG-RwM', autostop: 1, guard: 66, yg: '3014', assembl: true },
