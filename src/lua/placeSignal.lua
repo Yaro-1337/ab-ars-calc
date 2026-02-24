@@ -1,6 +1,6 @@
-R50_MODE = false
-RAYS = false
-NEW_ERA = true
+R50_MODE = true
+RAYS = true
+NEW_ERA = false
 
 function getSignalTrackRerailTrace(trackID, x, isBack)
     local downVector = Vector(0, 0, -300)
