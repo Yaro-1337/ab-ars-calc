@@ -23,9 +23,9 @@ lines['neocrimson_new']['1'] = [
             { x: 0 - 19 + 75 + 50 + 50, name: '2915', limit: 70, later: { 40: 1, 60: 1, 70: 2 } },
             { x: 0 - 19 + 75 + 50 + 50 + 125 - 37.5, name: '2917', limit: 80, point: true, later: { 70: 2, 80: 3 } },
 
-            { x: 960 - 4 - 12.5 - 75 - 62.5 - 75 - 87.5 - 100 - 100 - 50 - 62.5, name: '2919', limit: 80, later: { 70: 1, 80: 1 } },
-            { x: 960 - 4 - 12.5 - 75 - 62.5 - 75 - 87.5 - 100 - 25 - 25, name: '2921', limit: 80, later: { 70: 1 } },
-            { x: 960 - 4 - 12.5 - 75 - 62.5 - 75 - 87.5, name: '2923', limit: 70 },
+            { x: 960 - 4 - 12.5 - 75 - 62.5 - 75 - 87.5 - 100 - 100 - 50 - 62.5, name: '2967', limit: 80, later: { 70: 1, 80: 1 } },
+            { x: 960 - 4 - 12.5 - 75 - 62.5 - 75 - 87.5 - 100 - 25 - 25, name: '2969', limit: 80, later: { 70: 1 } },
+            { x: 960 - 4 - 12.5 - 75 - 62.5 - 75 - 87.5, name: '325', limit: 70 },
             { x: 960 - 4 - 12.5 - 75 - 62.5 - 75 - 12.5, name: '327', limit: 60, later: { 40: 1 } },
             { x: 960 - 4 - 12.5 - 75 - 62.5 - 12.5, name: '329', limit: 60, later: { 40: 1 } },
             { x: 960 - 4 - 12.5 - 75, name: '331', limit: 60, later: { 40: 2 } },
@@ -37,11 +37,11 @@ lines['neocrimson_new']['1'] = [
             { x: 960 - 4 + 62.5 + 50 + 37.5 + 62.5 + 62.5, name: '337б', limit: 0 },
         ],
         signals: [
-            { joint: '2911', name: 'БР-2901м', lenses: 'WYYG-RwM', autostop: 3, guard: 60, service: 25, y: '2921', yg: 'NEXT_y', g: 'NEXT_yg', shift: 0, assembl: true },
+            { joint: '2911', name: 'БР-2901м', lenses: 'WYYG-RwM', autostop: 3, guard: 60, service: 25, y: '2969', yg: 'NEXT_y', g: 'NEXT_yg', shift: 0, assembl: true },
 
-            { joint: '2919', name: 'ПН-2903', lenses: 'YYG-Rw', autostop: 3, guard: 80, service: 25, y: '327', yg: 'NEXT_y', g: 'NEXT_yg', shift: 17.5, assembl: true },
-            { joint: '2921', name: 'ПН-2905', lenses: 'YYG-Rw', autostop: 3, guard: 75, service: 25, y: '329', yg: 'NEXT_y', g: 'NEXT_yg', shift: 0, assembl: true },
-            { joint: '2923', name: 'ПН-2907', lenses: 'YYG-Rw', autostop: 1, guard: 66, service: 25, y: '331', yg: 'NEXT_y', g: 'NEXT_g', shift: 0, assembl: true },
+            { joint: '2967', name: 'ПН-2903', lenses: 'YYG-Rw', autostop: 3, guard: 80, service: 25, y: '327', yg: 'NEXT_y', g: 'NEXT_yg', shift: 17.5, assembl: true },
+            { joint: '2969', name: 'ПН-2905', lenses: 'YYG-Rw', autostop: 3, guard: 75, service: 25, y: '329', yg: 'NEXT_y', g: 'NEXT_yg', shift: 0, assembl: true },
+            { joint: '325', name: 'ПН-2907', lenses: 'YYG-Rw', autostop: 1, guard: 66, service: 25, y: '331', yg: 'NEXT_y', g: 'NEXT_g', shift: 0, assembl: true },
             { joint: '327', name: 'ПН-333', lenses: 'YY-GR-w', autostop: 1, guard: 66, service: 25, y: '333', g: 'NEXT_yg', macht: true, row: -1.5 },
             { joint: '329', name: 'ПН-335', lenses: 'YY-GR-w', autostop: 1, guard: 66, yg: '335a', macht: true },
 
