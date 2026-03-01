@@ -3,7 +3,7 @@ lines['neocrimson_new'] = lines['neocrimson_new'] || {};
 lines['neocrimson_new']['1'] = [
     {
         name: 'Братеево',
-        arsDrawBreakpoint: 13,
+        arsDrawBreakpoint: 12,
         arsAllSteps: false,
         tStay: 25,
         interval: 41,
@@ -27,9 +27,9 @@ lines['neocrimson_new']['1'] = [
             { x: 960 - 4 - 12.5 - 75 - 62.5 - 75 - 87.5 - 100 - 100 - 50 - 62.5, name: '2967', limit: 80, later: { 70: 1, 80: 1 } },
             { x: 960 - 4 - 12.5 - 75 - 62.5 - 75 - 87.5 - 100 - 25 - 25, name: '2969', limit: 80, later: { 70: 1 } },
             { x: 960 - 4 - 12.5 - 75 - 62.5 - 75 - 87.5, name: '325', limit: 70 },
-            { x: 960 - 4 - 12.5 - 75 - 62.5 - 75 - 12.5, name: '327', limit: 60, later: { 40: 1 } },
-            { x: 960 - 4 - 12.5 - 75 - 62.5 - 12.5, name: '329', limit: 60, later: { 40: 1 }, macht: true },
-            { x: 960 - 4 - 12.5 - 75, name: '331', limit: 60, later: { 40: 2 }, macht: true },
+            { x: 960 - 4 - 12.5 - 75 - 62.5 - 75 - 12.5, name: '327', limit: 60 },
+            { x: 960 - 4 - 12.5 - 75 - 62.5 - 12.5, name: '329', limit: 60, macht: true },
+            { x: 960 - 4 - 12.5 - 75, name: '331', limit: 60, macht: true },
             { x: 960 - 4 - 12.5, name: '333', limit: 60 },
             { x: 960 - 4 + 62.5, name: '335', limit: 40 },
             { x: 960 - 4 + 62.5 + 50, name: '335а', limit: 0 },
