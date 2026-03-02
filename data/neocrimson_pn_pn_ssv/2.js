@@ -42,7 +42,7 @@ lines['neocrimson_pn_pn_ssv']['2'] = [
         ],
         signals: [
             { joint: '336б', name: 'ПН-334М', lenses: 'yYY-YGR-M-w', autostop: 1, guard: 80, service: 35, y: '334а', g: 'NEXT_g', row: -1.5 },
-            { joint: '336г', name: '332', lenses: 'YY-GR', autostop: 1, guard: 70, service: 40, g: '332' },
+            { joint: '336г', name: '332', lenses: 'YGR', autostop: 1, guard: 70, service: 40, g: '332' },
             { joint: '334', name: '330', lenses: 'YY-GR', autostop: 1, guard: 70, service: 60, y: '330б', yg: 'NEXT_y', g: 'NEXT_yg' },
 
             { joint: '330', name: 'АП-328', lenses: 'YYG-Rw', autostop: 1, guard: 60, service: 25, y: '328', yg: 'NEXT_y', g: 'NEXT_yg' },
