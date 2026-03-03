@@ -15,11 +15,11 @@ lines['neocrimson_ap_pn_ssv']['1'] = [
             880: 'T',
         },
         switches: [
-			{ x: 0 - 19 + 75 + 6.6, name: '1', left: true, trailing: false },
-			{ x: 0 - 19 + 75 + 50 + 50 - 14.2, name: '3', left: true, trailing: true },
-			{ x: 0 - 19 + 75 + 50 + 50 + 532, name: '3', left: false, trailing: true },
-			{ x: 0 - 19 + 75 + 50 + 50 + 905.5, name: '1', left: true, trailing: true },
-		],
+            { x: 0 - 19 + 75 + 6.6, name: '1', left: true, trailing: false },
+            { x: 0 - 19 + 75 + 50 + 50 - 14.2, name: '3', left: true, trailing: true },
+            { x: 0 - 19 + 75 + 50 + 50 + 532, name: '3', left: false, trailing: true },
+            { x: 0 - 19 + 75 + 50 + 50 + 905.5, name: '1', left: true, trailing: true },
+        ],
         mks: [
             { x: 0 - 19 + 75 + 50 + 50 + 492, name: '551МК' },
         ],
@@ -49,10 +49,10 @@ lines['neocrimson_ap_pn_ssv']['1'] = [
             { x: 1198 - 4 - 12.5 - 87.5 - 62.5 - 75 - 75 - 150 - 100 - 125 - 175 - 100, name: '323а', limit: 70, later: { 40: 1, 60: 3, 70: 2 } },
             { x: 1198 - 4 - 12.5 - 87.5 - 62.5 - 75 - 75 - 150 - 100 - 125 - 175, name: '323б', limit: 70, later: { 40: 1, 60: 2, 70: 2 }, cra: { before: 'AP', after: 'PN' } },
             { x: 1198 - 4 - 12.5 - 87.5 - 62.5 - 75 - 75 - 150 - 100 - 125, name: '323в', limit: 70, later: { 70: 3 } },
-            { x: 1198 - 4 - 12.5 - 87.5 - 62.5 - 75 - 75 - 150 - 100, name: '325', limit: 70 },
-            { x: 1198 - 4 - 12.5 - 87.5 - 62.5 - 75 - 75 - 150, name: '325а', limit: 60, later: { 60: 1 } },
-            { x: 1198 - 4 - 12.5 - 87.5 - 62.5 - 75 - 75, name: '327', limit: 40, later: { 40: 1 } },
-            { x: 1198 - 4 - 12.5 - 87.5 - 62.5 - 75, name: '327а', limit: 60 },
+            { x: 1198 - 4 - 12.5 - 87.5 - 62.5 - 75 - 75 - 150 - 100, name: '325', limit: 70, later: { 60: 1 } },
+            { x: 1198 - 4 - 12.5 - 87.5 - 62.5 - 75 - 75 - 150, name: '325а', limit: 60, later: { 40: 1, 60: 1 } },
+            { x: 1198 - 4 - 12.5 - 87.5 - 62.5 - 75 - 75, name: '327', limit: 40 },
+            { x: 1198 - 4 - 12.5 - 87.5 - 62.5 - 75, name: '327а', limit: 40 },
             { x: 1198 - 4 - 12.5 - 87.5 - 62.5, name: '329', limit: 60 },
             { x: 1198 - 4 - 12.5 - 87.5 + 12.5, name: '331', limit: 60 },
             { x: 1198 - 4 - 12.5, name: '333', limit: 60 },
@@ -77,7 +77,7 @@ lines['neocrimson_ap_pn_ssv']['1'] = [
         mks: [
         ],
         switches: [
-		],
+        ],
     },
     {
         name: 'Пионерская',
@@ -101,7 +101,7 @@ lines['neocrimson_ap_pn_ssv']['1'] = [
             { x: 2.5 + 25 + 25 + 37.5 + 75 + 75 + 75 + 37, name: '557МК' },
         ],
         switches: [
-			{ x: 1220 - 5 + 75 + 39.3, name: '1', left: true, trailing: false },
-		],
+            { x: 1220 - 5 + 75 + 39.3, name: '1', left: true, trailing: false },
+        ],
     },
 ];
