@@ -27,7 +27,7 @@ lines['neocrimson_mt_depo_ssv']['1'] = [
   },
   joints: [
     { x: 0, name: '4СП', limit: 0 },
-    { x: 0 + 75, name: '22', limit: 0 },
+    { x: 0 + 75, name: '22', limit: 40, later: { 40: 3 } },
     { x: 0 + 75 + 37.5, name: '20', limit: 40, later: { 40: 2 } },
     { x: 0 + 75 + 37.5 + 87.5, name: '18', limit: 40, later: { 40: 1 } },
     { x: 0 + 75 + 37.5 + 87.5 + 29, name: '16', limit: 60 },
