@@ -280,7 +280,7 @@ lines['neocrimson_new']['1'] = [
             { joint: '391', name: 'ФН-395', gmod: { DoubleLetters: true }, lenses: 'YYG-Rw', autostop: 1, guard: 80, service: 35, y: '395', yg: 'NEXT_y', g: 'NEXT_yg' },
             { joint: '391а', name: 'ФН-397', gmod: { DoubleLetters: true }, lenses: 'YYG-Rw', autostop: 1, guard: 74, service: 35, y: '397', yg: 'NEXT_y', g: 'NEXT_g' },
             { joint: '393', name: 'ФН-399', gmod: { DoubleLetters: true }, lenses: 'YYG-Rw', autostop: 1, guard: 66, service: 35, y: '399с', g: 'NEXT_yg' },
-            { joint: '395', name: 'ФН-401, gmod: { DoubleLetters: true }', lenses: 'YYG-Rw', autostop: 1, guard: 66, service: 35, yg: '401с' },
+            { joint: '395', name: 'ФН-401', gmod: { DoubleLetters: true }, lenses: 'YYG-Rw', autostop: 1, guard: 66, service: 35, yg: '401с' },
             // { joint: '397', name: 'ФН-401', lenses: 'YYG-Rw', autostop: 1, guard: 69, yg: '401с', shift: 7 },
 
             { joint: '401', name: 'ФН-403м', lenses: 'X', guard: 35, shift: 0 },
