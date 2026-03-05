@@ -135,15 +135,16 @@ lines['neoorange_r50']['1'] = [
             { x: 1823 + 12.5 - 75 - 100 - 100 - 100 - 100 - 100, name: '1103', limit: 0 },
             { x: 1823 + 12.5 - 75 - 100 - 100 - 100 - 100, name: '1103а', limit: 0 },
             { x: 1823 + 12.5 - 75 - 100 - 100 - 100, name: '1103б', limit: 0 },
-            { x: 1823 + 12.5 - 75 - 100 - 100, name: '1105', limit: 0 },
-            { x: 1823 + 12.5 - 75 - 100, name: '1107', limit: 0 },
-            { x: 1823 + 12.5 - 75, name: '1109', limit: 0 },
-            { x: 1823 + 12.5 - 75 + 50, name: '1109с', limit: 0, vks: 'min' },
-            { x: 1823 + 12.5 - 75 + 75 + 25, name: '1111с', limit: 0, vks: { numJoints: 2 } },
-            { x: 1823 + 12.5 + 62.5, name: '1111са', limit: 0, vks: { prev: true } },
-            { x: 1823 + 12.5 + 75 + 37.5, name: '1113', limit: 0, vks: 'min' },
-            { x: 1823 + 12.5 + 75 + 75, name: '1115', limit: 0, vks: 'min' },
-            { x: 1823 + 12.5 + 75 + 75 + 37.5, name: '1201', limit: 0 },
+            { x: 1823 + 12.5 - 75 - 100 - 100, name: '1105/1103в', limit: 0 },
+            { x: 1823 + 12.5 - 75 - 100, name: '1107/1105', limit: 0 },
+            { x: 1823 + 12.5 - 75, name: '1109/1107', limit: 0 },
+            { x: 1823 + 12.5 - 75 + 50, name: '1109с/1107с', limit: 0, vks: 'min' },
+            { x: 1823 + 12.5 - 75 + 75 + 25, name: '1111с/1109с', limit: 0, vks: { numJoints: 2 } },
+            { x: 1823 + 12.5 + 62.5, name: '1111са/1109са', limit: 0, vks: { prev: true } },
+            { x: 1823 + 12.5 + 75 + 37.5, name: '1113с/1111ас', limit: 0, vks: 'min' },
+            { x: 1823 + 12.5 + 75 + 75, name: '1115с/1111с-1113с-1115с', limit: 0, vks: 'min' },
+            { x: 1823 + 12.5 + 75 + 75 + 37.5, name: '1201с/1111са/с-1113са/с-1115са/с', limit: 0, vks: 'min' },
+            { x: 1823 + 12.5 + 75 + 75 + 37.5 + 37.5, name: '1201а', limit: 0 },
         ],
         signals: [
             { joint: '321', name: 'АП-323м', lenses: 'YYY-YG-Rw', autostop: 1, guard: 35, service: 35, y: '1001а', g: 'NEXT_y' },
@@ -152,15 +153,97 @@ lines['neoorange_r50']['1'] = [
 
             { joint: '1003', name: '1101', lenses: 'YY-GR', autostop: 1, guard: 80, service: 80, y: '1101а', yg: 'NEXT_y', g: 'NEXT_yg' },
             { joint: '1101', name: '1103', lenses: 'YY-GR', autostop: 1, guard: 80, service: 35, y: '1103б', yg: 'NEXT_y', g: 'NEXT_yg' },
-            { joint: '1103', name: '1105', lenses: 'YY-GR', autostop: 1, guard: 75, shift: 20, service: 35, y: '1105', yg: 'NEXT_y', g: 'NEXT_yg' },
-            { joint: '1103а', name: '1107', lenses: 'YY-GR', autostop: 1, guard: 75, shift: 20, service: 35, y: '1107', yg: 'NEXT_y', g: 'NEXT_yg' },
-            { joint: '1103б', name: '1109', lenses: 'YY-GR', autostop: 1, guard: 75, shift: 20.5, service: 35, y: '1109с', yg: 'NEXT_y', g: 'NEXT_yg' },
-            { joint: '1105', name: '1111', lenses: 'YY-GR', autostop: 1, guard: 75, shift: 20.5, service: 35, y: '1111са', yg: 'NEXT_y', g: 'NEXT_g' },
-            { joint: '1107', name: '1113', lenses: 'YY-GR', autostop: 1, guard: 75, shift: 20, service: 35, y: '1113', g: 'NEXT_yg' },
-            { joint: '1109', name: '1115', lenses: 'YY-GR', autostop: 1, guard: 75, shift: 20, yg: '1115' },
+            { joint: '1103', name: '1105', lenses: 'YY-GR', autostop: 1, guard: 75, shift: 20, service: 35, y: '1105/1103в', yg: 'NEXT_y', g: 'NEXT_yg' },
+            { joint: '1103а', name: '1107', lenses: 'YY-GR', autostop: 1, guard: 75, shift: 20, service: 35, y: '1107/1105', yg: 'NEXT_y', g: 'NEXT_yg' },
+            { joint: '1103б', name: '1109', lenses: 'YY-GR', autostop: 1, guard: 75, shift: 20.5, service: 35, y: '1109с/1107с', yg: 'NEXT_y', g: 'NEXT_yg' },
+            { joint: '1105/1103в', name: '1111', lenses: 'YY-GR', autostop: 1, guard: 75, shift: 20.5, service: 35, y: '1111са/1109са', yg: 'NEXT_y', g: 'NEXT_g' },
+            { joint: '1107/1105', name: '1113', lenses: 'YY-GR', autostop: 1, guard: 75, shift: 20, service: 35, y: '1113с/1111ас', g: 'NEXT_yg' },
+            { joint: '1109/1107', name: '1115', lenses: 'YY-GR', autostop: 1, guard: 75, shift: 20, yg: '1115с/1111с-1113с-1115с' },
 
-            { joint: '1111са', name: '1201', lenses: 'X', guard: 35, shift: 0 },
+            { joint: '1111са/1109са', name: '1201', lenses: 'X', guard: 35, shift: 0 },
         ],
+        /*Пиздец на 85 v1
+        joints: [
+            { x: 0 - 2, name: '319', limit: 60 },
+            { x: 0 - 2 + 75, name: '321', limit: 60 },
+            { x: 0 - 2 + 75 + 75, name: '1001', limit: 60 },
+
+            { x: 1823 + 12.5 - 75 - 100 - 100 - 100 - 100 - 100 - 175 - 175 - 300 - 300, name: '1001а', limit: 0 },
+            { x: 1823 + 12.5 - 75 - 100 - 100 - 100 - 100 - 100 - 175 - 175 - 300, name: '1003', limit: 0 },
+            { x: 1823 + 12.5 - 75 - 100 - 100 - 100 - 100 - 100 - 175 - 187.5, name: '1101', limit: 0 },
+            { x: 1823 + 12.5 - 75 - 100 - 100 - 100 - 100 - 100 - 175, name: '1101а', limit: 0 },
+            { x: 1823 + 12.5 - 75 - 100 - 100 - 100 - 100 - 100, name: '1103', limit: 0 },
+            { x: 1823 + 12.5 - 75 - 100 - 100 - 100 - 100, name: '1103а', limit: 0 },
+            { x: 1823 + 12.5 - 75 - 100 - 100 - 100, name: '1103б', limit: 0 },
+            { x: 1823 + 12.5 - 75 - 100 - 100, name: '1105/1103в', limit: 0 },
+            { x: 1823 + 12.5 - 75 - 100, name: '1107/1105', limit: 0 },
+            { x: 1823 + 12.5 - 75, name: '1109/1107', limit: 0 },
+            { x: 1823 + 12.5 - 75 + 50, name: '1109с/1107с', limit: 0, vks: 'min' },
+            { x: 1823 + 12.5 - 75 + 75 + 25, name: '1111с/1109с', limit: 0, vks: { numJoints: 2 } },
+            { x: 1823 + 12.5 + 62.5, name: '1111са/1109са', limit: 0, vks: { prev: true } },
+            { x: 1823 + 12.5 + 75 + 37.5, name: '1113с/1111ас', limit: 0, vks: 'min' },
+            { x: 1823 + 12.5 + 75 + 75, name: '1115с/1111с-1113с-1115с', limit: 0, vks: { numJoints: 2 } },
+            { x: 1823 + 12.5 + 75 + 75 + 37.5, name: '1201с/1111са/с-1113са/с-1115са/с', limit: 0, vks: { prev: true } },
+            { x: 1823 + 12.5 + 75 + 75 + 37.5 + 37.5, name: '1201а', limit: 0 },
+        ],
+        signals: [
+            { joint: '321', name: 'АП-323м', lenses: 'YYY-YG-Rw', autostop: 1, guard: 35, service: 35, y: '1001а', g: 'NEXT_y' },
+
+            { joint: '1001а', name: '1003', lenses: 'YGR', autostop: 1, guard: 80, service: 80, g: '1003' },
+
+            { joint: '1003', name: '1101', lenses: 'YY-GR', autostop: 1, guard: 80, service: 80, y: '1101а', yg: 'NEXT_y', g: 'NEXT_yg' },
+            { joint: '1101', name: '1103', lenses: 'YY-GR', autostop: 1, guard: 80, service: 35, y: '1105/1103в', yg: 'NEXT_y', g: 'NEXT_yg' },
+            { joint: '1103', name: '1105', lenses: 'YY-GR', autostop: 1, guard: 85, shift: 20, service: 35, y: '1107/1105', yg: 'NEXT_y', g: 'NEXT_yg' },
+            { joint: '1103а', name: '1107', lenses: 'YY-GR', autostop: 1, guard: 85, shift: 20, service: 35, y: '1109/1107с', yg: 'NEXT_y', g: 'NEXT_yg' },
+            { joint: '1103б', name: '1109', lenses: 'YY-GR', autostop: 1, guard: 85, shift: 20.5, service: 35, y: '1111/1109са', yg: 'NEXT_y', g: 'NEXT_yg' },
+            { joint: '1105/1103в', name: '1111', lenses: 'YY-GR', autostop: 1, guard: 85, shift: 20.5, service: 35, y: '1201/1111са/с-1113са/с-1115са/с', yg: 'NEXT_y', g: 'NEXT_g' },
+            { joint: '1107/1105', name: '1113', lenses: 'YY-GR', autostop: 1, guard: 85, shift: 20, service: 35, y: '1201/1111са/с-1113са/с-1115са/с', g: 'NEXT_yg' },
+            { joint: '1109/1107', name: '1115', lenses: 'YY-GR', autostop: 1, guard: 85, shift: 20, yg: '1201/1111са/с-1113са/с-1115са/с' },
+
+            { joint: '1111са/1109са', name: '1201', lenses: 'X', guard: 35, shift: 0 },
+        ],*/
+        /* ПИЗДЕЦ НА 85 км/ч v2
+        joints: [
+            { x: 0 - 2, name: '319', limit: 60 },
+            { x: 0 - 2 + 75, name: '321', limit: 60 },
+            { x: 0 - 2 + 75 + 75, name: '1001', limit: 60 },
+
+            { x: 1823 + 12.5 - 75 - 100 - 100 - 100 - 100 - 100 - 175 - 175 - 300 - 300, name: '1001а', limit: 0 },
+            { x: 1823 + 12.5 - 75 - 100 - 100 - 100 - 100 - 100 - 175 - 175 - 300, name: '1003', limit: 0 },
+            { x: 1823 + 12.5 - 75 - 100 - 100 - 100 - 100 - 100 - 175 - 187.5, name: '1101', limit: 0 },
+            { x: 1823 + 12.5 - 75 - 100 - 100 - 100 - 100 - 100 - 175, name: '1101а', limit: 0 },
+            { x: 1823 + 12.5 - 75 - 100 - 100 - 100 - 100 - 100, name: '1103', limit: 0 },
+            { x: 1823 + 12.5 - 75 - 100 - 100 - 100 - 100, name: '1103а', limit: 0 },
+            { x: 1823 + 12.5 - 75 - 100 - 100 - 100, name: '1103б', limit: 0 },
+            { x: 1823 + 12.5 - 75 - 100 - 100, name: '1105/1103в', limit: 0 },
+            { x: 1823 + 12.5 - 75 - 100, name: '1107/1105', limit: 0 },
+            { x: 1823 + 12.5 - 75, name: '1109/1107', limit: 0 },
+            { x: 1823 + 12.5 - 75 + 50, name: '1109с/1107с', limit: 0, vks: 'min' },
+            { x: 1823 + 12.5 - 75 + 75 + 25, name: '1111с/1109с', limit: 0, vks: { numJoints: 2 } },
+            { x: 1823 + 12.5 + 62.5, name: '1111са/1109са', limit: 0, vks: { prev: true } },
+            { x: 1823 + 12.5 + 75 + 37.5, name: '1113с/1111ас', limit: 0, vks: 'min' },
+            { x: 1823 + 12.5 + 75 + 75, name: '1115с/1111с', limit: 0, vks: { numJoints: 2 } },
+            { x: 1823 + 12.5 + 75 + 75 + 37.5, name: '1201с/1111са', limit: 0, vks: { prev: true } },
+            { x: 1823 + 12.5 + 75 + 75 + 37.5 + 37.5, name: '1201ас/1113с', limit: 0, vks: 'min' },
+            { x: 1823 + 12.5 + 75 + 75 + 37.5 + 37.5 + 37.5, name: '1201бс/1115с', limit: 0, vks: 'min' },
+            { x: 1823 + 12.5 + 75 + 75 + 37.5 + 37.5 + 37.5 + 37.5, name: '1201в', limit: 0 },
+        ],
+        signals: [
+            { joint: '321', name: 'АП-323м', lenses: 'YYY-YG-Rw', autostop: 1, guard: 35, service: 35, y: '1001а', g: 'NEXT_y' },
+
+            { joint: '1001а', name: '1003', lenses: 'YGR', autostop: 1, guard: 80, service: 80, g: '1003' },
+
+            { joint: '1003', name: '1101', lenses: 'YY-GR', autostop: 1, guard: 80, service: 80, y: '1101а', yg: 'NEXT_y', g: 'NEXT_yg' },
+            { joint: '1101', name: '1103', lenses: 'YY-GR', autostop: 1, guard: 80, service: 35, y: '1105/1103в', yg: 'NEXT_y', g: 'NEXT_yg' },
+            { joint: '1103', name: '1105', lenses: 'YY-GR', autostop: 1, guard: 85, shift: 20, service: 35, y: '1107/1105', yg: 'NEXT_y', g: 'NEXT_yg' },
+            { joint: '1103а', name: '1107', lenses: 'YY-GR', autostop: 1, guard: 85, shift: 20, service: 35, y: '1109/1107с', yg: 'NEXT_y', g: 'NEXT_yg' },
+            { joint: '1103б', name: '1109', lenses: 'YY-GR', autostop: 1, guard: 85, shift: 20.5, service: 35, y: '1111/1109са', yg: 'NEXT_y', g: 'NEXT_yg' },
+            { joint: '1105/1103в', name: '1111', lenses: 'YY-GR', autostop: 1, guard: 85, shift: 20.5, service: 35, y: '1201/1111са', yg: 'NEXT_y', g: 'NEXT_g' },
+            { joint: '1107/1105', name: '1113', lenses: 'YY-GR', autostop: 1, guard: 85, shift: 20, service: 35, y: '1201а/1113с', g: 'NEXT_yg' },
+            { joint: '1109/1107', name: '1115', lenses: 'YY-GR', autostop: 1, guard: 85, shift: 20, yg: '1201б/1115с' },
+
+            { joint: '1111са/1109са', name: '1201', lenses: 'X', guard: 35, shift: 0 },
+        ],*/
         mks: [
         ],
     },
@@ -182,6 +265,5 @@ lines['neoorange_r50']['1'] = [
         ],
         mks: [
         ],
-    },
-
+    }
 ];
