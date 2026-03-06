@@ -153,16 +153,16 @@ lines['neoorange_r50']['1'] = [
         signals: [
             { joint: '321', name: 'АП-323м', lenses: 'YYY-YG-Rw', autostop: 1, guard: 35, service: 35, y: '1001в', g: 'NEXT_g' },
 
-            { joint: '1001б', name: '1003', lenses: 'YGR', autostop: 1, guard: 80, service: 80, g: '1003' },
+            { joint: '1001б', name: '1003', lenses: 'YGR', autostop: 1, guard: 80, service: 80, g: '1003', left: true },
 
             { joint: '1003', name: '1101', lenses: 'YY-GR', autostop: 1, guard: 80, service: 80, y: '1101а', yg: 'NEXT_y', g: 'NEXT_yg' },
             { joint: '1101', name: '1103', lenses: 'YY-GR', autostop: 1, guard: 80, service: 35, y: '1103б', yg: 'NEXT_y', g: 'NEXT_yg' },
-            { joint: '1103', name: '1105', lenses: 'YY-GR', autostop: 1, guard: 75, shift: 20, service: 35, y: '1105/1103в', yg: 'NEXT_y', g: 'NEXT_yg' },
+            { joint: '1103', name: '1105', lenses: 'YY-GR', autostop: 1, guard: 75, shift: 20, service: 35, y: '1105/1103в', yg: 'NEXT_y', g: 'NEXT_yg', left: true },
             { joint: '1103а', name: '1107', lenses: 'YY-GR', autostop: 1, guard: 75, shift: 20, service: 35, y: '1107/1105', yg: 'NEXT_y', g: 'NEXT_yg' },
             { joint: '1103б', name: '1109', lenses: 'YY-GR', autostop: 1, guard: 75, shift: 20.5, service: 35, y: '1177', yg: 'NEXT_y', g: 'NEXT_yg' },
             { joint: '1105/1103в', name: '1111', lenses: 'YY-GR', autostop: 1, guard: 75, shift: 20.5, service: 35, y: '1211', yg: 'NEXT_y', g: 'NEXT_g' },
-            { joint: '1107/1105', name: '1113', lenses: 'YY-GR', autostop: 1, guard: 75, shift: 20, service: 35, y: '1213', g: 'NEXT_yg' },
-            { joint: '1175', name: '1115', lenses: 'YY-GR', autostop: 1, guard: 75, shift: 20, yg: '1213' },
+            { joint: '1107/1105', name: '1113', lenses: 'YY-GR', autostop: 1, guard: 75, shift: 20, service: 35, y: '1213', g: 'NEXT_yg', left: true },
+            { joint: '1175', name: '1115', lenses: 'YY-GR', autostop: 1, guard: 75, shift: 20, yg: '1213', left: true },
 
             { joint: '1211', name: '1201', lenses: 'x', guard: 35, shift: 0 },
         ],
@@ -195,16 +195,16 @@ lines['neoorange_r50']['1'] = [
         signals: [
             { joint: '321', name: 'АП-323м', lenses: 'YYY-YG-Rw', autostop: 1, guard: 35, service: 35, y: '1001в', g: 'NEXT_g' },
 
-            { joint: '1001б', name: '1003', lenses: 'YGR', autostop: 1, guard: 80, service: 80, g: '1003' },
+            { joint: '1001б', name: '1003', lenses: 'YGR', autostop: 1, guard: 80, service: 80, g: '1003', left: true },
 
             { joint: '1003', name: '1101', lenses: 'YY-GR', autostop: 1, guard: 80, service: 80, y: '1101а', yg: 'NEXT_y', g: 'NEXT_yg' },
             { joint: '1101', name: '1103', lenses: 'YY-GR', autostop: 1, guard: 80, service: 35, y: '1105/1103в', yg: 'NEXT_y', g: 'NEXT_yg' },
-            { joint: '1103', name: '1105', lenses: 'YY-GR', autostop: 1, guard: 85, shift: 20, service: 35, y: '1107/1105', yg: 'NEXT_y', g: 'NEXT_yg' },
+            { joint: '1103', name: '1105', lenses: 'YY-GR', autostop: 1, guard: 85, shift: 20, service: 35, y: '1107/1105', yg: 'NEXT_y', g: 'NEXT_yg', left: true },
             { joint: '1103а', name: '1107', lenses: 'YY-GR', autostop: 1, guard: 85, shift: 20, service: 35, y: '1177', yg: 'NEXT_y', g: 'NEXT_yg' },
             { joint: '1103б', name: '1109', lenses: 'YY-GR', autostop: 1, guard: 85, shift: 20.5, service: 35, y: '1211', yg: 'NEXT_y', g: 'NEXT_yg' },
             { joint: '1105/1103в', name: '1111', lenses: 'YY-GR', autostop: 1, guard: 85, shift: 20.5, service: 35, y: '1215', yg: 'NEXT_y', g: 'NEXT_g' },
-            { joint: '1107/1105', name: '1113', lenses: 'YY-GR', autostop: 1, guard: 85, shift: 20, service: 35, y: '1215', g: 'NEXT_yg' },
-            { joint: '1175', name: '1115', lenses: 'YY-GR', autostop: 1, guard: 85, shift: 20, yg: '1215' },
+            { joint: '1107/1105', name: '1113', lenses: 'YY-GR', autostop: 1, guard: 85, shift: 20, service: 35, y: '1215', g: 'NEXT_yg', left: true },
+            { joint: '1175', name: '1115', lenses: 'YY-GR', autostop: 1, guard: 85, shift: 20, yg: '1215', left: true },
 
             { joint: '1211', name: '1201', lenses: 'x', guard: 35, shift: 0 },
         ],
