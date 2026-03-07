@@ -9,7 +9,7 @@ lines['neocrimson_mt_depo_ssv']['3'] = [
   tStay: 25,
   K: 1.5,
   interval: 20,
-  minInterval: 28,
+  minInterval: 36,
   slopes: {
     0: 0,
     180: -40,
@@ -21,8 +21,8 @@ lines['neocrimson_mt_depo_ssv']['3'] = [
   modes: {
     0: 'H',
     7: '0',
-    // 125: 'H',
-    // 160: '0',
+    400: 'H',
+    500: '0',
   },
   joints: [
     { x: 0, name: '1СП', limit: 0 },
