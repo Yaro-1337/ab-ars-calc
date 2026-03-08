@@ -219,7 +219,7 @@ lines['neocrimson_new']['1'] = [
 
             { joint: '379', name: '381м', lenses: 'X', guard: 35, shift: 0 },
             { joint: '367', name: 'ДОП', gmod: { name: 'МТ-ДОП' }, lenses: 'zr', back: true, left: true },
-            { joint: '367г', name: 'Г', gmod: { name: 'МТ-Г' }, lenses: 'yR-Yw', autostop: 1, shift: 0, back: true, row: -1.5 },
+            { joint: '367г', name: 'Гм', gmod: { name: 'МТ-Гм' }, lenses: 'yR-Yw', autostop: 1, shift: 0, back: true, row: -1.5 },
         ],
         mks: [
         ],

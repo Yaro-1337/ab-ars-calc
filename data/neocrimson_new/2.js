@@ -159,9 +159,9 @@ lines['neocrimson_new']['2'] = [
             { x: 1547 - 7.5 + 25 + 75 + 75 + 62.5, name: '366а', limit: 0 },
         ],
         signals: [
-            { joint: '382', name: 'МТ-380', lenses: 'YYG-Rw-M', autostop: 1, guard: 35, service: 35, y: '380д', g: 'NEXT_y' },
+            { joint: '382', name: 'МТ-380м', lenses: 'YYG-Rw-M', autostop: 1, guard: 35, service: 35, y: '380д', g: 'NEXT_y' },
             { joint: '380б', name: 'МТ-378', lenses: 'YYG-Rw-M', autostop: 1, guard: 80, service: 80, y: '378а', g: 'NEXT_g' },
-            { joint: '380д', name: 'МТ-376', lenses: 'yYY-GRw-M', autostop: 1, guard: 80, service: 80, g: '376б' },
+            { joint: '380д', name: 'МТ-376м', lenses: 'yYY-GRw-M', autostop: 1, guard: 80, service: 80, g: '376б' },
             { joint: '376а', name: 'МТ-374', lenses: 'YYG-Rw', autostop: 1, guard: 80, service: 70, y: '374а', yg: 'NEXT_y', g: 'NEXT_yg' },
             { joint: '374', name: 'МТ-372', lenses: 'YYG-Rw', autostop: 1, guard: 68, service: 25, y: '372', yg: 'NEXT_y', g: 'NEXT_g' },
             { joint: '374а', name: 'МТ-370', lenses: 'YYG-Rw', autostop: 1, guard: 66, service: 25, y: '370с', g: 'NEXT_yg' },
