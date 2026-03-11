@@ -40,8 +40,8 @@ lines['neocrimson_pn_pn_ssv']['2'] = [
             { joint: '336б', name: 'ПН-334М', lenses: 'yYY-YGR-M-w', autostop: 1, guard: 80, service: 35, y: '334', g: 'NEXT_g', row: -1.5 },
             { joint: '334', name: '332', lenses: 'YY-GR', autostop: 1, guard: 70, service: 60, y: '332б', yg: 'NEXT_y', g: 'NEXT_yg' },
 
-            { joint: '332', name: 'АП-330', lenses: 'YYG-Rw', autostop: 1, guard: 79, service: 25, y: '330', yg: 'NEXT_y', g: 'NEXT_yg' },
-            { joint: '332а', name: 'АП-328', lenses: 'YYG-Rw', autostop: 1, guard: 73, service: 25, y: '328', yg: 'NEXT_y', g: 'NEXT_yg' },
+            { joint: '332', name: '330', lenses: 'YY-GR', autostop: 1, guard: 79, service: 25, y: '330', yg: 'NEXT_y', g: 'NEXT_yg' },
+            { joint: '332а', name: 'АП-328', lenses: 'YYG-Rw', autostop: 1, shift: 20, guard: 78, service: 25, y: '328', yg: 'NEXT_y', g: 'NEXT_yg' },
             { joint: '332б', name: 'АП-326', lenses: 'YYG-Rw', autostop: 1, guard: 68, service: 25, y: '326', yg: 'NEXT_y', g: 'NEXT_g' },
             { joint: '330', name: 'АП-324', lenses: 'YYG-Rw', autostop: 1, guard: 68, service: 25, y: '324', g: 'NEXT_yg' },
             { joint: '328', name: 'АП-322', lenses: 'YYG-Rw', autostop: 1, guard: 68, service: 25, yg: '322' },
