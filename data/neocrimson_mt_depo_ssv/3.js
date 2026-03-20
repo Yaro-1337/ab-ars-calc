@@ -8,7 +8,7 @@ lines['neocrimson_mt_depo_ssv']['3'] = [
   arsAllSteps: false,
   tStay: 25,
   K: 1.5,
-  interval: 20,
+  interval: 36,
   minInterval: 36,
   slopes: {
     0: 0,
