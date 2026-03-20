@@ -8,7 +8,7 @@ lines['neocrimson_mt_depo_ssv']['4'] = [
   arsAllSteps: false,
   tStay: 25,
   K: 1,
-  interval: 20,
+  interval: 37,
   minInterval: 38,
   slopes: {
     0: 0,
@@ -28,8 +28,8 @@ lines['neocrimson_mt_depo_ssv']['4'] = [
   },
   joints: [
     { x: 0, name: '367г', limit: 0 },
-    { x: 0 + 137.5, name: '367в', limit: 40, later: { 40: 3 } },
-    { x: 0 + 137.5 + 45, name: '3', limit: 40, later: { 40: 3 } },
+    { x: 0 + 137.5, name: '367в', limit: 40 },
+    { x: 0 + 137.5 + 45, name: '3', limit: 40 },
     { x: 0 + 137.5 + 45 + 150 - 25, name: '3а', limit: 40 },
     { x: 0 + 137.5 + 45 + 150 - 25 + 37.5, name: '3б', limit: 40 },
     { x: 0 + 137.5 + 45 + 150 + 37.5 + 12.5, name: '3в', limit: 0 },
