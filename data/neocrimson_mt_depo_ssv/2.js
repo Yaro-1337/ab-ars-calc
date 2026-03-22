@@ -45,8 +45,8 @@ lines['neocrimson_mt_depo_ssv']['2'] = [
   signals: [
     { joint: '365', name: 'МТ367Г', lenses: 'yWY-YG-Rw', autostop: 1, guard: 60, y: '12', g: 'NEXT_y' },
     { joint: '12', name: 'Вм', lenses: 'YYG-Rw', autostop: 1, shift: 5, guard: 50, y: '18', g: 'NEXT_yg' },
-    { joint: '16', name: 'Ч4', lenses: 'YYG-Rw', autostop: 1, guard: 60, yg: '20', double: true, left: true },
-    { joint: '20', name: 'Ч6', lenses: 'YG-Rw', autostop: 1, y: '20', double: true, left: true },
+    { joint: '16', name: 'Ч6', lenses: 'YYG-Rw', autostop: 1, guard: 60, yg: '20', double: true, left: true },
+    { joint: '20', name: 'Ч8', lenses: 'YG-Rw', autostop: 1, y: '20', double: true, left: true },
 
     { joint: '4СП', name: 'М8', lenses: 'WR-w', macht: true, shift: 0, row: -1 },
     { joint: '4а', name: 'МТ-2', lenses: 'YW-Rw', autostop: 1, shift: -14, back: true, left: true },
