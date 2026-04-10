@@ -1,4 +1,4 @@
-const IS_OLD_ARS = true;
+const IS_OLD_ARS = false;
 
 const stepLength = 1;
 
