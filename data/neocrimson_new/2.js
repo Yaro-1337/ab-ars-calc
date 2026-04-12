@@ -49,8 +49,8 @@ lines['neocrimson_new']['2'] = [
         ],
         signals: [
             { joint: '426', name: '422', lenses: 'YY-GR', autostop: 1, guard: 64, yg: '422с' },
-            { joint: '424с', name: '420м', lenses: 'YYG-Rw-M', autostop: 1, guard: 35, service: 35, y: '420в', g: 'NEXT_y' },
-            { joint: '420а', name: '418м', lenses: 'YYG-Rw-M', autostop: 1, guard: 80, service: 70, y: '418', g: 'NEXT_y', left: true },
+            { joint: '424с', name: 'СТ-420м', lenses: 'YYG-Rw-M', autostop: 1, guard: 35, service: 35, y: '420в', g: 'NEXT_y' },
+            { joint: '420а', name: 'СТ-418м', lenses: 'YYG-Rw-M', autostop: 1, guard: 80, service: 70, y: '418', g: 'NEXT_y', left: true },
             { joint: '420б', name: 'СТ-416', lenses: 'YYG-Rw-M', autostop: 1, guard: 80, service: 79, y: '416', g: 'NEXT_y', left: true },
             { joint: '420в', name: 'СТ-414', lenses: 'WYY-GRw-M', autostop: 1, guard: 80, service: 80, y: '414а', g: 'NEXT_y' },
             { joint: '414', name: '412', lenses: 'YY-GR', autostop: 1, guard: 80, service: 80, y: '412а', g: 'NEXT_y', left: true },
