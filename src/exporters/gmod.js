@@ -450,12 +450,14 @@ function trackPeregon() {
             const isOdd = Number(el.name.replace(/\D/g, '')) % 2 === 1;
             result[origName + '_back'] = {
                 x: x,
+                Routes,
                 Name: (`TC${rtl(el.name)}${isOdd ? 'CH' : 'N'}`).toUpperCase(),
                 ARSOnly: true,
                 LensesStr: '',
                 SignalType: el.macht ? 1 : (el.point ? 6 : 0),
                 Back: true,
                 Left: !el.left,
+                Invisible: true,
             }
         }
     });
