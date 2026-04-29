@@ -24,9 +24,9 @@ function signals() { //Исправить это. Что исправить?
         if (el.double && !el.doubleL) name += '//';
         if (el.lenses == 'x') return;
         signals[name] = {
-            name: rtl((el.gmod?.name ?? el.name).replaceAll('-', '').toUpperCase()),
+            name: rtl((el.gmod?.name ?? el.name).replaceAll('-', '').toUpperCase().replaceAll('|', '').replaceAll('M', '')),
         };
-        switch (el.lenses.replaceAll('-', '').replaceAll('M', '')) {
+        switch (el.lenses.replaceAll('-', '').replaceAll('M', '').replaceAll('|', '')) {
             case 'RYYGR':
             case 'RYYGRw':
                 signals[name].def = '00000';
@@ -355,10 +355,20 @@ function lightsCode(signal) {
 
     signal.calc.sequence.push(lastIndication);
 
-    lens = signal.lenses.replaceAll('-', '').toUpperCase()
+    lens = signal.lenses.replaceAll('-', '').replaceAll('|', '').replaceAll('M', '').toUpperCase()
+    const Ycount = (lens.match(/y/gi) || []).length;
+    
     const RIndex = lens.lastIndexOf('R') + 1;
-    const YIndex = lens.indexOf('Y') + 1;
-    const Y2Index = (lens.split('Y').length - 1) > 1 ? lens.indexOf('Y', YIndex) + 1: YIndex;
+    let YIndex;
+    let Y2Index;
+    if (Ycount == 4) {
+        YIndex = lens.indexOf('Y') + 2;
+        Y2Index = lens.lastIndexOf('Y') + 1;
+
+    } else {
+        YIndex = lens.indexOf('Y') + 1;
+        Y2Index = (lens.split('Y').length - 1) > 1 ? lens.indexOf('Y', YIndex) + 1: YIndex;
+    }
     const GIndex = lens.indexOf('G') + 1;
 
     if (!signal.noRY) {
@@ -456,7 +466,7 @@ function trackPeregon() {
         if (!result[joint]) return;
         if (el.lenses === 'x') return;
 
-        const lenses = el.lenses.toUpperCase().replaceAll('Z', 'X').replaceAll('-', '');
+        const lenses = el.lenses.toUpperCase().replaceAll('Z', 'X').replaceAll('-', '').replaceAll('|', '').replaceAll('M', '');
         const redLense = lenses.lastIndexOf('R') + 1;
 
         if (el.back) {
