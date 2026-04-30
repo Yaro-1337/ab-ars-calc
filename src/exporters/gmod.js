@@ -410,6 +410,10 @@ function trackPeregon() {
         const LensesStr = '';
         // const SignalType = el.point ? 6 : 0;
         const SignalType = el.macht ? 1 : (el.point ? 6 : 0);
+        let RearArsName = '';
+        if (el.bothDirections) {
+            RearArsName = rtl(el.name);
+        }
         const Routes = [
             {
                 NextSignal: '*',
@@ -417,7 +421,7 @@ function trackPeregon() {
             },
         ];
 
-        result[origName] = { x, Routes, Name, ARSOnly, LensesStr, SignalType, Left };
+        result[origName] = { x, Routes, Name, ARSOnly, LensesStr, SignalType, Left, RearArsName };
 
         if (el.vksCalc && i) {
             result[origName + '_ray'] = {
