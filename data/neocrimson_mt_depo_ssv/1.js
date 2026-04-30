@@ -26,12 +26,12 @@ lines['neocrimson_mt_depo_ssv']['1'] = [
     701: 'T',
   },
   joints: [
-    { x: 0, name: '4СП', limit: 0 },
-    { x: 0 + 75, name: '20', limit: 40 },
-    { x: 0 + 75 + 37.5 + 12.5, name: '18', limit: 40 },
-    { x: 0 + 75 + 37.5 + 87.5, name: '16', limit: 60 },
-    { x: 0 + 75 + 37.5 + 87.5 + 50 + 37.5, name: '14', limit: 60, later: { 60: -1 } },
-    { x: 0 + 75 + 37.5 + 87.5 + 29 + 125 + 12.5, name: '12', limit: 60, later: { 60: 1 } },
+    { x: 0 + 25, name: '4СП', limit: 0 },
+    { x: 0 + 75 + 25, name: '20', limit: 40 },
+    { x: 0 + 75 + 37.5 + 12.5 + 25, name: '18', limit: 40 },
+    { x: 0 + 75 + 37.5 + 87.5 + 25, name: '16', limit: 60 },
+    { x: 0 + 75 + 37.5 + 87.5 + 50 + 37.5 + 25, name: '14', limit: 60, later: { 60: -1 } },
+    { x: 0 + 75 + 37.5 + 87.5 + 29 + 125 + 12.5 + 25, name: '12', limit: 60, later: { 60: 1 } },
     { x: 0 + 75 + 37.5 + 87.5 + 29 + 125 + 112.5 - 12.5, name: '4а', limit: 60, later: { 40: 2 } },
     { x: 0 + 75 + 37.5 + 87.5 + 29 + 125 + 112.5 + 112.5, name: '4', limit: 40 },
     { x: 0 + 75 + 37.5 + 87.5 + 29 + 125 + 112.5 + 112.5 + 50, name: '374а', limit: 40 },
@@ -45,7 +45,7 @@ lines['neocrimson_mt_depo_ssv']['1'] = [
   signals: [
     { joint: '20', name: 'Е4м', lenses: 'YGR-w', autostop: 1, guard: 60, y: '14', g: 'NEXT_y', row: -1.5 },
     { joint: '16', name: 'МТ6', lenses: 'YYG-Rw', autostop: 1, guard: 60, shift: 22, y: '4а', yg: 'NEXT_y', g: 'NEXT_yg', row: -1.5 },
-    { joint: '12', name: 'МТ4', lenses: 'YYG-Rw', autostop: 1, guard: 60, y: '372', yg: 'NEXT_y' },
+    { joint: '12', name: 'МТ4', lenses: 'YYG-Rw', autostop: 1, guard: 60, y: '372', yg: 'NEXT_y', shift: 14 },
     { joint: '4', name: 'МТ2', lenses: 'YW-Rw', autostop: 1, guard: 60, y: '370с', shift: 14 },
     { joint: '372', name: '368', lenses: 'YY-GR', autostop: 1, guard: 60, yg: '368с' },
 

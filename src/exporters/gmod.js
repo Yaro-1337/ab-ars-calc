@@ -363,7 +363,7 @@ function lightsCode(signal) {
     let Y2Index;
     if (Ycount == 4) {
         YIndex = lens.indexOf('Y') + 2;
-        Y2Index = lens.lastIndexOf('Y') + 1;
+        Y2Index = lens.lastIndexOf('Y');
 
     } else {
         YIndex = lens.indexOf('Y') + 1;
