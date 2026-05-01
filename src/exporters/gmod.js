@@ -412,7 +412,7 @@ function trackPeregon() {
         const SignalType = el.macht ? 1 : (el.point ? 6 : 0);
         let RearArsName = '';
         if (el.bothDirections) {
-            RearArsName = rtl(el.name);
+            RearArsName = rtl(el.name).toUpperCase();
         }
         const Routes = [
             {
