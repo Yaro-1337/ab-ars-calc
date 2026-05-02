@@ -348,7 +348,7 @@ lines['neocrimson_new']['1'] = [
             { joint: '405а', name: 'ОП3', gmod: { name: 'СТ-ОП3' }, lenses: 'zR', back: true},
             { joint: '407', name: 'ДОП3', gmod: { name: 'СТ-ДОП3' }, lenses: 'zr', back: true, left: true },
             { joint: '415а', name: 'ОП1', gmod: { name: 'СТ-ОП1' }, lenses: 'zR', autostop: 1, shift: 0, back: true, row: -1.5 },
-            { joint: '421', name: 'E', gmod: { name: 'СТ-Е' }, lenses: 'BWR', autostop: 1, shift: 0, back: true, left: true },
+            { joint: '421', name: 'E', gmod: { name: 'СТ-Е', AutostopBehind: true }, lenses: 'BWR', autostop: 1, shift: 0, back: true, left: true },
             { joint: '421а', name: 'СТ-3', lenses: 'Rw', back: true, left: true },
         ],
         mks: [

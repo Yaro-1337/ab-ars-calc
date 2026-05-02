@@ -62,7 +62,7 @@ lines['neocrimson_new']['2'] = [
 
             { joint: '404с', name: '400м', lenses: 'X', guard: 35, shift: 0 },
             { joint: '430', name: 'СТ4', lenses: 'Rw' },
-            { joint: '428', name: 'Г', gmod: { name: 'СТ-Г' }, lenses: 'BW-Rw', autostop: 1, shift: 0, row: -1.5 },
+            { joint: '428', name: 'Г', gmod: { name: 'СТ-Г', AutostopBehind: true }, lenses: 'BW-Rw', autostop: 1, shift: 0, row: -1.5 },
             { joint: '426', name: 'Д', gmod: { name: 'СТ-Д', PoleHeight: 2 }, lenses: 'BW-Rw-M', autostop: 1, shift: 0, back: true, row: -3 },
             { joint: '418', name: 'В', gmod: { name: 'СТ-В' }, lenses: 'BW-Rw', autostop: 1, shift: 0, back: true, left: true },
             { joint: '408', name: 'Д', gmod: { name: 'ФН-Д' }, lenses: 'BW-Rw', autostop: 1, shift: 0, back: true, row: -3 },
@@ -269,7 +269,7 @@ lines['neocrimson_new']['2'] = [
             { joint: '350б', name: '348', lenses: 'YY-GR', autostop: 1, guard: 80, service: 25, y: '348', yg: 'NEXT_y', g: 'NEXT_yg' },
             { joint: '350в', name: 'ПН-346', lenses: 'YYG-Rw', gmod: { DoubleLetters: true }, autostop: 1, guard: 80, service: 25, y: '346', yg: 'NEXT_y', g: 'NEXT_yg' },
             { joint: '350г', name: 'ПН-344', lenses: 'YYG-Rw', gmod: { DoubleLetters: true }, autostop: 1, guard: 70, service: 25, y: '344', yg: 'NEXT_y', g: 'NEXT_yg' },
-            { joint: '350д', name: 'ПН-342', lenses: 'YY-GR-w', gmod: { PoleHeight: 2 }, autostop: 1, guard: 68, service: 25, y: '342', yg: 'NEXT_y', g: 'NEXT_g', macht: true },
+            { joint: '350д', name: 'ПН-342', lenses: 'YY-GR-w', gmod: { DoubleLetters: true, PoleHeight: 2 }, autostop: 1, guard: 68, service: 25, y: '342', yg: 'NEXT_y', g: 'NEXT_g', macht: true },
             { joint: '348', name: 'ПН-340', lenses: 'YY-GR-w', autostop: 1, guard: 66, service: 25, y: '340', g: 'NEXT_g', macht: true, row: -1.5 },
             { joint: '346', name: 'ПН-338', lenses: 'BYY-GR-w', autostop: 1, guard: 60, g: '338', macht: true },
             { joint: '344', name: '338д', lenses: 'YY-GR', autostop: 1, guard: 60, yg: '338', macht: true, row: -1.5, shift: 12.5 },
