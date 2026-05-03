@@ -272,7 +272,7 @@ lines['neocrimson_new']['1'] = [
             { x: 1929 - 4 - 25 + 75 + 75 + 75 + 25, name: '403б', limit: 0 },
         ],
         signals: [
-            { joint: '379', name: '381м', lenses: 'YY-GR', autostop: 1, guard: 35, service: 35, y: '381а', g: 'NEXT_y' },
+            { joint: '379', name: '381м', lenses: 'YGR', autostop: 1, guard: 35, service: 35, g: '381а' },
             { joint: '381а', name: '383', lenses: 'YY-GR', autostop: 1, guard: 80, service: 60, y: '383а', g: 'NEXT_y', shift: 12.5 },
             { joint: '383', name: '385', lenses: 'YY-GR', autostop: 1, guard: 80, service: 80, y: '385', g: 'NEXT_y' },
             { joint: '385', name: '387', lenses: 'YY-GR', autostop: 1, guard: 80, service: 80, y: '387', g: 'NEXT_y' },
