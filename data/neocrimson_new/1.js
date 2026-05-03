@@ -159,8 +159,8 @@ lines['neocrimson_new']['1'] = [
             { joint: '353', name: '355', lenses: 'YY-GR', autostop: 1, guard: 80, service: 80, y: '355б', yg: 'NEXT_y', g: 'NEXT_yg' },
             { joint: '355', name: 'МТ-357', gmod: { DoubleLetters: true }, lenses: 'YYG-Rw', autostop: 1, guard: 80, service: 35, y: '357', yg: 'NEXT_y', g: 'NEXT_yg' },
             { joint: '355а', name: 'МТ-359', gmod: { DoubleLetters: true }, lenses: 'YYG-Rw', autostop: 1, guard: 76, service: 35, y: '359', yg: 'NEXT_y', g: 'NEXT_yg' },
-            { joint: '355б', name: 'МТ-361', gmod: { DoubleLetters: true }, lenses: 'BYY-GRw', autostop: 1, guard: 69, service: 35, y: '361', yg: 'NEXT_y', g: 'NEXT_g' },
-            { joint: '357', name: 'МТ-363', gmod: { DoubleLetters: true }, lenses: 'YYG-Rw', autostop: 1, guard: 64, service: 35, y: '363', g: 'NEXT_yg', double: true, left: true, row: -1.5 },
+            { joint: '355б', name: 'МТ-361', gmod: { DoubleLetters: true }, lenses: 'YYG-Rw', autostop: 1, guard: 69, service: 35, y: '361', yg: 'NEXT_y', g: 'NEXT_g' },
+            { joint: '357', name: 'МТ-363', gmod: { DoubleLetters: true }, lenses: 'BYY-GRw', autostop: 1, guard: 64, service: 35, y: '363', g: 'NEXT_yg', double: true, left: true, row: -1.5 },
             { joint: '359', name: 'МТ-365', gmod: { DoubleLetters: true }, lenses: 'YYG-Rw', autostop: 1, guard: 65, yg: '365', double: true, left: true },
 
             { joint: '365', name: 'МТ-367Г', lenses: '', guard: 35, shift: 0 },
@@ -280,9 +280,9 @@ lines['neocrimson_new']['1'] = [
             { joint: '389', name: '391', lenses: 'YY-GR', autostop: 1, guard: 80, service: 35, y: '391а', yg: 'NEXT_y', g: 'NEXT_yg' },
             { joint: '389а', name: '393', lenses: 'YY-GR', autostop: 1, guard: 80, service: 35, y: '393', yg: 'NEXT_y', g: 'NEXT_yg' },
             { joint: '391', name: 'ФН-395', gmod: { DoubleLetters: true }, lenses: 'YYG-Rw', autostop: 1, guard: 80, service: 35, y: '395', yg: 'NEXT_y', g: 'NEXT_yg' },
-            { joint: '391а', name: 'ФН-397', gmod: { DoubleLetters: true }, lenses: 'BYY-GRw', autostop: 1, guard: 74, service: 35, y: '397', yg: 'NEXT_y', g: 'NEXT_g' },
+            { joint: '391а', name: 'ФН-397', gmod: { DoubleLetters: true }, lenses: 'YYG-Rw', autostop: 1, guard: 74, service: 35, y: '397', yg: 'NEXT_y', g: 'NEXT_g' },
             { joint: '393', name: 'ФН-399', gmod: { DoubleLetters: true }, lenses: 'YYG-Rw', autostop: 1, guard: 66, service: 35, y: '399с', g: 'NEXT_yg', row: -2 },
-            { joint: '395', name: 'ФН-401', gmod: { DoubleLetters: true }, lenses: 'YYG-Rw', autostop: 1, guard: 66, service: 35, yg: '401с' },
+            { joint: '395', name: 'ФН-401', gmod: { DoubleLetters: true }, lenses: 'BYY-GRw', autostop: 1, guard: 66, service: 35, yg: '401с' },
             // { joint: '397', name: 'ФН-401', lenses: 'YYG-Rw', autostop: 1, guard: 69, yg: '401с', shift: 7 },
 
             { joint: '401', name: 'ФН-403м', lenses: 'X', guard: 35, shift: 0 },
@@ -339,8 +339,8 @@ lines['neocrimson_new']['1'] = [
             { joint: '405б', name: 'СТ-409м', lenses: 'YYY|M-YGR|BWw', autostop: 1, guard: 80, service: 80, y: '409а', yg: 'NEXT_y', g: 'NEXT_yg' },
             { joint: '409', name: '411', lenses: 'YY-GR', autostop: 1, guard: 80, service: 35, y: '411', yg: 'NEXT_y', g: 'NEXT_yg' },
             { joint: '409а', name: 'СТ-413', lenses: 'YYG-Rw', gmod: { DoubleLetters: true }, autostop: 1, guard: 80, service: 35, y: '413', yg: 'NEXT_y', g: 'NEXT_yg' },
-            { joint: '411', name: 'СТ-415', lenses: 'BYY-GRw', gmod: { DoubleLetters: true }, autostop: 1, guard: 66, service: 35, y: '415а', yg: 'NEXT_y', g: 'NEXT_g' },
-            { joint: '413', name: 'СТ-417', lenses: 'YYG-Rw', gmod: { DoubleLetters: true }, autostop: 1, guard: 66, service: 35, y: '417', g: 'NEXT_yg' },
+            { joint: '411', name: 'СТ-415', lenses: 'YYG-Rw', gmod: { DoubleLetters: true }, autostop: 1, guard: 66, service: 35, y: '415а', yg: 'NEXT_y', g: 'NEXT_g' },
+            { joint: '413', name: 'СТ-417', lenses: 'BYY-GRw', gmod: { DoubleLetters: true }, autostop: 1, guard: 66, service: 35, y: '417', g: 'NEXT_yg' },
             { joint: '415', name: 'СТ-419', lenses: 'YYG-Rw', gmod: { DoubleLetters: true }, autostop: 1, guard: 66, yg: '419' },
 
             { joint: '419', name: 'СТ-421Г', lenses: 'BWZ-YZ-Rw-M', gmod: { DoubleLetters: true, RouteNumberSetup: 'K' }, guard: 35, shift: 0 },

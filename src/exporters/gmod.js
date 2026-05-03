@@ -1,4 +1,7 @@
 function sections() {
+    const craIndex = peregon.joints.findIndex(el => el.cra);
+    const cra = peregon.joints[craIndex]?.cra;
+
     return peregon.signals.filter(el => !el.back).map(el => {
         if (el.back) return;
         let sections = {};
@@ -8,6 +11,10 @@ function sections() {
         const jointI = Object.values(peregon.joints).findIndex(elem => elem.name == el.joint);
         if (peregon.joints[jointI - 1]) {
             sections.prev = 'rc' + peregon.joints[jointI - 1].name;
+            sections.st = cra?.after;
+            if (jointI < craIndex) {
+                sections.st = cra?.before;
+            }
         }
 
         return sections;
@@ -263,6 +270,23 @@ function signals() { //Исправить это. Что исправить?
                 signals[name].yy = '001010';
                 signals[name].yfy = '002010';
                 break;
+            case 'ByYYR':
+            case 'ByYYRw':
+                signals[name].def = '00000';
+                signals[name].ro = '00001';
+                signals[name].ry = '00101';
+                signals[name].bo = '10000';
+                signals[name].yy = '01010';
+                signals[name].yfy = '02010';
+                break;
+            case 'yYYR':
+            case 'yYYRw':
+                signals[name].def = '0000';
+                signals[name].ro = '0001';
+                signals[name].ry = '0101';
+                signals[name].yy = '1010';
+                signals[name].yfy = '2010';
+                break;
             case 'ZR':
                 signals[name].ro = '01';
                 break;
@@ -292,7 +316,7 @@ function sectionsCopy() {
     let resultText = ``;
     for (section of sections()) {
         const signal = rtl(section.nm.toUpperCase());
-        const st = signal.slice(0, 2);
+        const st = section.st ?? signal.slice(0, 2);
         resultText += `gmod['${st}'].sections['${signal}'] = '${section.rc}';\n`
     }
     console.log(resultText);
