@@ -210,7 +210,7 @@ lines['neocrimson_new']['1'] = [
             { x: 1520 - 12.5 + 75 + 75 + 75, name: '381а', limit: 0 },
         ],
         signals: [
-            { joint: '365', name: 'МТ-367Г', gmod: { DoubleLetters: true, RouteNumberSetup: 'D4G1K' }, lenses: 'ByW-YYG-Rw', autostop: 1, guard: 64, service: 80, g: '367г' },
+            { joint: '365', name: 'МТ-367Г', gmod: { DoubleLetters: true, RouteNumberSetup: 'D4G1K' }, lenses: 'BWy-YYG-Rw', autostop: 1, guard: 64, service: 80, g: '367г' },
             // { joint: '463', name: '467', lenses: 'YY-GR', autostop: 1, guard: 64, service: 80, g: '4671' },
             { joint: '367в', name: 'МТ-369', gmod: { DoubleLetters: true }, lenses: 'BWY-YG-Rw', autostop: 1, guard: 80, service: 80, y: '369в', yg: 'NEXT_y', g: 'NEXT_yg', shift: 20 },
             { joint: '369а', name: '371', lenses: 'YY-GR', autostop: 1, guard: 80, service: 35, y: '371', yg: 'NEXT_y', g: 'NEXT_yg' },
