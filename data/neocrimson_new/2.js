@@ -164,7 +164,7 @@ lines['neocrimson_new']['2'] = [
         ],
         signals: [
             { joint: '382', name: 'МТ-380м', lenses: 'YYG-Rw-M', gmod: { DoubleLetters: true, PoleHeight: 2 }, autostop: 1, guard: 35, service: 35, y: '380д', g: 'NEXT_y' },
-            { joint: '380б', name: 'МТ-378', lenses: 'BYY-GRw-M', gmod: { DoubleLetters: true, PoleHeight: 2 }, autostop: 1, guard: 80, service: 80, y: '378а', g: 'NEXT_g' },
+            { joint: '380б', name: 'МТ-378м', lenses: 'BYY-GRw-M', gmod: { DoubleLetters: true, PoleHeight: 2 }, autostop: 1, guard: 80, service: 80, y: '378а', g: 'NEXT_g' },
             { joint: '380д', name: 'МТ-376м', lenses: 'ByY-YG-Rw-M', gmod: { DoubleLetters: true }, autostop: 1, guard: 80, service: 80, g: '376б' },
             { joint: '376а', name: 'МТ-374', lenses: 'YYG-Rw', gmod: { DoubleLetters: true }, autostop: 1, guard: 80, service: 70, y: '374а', yg: 'NEXT_y', g: 'NEXT_yg' },
             { joint: '374', name: 'МТ-372', lenses: 'YYG-Rw', gmod: { DoubleLetters: true }, autostop: 1, guard: 68, service: 25, y: '372', yg: 'NEXT_y', g: 'NEXT_g' },
