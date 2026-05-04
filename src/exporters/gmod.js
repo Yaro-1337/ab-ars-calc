@@ -48,14 +48,14 @@ function signals() { //Исправить это. Что исправить?
             case 'RBYYGR':
             case 'RBYYGRw':
                 signals[name].def = '000000';
-                signals[name].ro =  '000001';
-                signals[name].rr =  '100001';
-                signals[name].ry =  '000101';
-                signals[name].ya =  '000100';
-                signals[name].yo =  '001000';
-                signals[name].yg =  '001010';
-                signals[name].go =  '000010';
-                signals[name].bo =  '010000';
+                signals[name].ro = '000001';
+                signals[name].rr = '100001';
+                signals[name].ry = '000101';
+                signals[name].ya = '000100';
+                signals[name].yo = '001000';
+                signals[name].yg = '001010';
+                signals[name].go = '000010';
+                signals[name].bo = '010000';
                 break;
             case 'YYGR':
             case 'YYGRw':
@@ -152,6 +152,7 @@ function signals() { //Исправить это. Что исправить?
                 signals[name].go = '0010';
                 break;
             case 'WyYYGRw':
+            case 'WYYYGRw':
                 signals[name].def = '000000';
                 signals[name].ro = '000001';
                 signals[name].ry = '001001';
@@ -162,6 +163,33 @@ function signals() { //Исправить это. Что исправить?
                 signals[name].wo = '100000';
                 signals[name].yy = '010100';
                 signals[name].yfy = '020100';
+                break;
+            case 'BWyYYGRw':
+            case 'BWYYYGRw':
+                signals[name].def = '0000000';
+                signals[name].ro = '0000001';
+                signals[name].ry = '0001001';
+                signals[name].ya = '0001000';
+                signals[name].yo = '0010000';
+                signals[name].yg = '0010010';
+                signals[name].go = '0000010';
+                signals[name].wo = '0100000';
+                signals[name].yy = '0010100';
+                signals[name].yfy = '0020100';
+                signals[name].bo = '1000000';
+                break;
+            case 'ByYYGRw':
+            case 'BYYYGRw':
+                signals[name].def = '000000';
+                signals[name].ro = '000001';
+                signals[name].ry = '001001';
+                signals[name].ya = '001000';
+                signals[name].yo = '010000';
+                signals[name].yg = '010010';
+                signals[name].go = '000010';
+                signals[name].yy = '010100';
+                signals[name].yfy = '020100';
+                signals[name].bo = '100000';
                 break;
             case 'yYYYGRw':
             case 'YYYYGRw':
@@ -175,7 +203,7 @@ function signals() { //Исправить это. Что исправить?
                 signals[name].yy = '100100';
                 signals[name].yfy = '200100';
                 break;
-            case 'YYYGRW':
+            case 'yYYGRW':
             case 'YYYGRw':
                 signals[name].def = '00000';
                 signals[name].ro = '00001';
@@ -393,7 +421,7 @@ function lightsCode(signal) {
 
     lens = signal.lenses.replaceAll('-', '').replaceAll('|', '').replaceAll('M', '').toUpperCase()
     const Ycount = (lens.match(/y/gi) || []).length;
-    
+
     const RIndex = lens.lastIndexOf('R') + 1;
     let YIndex;
     let Y2Index;
@@ -403,7 +431,7 @@ function lightsCode(signal) {
 
     } else {
         YIndex = lens.indexOf('Y') + 1;
-        Y2Index = (lens.split('Y').length - 1) > 1 ? lens.indexOf('Y', YIndex) + 1: YIndex;
+        Y2Index = (lens.split('Y').length - 1) > 1 ? lens.indexOf('Y', YIndex) + 1 : YIndex;
     }
     const GIndex = lens.indexOf('G') + 1;
 
@@ -585,8 +613,8 @@ function trackPeregon() {
         }
 
         if (!result[joint].Routes[0].Lights) {
-                result[joint].Routes[0].Lights = (lenses.includes('R') && lenses.includes('G')) ? lightsCode(el) : (hasYR ? `${redLense}-${redLense}${redLense - 2}` : `${redLense}`);
-            }
+            result[joint].Routes[0].Lights = (lenses.includes('R') && lenses.includes('G')) ? lightsCode(el) : (hasYR ? `${redLense}-${redLense}${redLense - 2}` : `${redLense}`);
+        }
 
         if (el.autostop && el.shift && Math.abs(el.shift) > 0) {
             result[joint].NonAutoStop = true;
