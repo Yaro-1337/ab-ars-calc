@@ -288,6 +288,15 @@ function signals() { //Исправить это. Что исправить?
                 signals[name].yy = '001001';
                 signals[name].yfy = '002001';
                 break;
+            case 'ByWRY':
+            case 'ByWRYw':
+                signals[name].def = '00000';
+                signals[name].ro =  '00010';
+                signals[name].wo =  '00100';
+                signals[name].bo =  '10000';
+                signals[name].yy =  '01001';
+                signals[name].yfy = '02001';
+                break;
             case 'BWyYYR':
             case 'BWyYYRw':
                 signals[name].def = '000000';
