@@ -47,16 +47,16 @@ lines['neocrimson_mt_depo_ssv']['6'] = [
   ],
   signals: [
     { joint: '382', name: 'МТ-380м', lenses: 'YYG-Rw-M', autostop: 1, guard: 35, service: 35, y: '380д', g: 'NEXT_y' },
-    { joint: '380б', name: 'МТ-378', lenses: 'YYG-Rw-M', autostop: 1, guard: 80, service: 80, y: '6б', yg: 'NEXT_y' },
-    { joint: '380д', name: 'МТ-376м', lenses: 'yYY-GRw-M', autostop: 1, guard: 80, service: 35, y: '6в', g: 'NEXT_y' },
-    { joint: '6б', name: 'Ч2', lenses: 'YYG-Rw', autostop: 1, guard: 60, y: '6г', yg: 'NEXT_y' },
-    { joint: '6г', name: 'Ч4', lenses: 'YG-Rw', autostop: 1, y: '6г' },
+    { joint: '380б', name: 'МТ-378', lenses: 'BYY-GRw-M', autostop: 1, guard: 80, service: 80, y: '6б', yg: 'NEXT_y' },
+    { joint: '380д', name: 'МТ-376м', lenses: 'ByY-YG-Rw-M', autostop: 1, guard: 80, service: 35, y: '6в', g: 'NEXT_y' },
+    { joint: '6б', name: 'Ч2', lenses: 'BYY-GRw', autostop: 1, guard: 60, y: '6г', yg: 'NEXT_y' },
+    { joint: '6г', name: 'Ч4', lenses: 'BYG-Rw', autostop: 1, y: '6г' },
 
     { joint: '5СП', name: 'М6', lenses: 'WR-w', shift: 0, row: -1 },
     { joint: '380в', name: 'МТ-ОП2', lenses: 'zR', autostop: 1, shift: 0, back: true, row: -1.5 },
-    { joint: '6', name: 'МТ-8', lenses: 'WR', autostop: 1, back: true, left: true },
-    { joint: '6в', name: 'МТ-10', lenses: 'YYG-Rw', autostop: 1, back: true, left: true },
-    { joint: '5СП', name: 'Е2м', lenses: 'YYG-Rw', autostop: 1, back: true, left: true, row: -1 },
+    { joint: '6', name: 'МТ-8', lenses: 'BWR', autostop: 1, back: true, left: true },
+    { joint: '6в', name: 'МТ-10', lenses: 'BYY-GRw', autostop: 1, back: true, left: true },
+    { joint: '5СП', name: 'Е2м', lenses: 'BY-GRw', autostop: 1, back: true, left: true, row: -1 },
   ],
   mks: [
   ],

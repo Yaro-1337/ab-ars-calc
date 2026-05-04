@@ -37,14 +37,14 @@ lines['neocrimson_mt_depo_ssv']['4'] = [
     { x: 0 + 137.5 + 45 + 150 + 37.5 + 62.5 + 75, name: '3СП', limit: 0 },
   ],
   signals: [
-    { joint: '367в', name: 'Гм', lenses: 'YYG-Rw', autostop: 1, guard: 60, y: '3б', g: 'NEXT_y' },
-    { joint: '3а', name: 'Ч1', lenses: 'YYG-Rw', autostop: 1, guard: 60, y: '3в' },
-    { joint: '3в', name: 'Ч3', lenses: 'YG-Rw', autostop: 1, y: '3в' },
+    { joint: '367в', name: 'Гм', lenses: 'ByR-Yw', autostop: 1, guard: 60, y: '3б', g: 'NEXT_y' },
+    { joint: '3а', name: 'Ч1', lenses: 'BYY-GRw', autostop: 1, guard: 60, y: '3в' },
+    { joint: '3в', name: 'Ч3', lenses: 'BYG-Rw', autostop: 1, y: '3в' },
 
     { joint: '1СП', name: 'М4', lenses: 'WR-w', row: -1 },
-    { joint: '3', name: 'МТ-3', lenses: 'yYY-Rw', autostop: 1, back: true, left: true },
+    { joint: '3', name: 'МТ-3', lenses: 'ByY-YRw', autostop: 1, back: true, left: true },
     // { joint: '3б', name: 'МТ-5', lenses: 'YYG-Rw', autostop: 1, shift: 0, back: true, left: true },
-    { joint: '1СП', name: 'Е1м', lenses: 'YGR-w', autostop: 1, shift: 0, back: true, left: true },
+    { joint: '1СП', name: 'Е1м', lenses: 'BY-GR-w', autostop: 1, shift: 0, back: true, left: true },
   ],
   mks: [
   ],
