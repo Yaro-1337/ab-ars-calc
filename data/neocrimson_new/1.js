@@ -164,8 +164,8 @@ lines['neocrimson_new']['1'] = [
             { joint: '359', name: 'МТ-365', gmod: { DoubleLetters: true }, lenses: 'YYG-Rw', autostop: 1, guard: 65, yg: '365', double: true, left: true },
 
             { joint: '365', name: 'МТ-367мГ', lenses: '', guard: 35, shift: 0 },
-            { joint: '359', name: 'ОП', gmod: { name: 'МТ-ОП' }, lenses: 'zR', autostop: 1, shift: 0, back: true },
-            { joint: '367', name: 'МТ-ДОП', lenses: '', back: true, left: true },
+            { joint: '359', name: 'ОП1', gmod: { name: 'МТ-ОП1' }, lenses: 'zR', autostop: 1, shift: 0, back: true },
+            { joint: '367', name: 'ДОП1', gmod: { name: 'МТ-ДОП1' }, lenses: '', back: true, left: true },
         ],
         mks: [
             { x: 2.5 + 25 + 25 + 12.5 + 19.3, name: '555МК' },
@@ -220,7 +220,7 @@ lines['neocrimson_new']['1'] = [
             { joint: '373', name: '379', lenses: 'YY-GR', autostop: 1, guard: 64, yg: '379' },
 
             { joint: '379', name: '381м', lenses: 'X', guard: 35, shift: 0 },
-            { joint: '367', name: 'ДОП', gmod: { name: 'МТ-ДОП' }, lenses: 'zr', back: true, left: true },
+            { joint: '367', name: 'ДОП1', gmod: { name: 'МТ-ДОП1' }, lenses: 'zr', back: true, left: true },
             { joint: '367г', name: 'Гм', gmod: { name: 'МТ-Гм' }, lenses: 'ByR-Yw', autostop: 1, shift: 0, back: true, row: -1.5 },
         ],
         mks: [
