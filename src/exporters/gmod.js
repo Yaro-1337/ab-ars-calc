@@ -203,6 +203,19 @@ function signals() { //Исправить это. Что исправить?
                 signals[name].yy = '100100';
                 signals[name].yfy = '200100';
                 break;
+            case 'ByYYYGRw':
+            case 'BYYYYGRw':
+                signals[name].def = '0000000';
+                signals[name].ro = '0000001';
+                signals[name].ry = '0001001';
+                signals[name].ya = '0001000';
+                signals[name].yo = '0010000';
+                signals[name].yg = '0010010';
+                signals[name].go = '0000010';
+                signals[name].yy = '0100100';
+                signals[name].yfy = '0200100';
+                signals[name].bo = '1000000';
+                break;
             case 'yYYGRW':
             case 'YYYGRw':
                 signals[name].def = '00000';
