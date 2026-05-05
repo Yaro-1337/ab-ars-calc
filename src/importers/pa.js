@@ -19,30 +19,30 @@ async function importTrackPlanProfile(name, track, n, peregon, nextPeregon) {
         });
     }
 
-    console.log(paths[track]);
+    // console.log(paths[track]);
 
     const gmTrack = paths[track][0].TrackPath;
     const planRes = await fetch(`/data/metrostroi_data/plan_${name}_${gmTrack}.json`);
     const plan = await planRes.json();
     const profRes = await fetch(`/data/metrostroi_data/prof_${name}_${gmTrack}.json`);
     const prof = await profRes.json();
-    console.log(plan);
-    console.log(prof);
+    // console.log(plan);
+    // console.log(prof);
 
     const trackLength1 = Math.round(paths[track][Number(n) + 1].TrackX - paths[track][Number(n)].TrackX);
     const trackLength2 = paths[track][Number(n) + 2] ? Math.round(paths[track][Number(n) + 2].TrackX - paths[track][Number(n) + 1].TrackX) : 300;
     peregon.trackLength = trackLength1;
     nextPeregon.trackLength = trackLength2;
 
-    console.log(`Track length 1: ${trackLength1}`);
-    console.log(`Track length 2: ${trackLength2}`);
+    // console.log(`Track length 1: ${trackLength1}`);
+    // console.log(`Track length 2: ${trackLength2}`);
 
     const station1X = paths[track][Number(n)].TrackX - trainHalf;
     const station2X = paths[track][Number(n) + 1].TrackX - trainHalf;
     const X3 = station1X + (peregon.joints.at(-1)?.x || ((station2X - station1X) + 300));
-    console.log(`Station 1X: ${station1X}`);
-    console.log(`Station 2X: ${station2X}`);
-    console.log(`X3: ${X3}`);
+    // console.log(`Station 1X: ${station1X}`);
+    // console.log(`Station 2X: ${station2X}`);
+    // console.log(`X3: ${X3}`);
     window.station1X = station1X;
     window.station2X = station2X;
 
@@ -77,7 +77,7 @@ async function importTrackPlanProfile(name, track, n, peregon, nextPeregon) {
     filterSlopesSharp(peregon);
     filterSlopesSharp(nextPeregon);
 
-    console.log(peregon, nextPeregon)
+    // console.log(peregon, nextPeregon)
 
     if (peregon.curvesOverride) {
         Object.assign(peregon.curves, peregon.curvesOverride);
