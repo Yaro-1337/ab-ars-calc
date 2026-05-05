@@ -150,7 +150,7 @@ lines['neocrimson_new']['1'] = [
             { x: 1220 - 5 - 12.5 - 75 + 37.5, name: '361', limit: 60, bothDirections: true },
             { x: 1220 - 5 - 12.5, name: '363', limit: 60, left: true, gmod: { CenteredArsName: true }, bothDirections: true },
             { x: 1220 - 5 - 12.5 + 75, name: '365', limit: 40, bothDirections: true },
-            { x: 1220 - 5 - 12.5 + 75 + 75 + 12.5 + 12.5, name: '367', limit: 0 },
+            { x: 1220 - 5 - 12.5 + 75 + 75 + 12.5 + 12.5 - 1, name: '367', limit: 0 },
             { x: 1220 - 5 - 12.5 + 75 + 75 + 75, name: '367а', limit: 0 },
         ],
         signals: [
@@ -191,7 +191,7 @@ lines['neocrimson_new']['1'] = [
         joints: [
             { x: 0 - 5 - 12.5, name: '363', limit: 60 },
             { x: 0 - 5 - 12.5 + 75, name: '365', limit: 60, later: { 60: 3 }, bothDirections: true },
-            { x: 0 - 5 - 12.5 + 75 + 75 + 12.5 + 12.5, name: '367', limit: 60, later: { 40: 3, 60: 3 } },
+            { x: 0 - 5 - 12.5 + 75 + 75 + 12.5 + 12.5 - 1, name: '367', limit: 60, later: { 40: 3, 60: 3 } },
             { x: 0 - 5 - 12.5 + 75 + 75 + 75, name: '367а', limit: 60, later: { 40: 3, 60: 3 } },
 
             { x: 1520 - 12.5 - 75 - 87.5 - 75 - 125 - 125 - 262.5 - 50 - 12.5 - 225, name: '367б', limit: 60, later: { 40: 2, 60: 2 } },
