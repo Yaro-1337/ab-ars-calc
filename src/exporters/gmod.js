@@ -232,7 +232,7 @@ function signals() { //Исправить это. Что исправить?
             case 'BWYYGR':
             case 'BWYYGRw':
                 signals[name].def = '000000';
-                signals[name].ro = '00001';
+                signals[name].ro = '000001';
                 signals[name].ry = '000101';
                 signals[name].ya = '000100';
                 signals[name].yo = '001000';
@@ -291,11 +291,19 @@ function signals() { //Исправить это. Что исправить?
             case 'ByWRY':
             case 'ByWRYw':
                 signals[name].def = '00000';
-                signals[name].ro =  '00010';
-                signals[name].wo =  '00100';
-                signals[name].bo =  '10000';
-                signals[name].yy =  '01001';
+                signals[name].ro = '00010';
+                signals[name].wo = '00100';
+                signals[name].bo = '10000';
+                signals[name].yy = '01001';
                 signals[name].yfy = '02001';
+                break;
+            case 'ByRY':
+            case 'ByRYw':
+                signals[name].def = '0000';
+                signals[name].ro = '0010';
+                signals[name].bo = '1000';
+                signals[name].yy = '0101';
+                signals[name].yfy = '0201';
                 break;
             case 'BWyYYR':
             case 'BWyYYRw':
