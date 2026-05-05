@@ -118,7 +118,7 @@ lines['neocrimson_new']['2'] = [
             { joint: '388', name: '384', lenses: 'YY-GR', autostop: 1, guard: 71, service: 25, y: '384', g: 'NEXT_yg' },
             { joint: '386', name: '382', lenses: 'YY-GR', autostop: 1, guard: 68, yg: '382' },
 
-            { joint: '382', name: 'МТ-380', lenses: '', guard: 35, shift: 0 },
+            { joint: '382', name: 'МТ-380м', lenses: '', guard: 35, shift: 0 },
         ],
         mks: [
         ],
