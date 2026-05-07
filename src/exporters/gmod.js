@@ -33,7 +33,8 @@ function signals() { //Исправить это. Что исправить?
         signals[name] = {
             name: rtl((el.gmod?.name ?? el.name).replaceAll('-', '').toUpperCase().replaceAll('|', '').replaceAll('M', '')),
         };
-        switch (el.lenses.replaceAll('-', '').replaceAll('M', '').replaceAll('|', '')) {
+        const lenses = el.lenses.replaceAll('-', '').replaceAll('|', '').replaceAll('M', '');
+        switch (lenses) {
             case 'RYYGR':
             case 'RYYGRw':
                 signals[name].def = '00000';
@@ -203,6 +204,19 @@ function signals() { //Исправить это. Что исправить?
                 signals[name].yy = '100100';
                 signals[name].yfy = '200100';
                 break;
+            case 'ByYYYGRw':
+            case 'BYYYYGRw':
+                signals[name].def = '0000000';
+                signals[name].ro = '0000001';
+                signals[name].ry = '0001001';
+                signals[name].ya = '0001000';
+                signals[name].yo = '0010000';
+                signals[name].yg = '0010010';
+                signals[name].go = '0000010';
+                signals[name].yy = '0100100';
+                signals[name].yfy = '0200100';
+                signals[name].bo = '1000000';
+                break;
             case 'yYYGRW':
             case 'YYYGRw':
                 signals[name].def = '00000';
@@ -341,9 +355,17 @@ function signals() { //Исправить это. Что исправить?
             case 'Rw':
                 signals[name].ro = '1';
                 break;
+            case 'YG':
+                signals[name].yo = '10';
+                signals[name].go = '01';
+                break;
+            case 'GY':
+                signals[name].yo = '01';
+                signals[name].go = '10';
+                break;
 
         }
-        if (el.lenses[el.lenses.length - 1] == 'w') {
+        if (lenses.at(-1) === 'w') {
             signals[name].ps = '';
         }
     });
@@ -373,7 +395,7 @@ function arsRcCopy() {
     for (section of sections()) {
         if (!section.prev) continue;
         const signal = rtl(section.nm.toUpperCase());
-        const st = signal.slice(0, 2);
+        const st = section.st ?? signal.slice(0, 2);
         resultText += `gmod['${st}'].arsRc['${section.prev}'] = '${signal}';\n`
     }
     console.log(resultText);
@@ -724,6 +746,21 @@ async function exportTrackSignals(track) {
 
     const query = Object.fromEntries(document.location.search.slice(1).split('&').map(el => el.split('=')));
     const line = query.line;
+
+    const result = {};
+
+    const peregons = await stationsMap(track, () => trackPeregon());
+    for (const peregon of peregons) {
+        Object.assign(result, peregon);
+    }
+
+    console.log(JSON.stringify(result));
+    downloadJSON(result, `signals-${line}-${track}.json`);
+}
+
+async function stationsMap(track, callback) {
+    const query = Object.fromEntries(document.location.search.slice(1).split('&').map(el => el.split('=')));
+    const line = query.line;
     const map = query.import;
 
     if (!line || !lines[line]) {
@@ -737,21 +774,20 @@ async function exportTrackSignals(track) {
     }
 
     const count = lines[line][track].length;
-    const result = {};
 
-    async function exportPeregonSignals(i) {
+    async function runCallback(i) {
         const a = new App();
         await a.init(line, track, i, map, true);
-        return trackPeregon();
+        return callback();
     }
+
+    const result = [];
 
     for (let i = 0; i < count - 1; i++) {
-        const peregon = await exportPeregonSignals(i);
-        Object.assign(result, peregon);
+        result[i] = await runCallback(i);
     }
 
-    console.log(JSON.stringify(result));
-    downloadJSON(result, `signals-${line}-${track}.json`);
+    return result;
 }
 
 function downloadJSON(data, filename) {

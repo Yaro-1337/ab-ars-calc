@@ -118,7 +118,7 @@ lines['neocrimson_new']['2'] = [
             { joint: '388', name: '384', lenses: 'YY-GR', autostop: 1, guard: 71, service: 25, y: '384', g: 'NEXT_yg' },
             { joint: '386', name: '382', lenses: 'YY-GR', autostop: 1, guard: 68, yg: '382' },
 
-            { joint: '382', name: 'МТ-380', lenses: '', guard: 35, shift: 0 },
+            { joint: '382', name: 'МТ-380м', lenses: '', guard: 35, shift: 0 },
         ],
         mks: [
         ],
@@ -303,7 +303,7 @@ lines['neocrimson_new']['2'] = [
             { x: 0 + 11 + 50 + 62.5 + 62.5 + 62.5 + 34, name: '336б', limit: 60, later: { 40: 1 } },
             { x: 0 + 11 + 50 + 62.5 + 62.5 + 62.5 + 37.5 + 50, name: '2922', limit: 60, later: { 40: 1, 60: 2 } },
 
-            { x: 978 + 4.5 + 3.5 - 62.5 - 37.5 - 50 - 125 - 25 - 75 - 112.5 - 112.5, name: '2964', limit: 80, later: { 60: 2, 70: 1, 80: 5 } },
+            { x: 978 + 4.5 + 3.5 - 62.5 - 37.5 - 50 - 125 - 25 - 75 - 112.5 - 112.5, name: '2964', limit: 80, later: { 60: 2, 70: 1, 80: 5 }, cra: { before: 'PN', after: 'BR' } },
             { x: 978 + 4.5 + 3.5 - 62.5 - 37.5 - 50 - 125 - 25 - 75 - 112.5, name: '2966', limit: 80, point: true, later: { 40: 2, 70: 5, 80: 3 } },
             { x: 978 + 4.5 + 3.5 - 62.5 - 37.5 - 50 - 125 - 25 - 75, name: '2968', limit: 70, later: { 40: 1, 60: 4, 70: 3 } },
             { x: 978 + 4.5 + 3.5 - 62.5 - 37.5 - 50 - 125 - 25, name: '2970', limit: 60, point: true, later: { 40: 6, 60: 3 } },
@@ -318,10 +318,10 @@ lines['neocrimson_new']['2'] = [
         ],
         signals: [
             { joint: '340', name: 'ПН-336м', lenses: 'YY-GR-M-w', autostop: 1, guard: 80, service: 25, y: '2966', yg: 'NEXT_y', g: 'NEXT_g', macht: true },
-            { joint: '336б', name: 'ПН-334м', lenses: 'ByYYY-GRMw', gmod: { ISMPL: true }, autostop: 1, guard: 80, service: 25, y: '2970', g: 'NEXT_y', macht: true, assembl: true, shift: 3 },
-            { joint: '2964', name: '2902', lenses: 'YYGR', gmod: { ISMPL: true }, autostop: 1, guard: 80, service: 60, y: '2972', g: 'NEXT_g', assembl: true, row: -1.5 },
-            { joint: '2968', name: 'БР-2904', lenses: 'YYG-RW', gmod: { DoubleLetters: true, ISMPL: true }, autostop: 1, guard: 65, g: '3014', shift: 20, assembl: true },
-            { joint: '2974', name: 'БР-2906', lenses: 'BYYY-GRwM', gmod: { DoubleLetters: true, ISMPL: true }, autostop: 1, guard: 66, yg: '3014', assembl: true },
+            { joint: '336б', name: 'ПН-334м', lenses: 'ByYYY-GRMw', autostop: 1, guard: 80, service: 25, y: '2970', g: 'NEXT_y', macht: true, assembl: true, shift: 3 },
+            { joint: '2964', name: '2902', lenses: 'YYGR', autostop: 1, guard: 80, service: 60, y: '2972', g: 'NEXT_g', assembl: true, row: -1.5 },
+            { joint: '2968', name: 'БР-2904', lenses: 'YYG-RwM', gmod: { DoubleLetters: true }, autostop: 1, guard: 65, g: '3014', shift: 20, assembl: true },
+            { joint: '2974', name: 'БР-2906', lenses: 'BYYY-GRwM', gmod: { DoubleLetters: true }, autostop: 1, guard: 66, yg: '3014', assembl: true },
 
             { joint: '2922', name: 'ДОП4', gmod: { name: 'ПН-ДОП4', ISMPL: true }, lenses: 'R', assembl: true, back: true, row: -1.5 },
             { joint: '2978', name: 'БР-2м', lenses: 'BWyY-YRwM', gmod: { DoubleLetters: true, ISMPL: true, AutostopBehind: true }, autostop: 1, shift: 0, assembl: true, back: true, row: -1.5  },
@@ -371,7 +371,7 @@ lines['neocrimson_new']['2'] = [
             { joint: '2962', name: '2902', lenses: 'YYGR-MM', autostop: 1, guard: 76, service: 25, y: '2968', yg: 'NEXT_y', g: 'NEXT_yg', shift: 20, assembl: true },
             { joint: '2964', name: '2904', lenses: 'YYGR-MM', autostop: 1, guard: 70, service: 25, y: '2970', yg: 'NEXT_y', g: 'NEXT_g', row: -1.5, assembl: true },
             { joint: '2966', name: '2906', lenses: 'YYGR', autostop: 1, guard: 66, service: 25, y: '2972', g: 'NEXT_g', assembl: true },
-            { joint: '2968', name: 'БР-2908', lenses: 'YYG-RW', autostop: 1, guard: 65, g: '3012', shift: 20, assembl: true },
+            { joint: '2968', name: 'БР-2908', lenses: 'YYG-Rw', autostop: 1, guard: 65, g: '3012', shift: 20, assembl: true },
             { joint: '2974', name: 'БР-2910', lenses: 'YYYY-GRwM', autostop: 1, guard: 66, yg: '3012', assembl: true },
         ],
         mks: [
