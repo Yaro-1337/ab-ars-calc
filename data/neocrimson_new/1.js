@@ -212,7 +212,7 @@ lines['neocrimson_new']['1'] = [
         signals: [
             { joint: '365', name: 'МТ-367мГ', gmod: { DoubleLetters: true, RouteNumberSetup: 'D4G1K' }, lenses: 'BWy-YYG-Rw', autostop: 1, guard: 64, service: 80, g: '367г' },
             // { joint: '463', name: '467', lenses: 'YY-GR', autostop: 1, guard: 64, service: 80, g: '4671' },
-            { joint: '367в', name: 'МТ-369', gmod: { DoubleLetters: true }, lenses: 'BWY-YG-Rw', autostop: 1, guard: 80, service: 80, y: '369в', yg: 'NEXT_y', g: 'NEXT_yg', shift: 20 },
+            { joint: '367в', name: 'МТ-369', gmod: { DoubleLetters: true, RouteNumberSetup: '1G' }, lenses: 'BWY-YG-Rw', autostop: 1, guard: 80, service: 80, y: '369в', yg: 'NEXT_y', g: 'NEXT_yg', shift: 20 },
             { joint: '369а', name: '371', lenses: 'YY-GR', autostop: 1, guard: 80, service: 35, y: '371', yg: 'NEXT_y', g: 'NEXT_yg' },
             { joint: '369б', name: '373', lenses: 'YY-GR', autostop: 1, guard: 64, service: 35, y: '373', yg: 'NEXT_y', g: 'NEXT_yg' },
             { joint: '369в', name: '375', lenses: 'YY-GR', autostop: 1, guard: 66, service: 35, y: '375', yg: 'NEXT_y', g: 'NEXT_g' },
@@ -274,7 +274,7 @@ lines['neocrimson_new']['1'] = [
         signals: [
             { joint: '379', name: '381м', lenses: 'YGR', autostop: 1, guard: 35, service: 35, g: '381а' },
             { joint: '381а', name: '383', lenses: 'YY-GR', autostop: 1, guard: 80, service: 60, y: '383а', g: 'NEXT_y', shift: 12.5 },
-            { joint: '383', name: '385', lenses: 'YY-GR', autostop: 1, guard: 80, service: 80, y: '385', g: 'NEXT_y' },
+            { joint: '383', name: '385', lenses: 'YY-GR', autostop: 1, guard: 80, service: 80, y: '385', g: 'NEXT_y', left: true, double: true },
             { joint: '385', name: '387', lenses: 'YY-GR', autostop: 1, guard: 80, service: 80, y: '387', g: 'NEXT_y' },
             { joint: '387', name: '389м', lenses: 'YY-GR', autostop: 1, guard: 80, service: 80, y: '389а', yg: 'NEXT_y', g: 'NEXT_yg' },
             { joint: '389', name: '391', lenses: 'YY-GR', autostop: 1, guard: 80, service: 35, y: '391а', yg: 'NEXT_y', g: 'NEXT_yg' },
