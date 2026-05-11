@@ -1,5 +1,8 @@
 var lines = lines || {};
 lines['neoorange_r50'] = lines['neoorange_r50'] || {};
+lines['neoorange_r50']['config'] = {
+    wagonCount: 6,
+};
 lines['neoorange_r50']['2'] = [
     {
         name: 'Флора',

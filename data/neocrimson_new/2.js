@@ -1,7 +1,8 @@
-// wagonCount = 4;
-trainHalf = wagonLength * wagonCount / 2;
 var lines = lines || {};
 lines['neocrimson_new'] = lines['neocrimson_new'] || {};
+lines['neocrimson_new']['config'] = {
+    wagonCount: 6,
+};
 lines['neocrimson_new']['2'] = [
     {
         name: 'Сталинская',

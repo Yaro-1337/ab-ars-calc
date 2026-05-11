@@ -1,7 +1,8 @@
-wagonCount = 4;
-trainHalf = wagonLength * wagonCount / 2;
 var lines = lines || {};
 lines['neocrimson_new'] = lines['neocrimson_new'] || {};
+lines['neocrimson_new']['config'] = {
+    wagonCount: 6,
+};
 lines['neocrimson_new']['1'] = [
     {
         name: 'Братеево',
@@ -172,7 +173,7 @@ lines['neocrimson_new']['1'] = [
             { x: 2.5 + 25 + 25 + 37.5 + 75 + 75 + 75 + 37, name: '557МК' },
         ],
         switches: [
-            { x: 1220 - 5 + 75 + 39.3, name: '1', left: true, trailing: false },
+            // { x: 1220 - 5 + 75 + 39.3, name: '1', left: true, trailing: false },
         ],
     },
     {
@@ -227,7 +228,7 @@ lines['neocrimson_new']['1'] = [
         ],
         switches: [
             { x: 0 - 5 + 75 + 39.3, name: '1', left: true, trailing: false },
-            { x: 0 - 5 + 75 + 75 + 75 + 530.1, name: '1', left: false, trailing: true },
+            { x: 0 - 5 + 75 + 75 + 75 + 530.1, name: '5', left: false, trailing: true },
         ],
     },
     {

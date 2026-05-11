@@ -1,5 +1,8 @@
 var lines = lines || {};
 lines['neoorange_r50'] = lines['neoorange_r50'] || {};
+lines['neoorange_r50']['config'] = {
+    wagonCount: 6,
+};
 lines['neoorange_r50']['1'] = [
     {
         name: 'Мастерская',
@@ -28,7 +31,7 @@ lines['neoorange_r50']['1'] = [
             { x: 2133 + 74.5 + 12.5 - 12.5 - 187.5 - 337.5 - 112.5 - 50 - 200 - 187.5 - 337.5, name: '279д', limit: 70, later: { 40: 1, 70: 1 } },
             { x: 2133 + 74.5 + 12.5 - 12.5 - 187.5 - 337.5 - 112.5 - 50 - 200 - 187.5 - 162.5, name: '279да', limit: 70, later: { 60: 1 } },
             { x: 2133 + 74.5 + 12.5 - 12.5 - 187.5 - 337.5 - 112.5 - 50 - 200 - 187.5, name: '279', limit: 70, later: { 40: 1, 70: 4 } },
-            { x: 2133 + 74.5 + 12.5 - 12.5 - 187.5 - 337.5 - 112.5 - 50 - 200, name: '279а', limit: 80, later: { 60: 3, 70: 1, 80: 2 }  },
+            { x: 2133 + 74.5 + 12.5 - 12.5 - 187.5 - 337.5 - 112.5 - 50 - 200, name: '279а', limit: 80, later: { 60: 3, 70: 1, 80: 2 } },
             { x: 2133 + 74.5 + 12.5 - 12.5 - 187.5 - 337.5 - 112.5 - 50, name: '281', limit: 80, later: { 70: 2, 80: 1 } },
             { x: 2133 + 74.5 + 12.5 - 12.5 - 187.5 - 337.5 - 62.5, name: '281а', limit: 80, later: { 60: 1, 70: 2 } },
             { x: 2133 + 74.5 + 12.5 - 12.5 - 187.5 - 337.5 - 25, name: '281б', limit: 80, later: { 60: 1, 70: 1, 80: 1 } },
@@ -51,8 +54,8 @@ lines['neoorange_r50']['1'] = [
             { joint: '279д', name: '279', lenses: 'YGR', autostop: 1, guard: 80, service: 70, y: '279а', g: 'NEXT_y' },
             { joint: '279', name: '281', lenses: 'YGR', gmod: { RouteNumberSetup: 'W' }, autostop: 1, guard: 80, service: 80, y: '281в', yg: 'NEXT_y', g: 'NEXT_yg' },
 
-            { joint: '281', name: '283', lenses: 'zYYG-Rzz', autostop: 1, guard: 80, service: 25, y: '283', yg: 'NEXT_y', g: 'NEXT_yg', macht: true, assembl: true},
-            { joint: '281б', name: 'ПК-285', gmod: { DoubleLetters: true, RouteNumberSetup: 'W' }, lenses: 'YY-GR', autostop: 1, guard: 80, service: 35, y: '285', yg: 'NEXT_y', g: 'NEXT_yg'  },
+            { joint: '281', name: '283', lenses: 'zYYG-Rzz', autostop: 1, guard: 80, service: 25, y: '283', yg: 'NEXT_y', g: 'NEXT_yg', macht: true, assembl: true },
+            { joint: '281б', name: 'ПК-285', gmod: { DoubleLetters: true, RouteNumberSetup: 'W' }, lenses: 'YY-GR', autostop: 1, guard: 80, service: 35, y: '285', yg: 'NEXT_y', g: 'NEXT_yg' },
             { joint: '281в', name: 'ПК-1285', gmod: { DoubleLetters: true, RouteNumberSetup: 'W' }, lenses: 'YY-GR', autostop: 1, guard: 60, service: 35, y: '1285', yg: 'NEXT_y', g: 'NEXT_g' },
             { joint: '283', name: 'ПК-287д', gmod: { DoubleLetters: true, RouteNumberSetup: 'W' }, lenses: 'YGR', autostop: 1, guard: 60, service: 25, y: '287дс', g: 'NEXT_g', shift: 16 },
             { joint: '285', name: 'ПК-287', gmod: { DoubleLetters: true, RouteNumberSetup: 'W' }, lenses: 'YGR', autostop: 1, guard: 60, g: '287с', shift: 2.5 },
@@ -145,7 +148,7 @@ lines['neoorange_r50']['1'] = [
             { x: 1077 + 1 + 75 - 137.5 - 312.5 - 312.5 - 50, name: '297б', limit: 70, later: { 40: 1, 70: 1 } },
             { x: 1077 + 1 + 75 - 137.5 - 312.5 - 150 - 25, name: '297в', limit: 70 },
             { x: 1077 + 1 + 75 - 137.5 - 312.5 - 25, name: '299', limit: 70 },
-            { x: 1077 + 1 + 75 - 137.5 - 200 - 25 , name: '301д', limit: 70 },
+            { x: 1077 + 1 + 75 - 137.5 - 200 - 25, name: '301д', limit: 70 },
             { x: 1077 + 1 + 75 - 137.5 - 100 - 12.5, name: '301', limit: 70, later: { 40: 1 } },
             { x: 1077 + 1 + 75 - 137.5, name: '1301', limit: 70, later: { 40: -1 } },
             { x: 1077 + 1 + 75 - 137.5 + 37.5 + 12.5, name: '1301с', limit: 60, vks: 'min' },
@@ -326,7 +329,7 @@ lines['neoorange_r50']['1'] = [
             1692: 'T',
         },
         //СХЕМА на 75
-        
+
         joints: [
             { x: 0 - 2, name: '319', limit: 60 },
             { x: 0 - 2 + 75, name: '321', limit: 60, later: { 60: 2 } },
@@ -337,7 +340,7 @@ lines['neoorange_r50']['1'] = [
             { x: 1823 + 12.5 - 75 - 100 - 100 - 100 - 100 - 100 - 175 - 175 - 300 - 162.5, name: '1001в', limit: 80 },
             { x: 1823 + 12.5 - 75 - 100 - 100 - 100 - 100 - 100 - 175 - 175 - 300, name: '1003', limit: 80, later: { 70: 2, 80: 1 } },
             { x: 1823 + 12.5 - 75 - 100 - 100 - 100 - 100 - 100 - 175 - 187.5, name: '1101', limit: 80, later: { 40: 1, 70: 2, 80: 1 } },
-            { x: 1823 + 12.5 - 75 - 100 - 100 - 100 - 100 - 100 - 175, name: '1101а', limit: 80, later: { 40 : 2, 60: 2, 70: 1 } },
+            { x: 1823 + 12.5 - 75 - 100 - 100 - 100 - 100 - 100 - 175, name: '1101а', limit: 80, later: { 40: 2, 60: 2, 70: 1 } },
             { x: 1823 + 12.5 - 75 - 100 - 100 - 100 - 100 - 100, name: '1103', limit: 70, later: { 40: 1 } },
             { x: 1823 + 12.5 - 75 - 100 - 100 - 100 - 100, name: '1103а', limit: 70 },
             { x: 1823 + 12.5 - 75 - 100 - 100 - 100, name: '1103б', limit: 70, later: { 60: 1, 70: 1 } },

@@ -1,5 +1,8 @@
 var lines = lines || {};
 lines['neocrimson_mt_depo_ssv'] = lines['neocrimson_mt_depo_ssv'] || {};
+lines['neocrimson_mt_depo_ssv']['config'] = {
+  wagonCount: 4,
+};
 lines['neocrimson_mt_depo_ssv']['4'] = [
 {
   name: 'Метродрочителей',

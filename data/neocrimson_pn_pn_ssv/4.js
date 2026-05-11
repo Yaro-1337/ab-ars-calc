@@ -1,5 +1,8 @@
 var lines = lines || {};
 lines['neocrimson_pn_pn_ssv'] = lines['neocrimson_pn_pn_ssv'] || {};
+lines['neocrimson_pn_pn_ssv']['config'] = {
+    wagonCount: 4,
+};
 lines['neocrimson_pn_pn_ssv']['4'] = [
     {
         name: 'Пионерская Кольца',
