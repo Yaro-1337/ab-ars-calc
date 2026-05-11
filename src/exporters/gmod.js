@@ -195,6 +195,16 @@ function signals() { //Исправить это. Что исправить?
                 signals[name].yfy = '020100';
                 signals[name].bo = '100000';
                 break;
+            case 'ByYYRw':
+            case 'BYYYRw':
+                signals[name].def = '00000';
+                signals[name].ro = '00001';
+                signals[name].ry = '00101';
+                signals[name].ya = '00100';
+                signals[name].yy = '01010';
+                signals[name].yfy = '02010';
+                signals[name].bo = '10000';
+                break;
             case 'yYYYGRw':
             case 'YYYYGRw':
                 signals[name].def = '000000';
