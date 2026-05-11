@@ -1,7 +1,7 @@
 var lines = lines || {};
 lines['neocrimson_new'] = lines['neocrimson_new'] || {};
 lines['neocrimson_new']['config'] = {
-    wagonCount: 6,
+    wagonCount: 4,
 };
 lines['neocrimson_new']['2'] = [
     {
