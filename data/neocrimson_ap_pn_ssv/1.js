@@ -1,5 +1,8 @@
 var lines = lines || {};
 lines['neocrimson_ap_pn_ssv'] = lines['neocrimson_ap_pn_ssv'] || {};
+lines['neocrimson_ap_pn_ssv']['config'] = {
+    wagonCount: 4,
+};
 lines['neocrimson_ap_pn_ssv']['1'] = [
     {
         name: 'Тупик',
