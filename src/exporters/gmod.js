@@ -6,6 +6,8 @@ function sections() {
         if (el.back) return;
         let sections = {};
         sections.nm = (el.gmod?.name ?? el.name).replace('-', '');
+        if (el.double && el.doubleL) sections.nm += '/';
+        if (el.double && !el.doubleL) sections.nm += '//';
         sections.rc = 'rc' + el.joint;
 
         const jointI = Object.values(peregon.joints).findIndex(elem => elem.name == el.joint);
@@ -27,11 +29,12 @@ function signals() { //Исправить это. Что исправить?
     peregon.signals.forEach(el => {
         let nm = el.name.replaceAll('-', '');
         let name = 'sig' + nm;
-        if (el.double && el.doubleL) name += '/';
-        if (el.double && !el.doubleL) name += '//';
         if (el.lenses == 'x') return;
+        let sigName = el.gmod?.name ?? el.name;
+        if (el.double && el.doubleL) sigName += '/';
+        if (el.double && !el.doubleL) sigName += '//';
         signals[name] = {
-            name: rtl((el.gmod?.name ?? el.name).replaceAll('-', '').toUpperCase().replaceAll('|', '').replaceAll('M', '')),
+            name: rtl(sigName.replaceAll('-', '').toUpperCase().replaceAll('|', '').replaceAll('M', '')),
         };
         const lenses = el.lenses.replaceAll('-', '').replaceAll('|', '').replaceAll('M', '');
         switch (lenses) {
