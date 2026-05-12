@@ -145,6 +145,18 @@ function signals() { //Исправить это. Что исправить?
                 signals[name].go = '0010';
                 signals[name].wo = '1000';
                 break;
+            case 'BWYGR':
+            case 'BWYGRw':
+                signals[name].def = '00000';
+                signals[name].ro = '00001';
+                signals[name].ry = '00101';
+                signals[name].ya = '00010';
+                signals[name].yo = '00100';
+                signals[name].yg = '00110';
+                signals[name].go = '00010';
+                signals[name].wo = '01000';
+                signals[name].bo = '10000';
+                break;
             case 'ZYGRZ':
             case 'ZYGRw':
                 signals[name].def = '0000';
