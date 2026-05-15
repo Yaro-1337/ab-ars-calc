@@ -545,7 +545,7 @@ function trackPeregon() {
         const Routes = [
             {
                 NextSignal: '*',
-                ARSCodes: ARSCodes,
+                ARSCodes: '1',
             },
         ];
 
