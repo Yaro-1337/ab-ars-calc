@@ -375,6 +375,7 @@ function signals() { //Исправить это. Что исправить?
                 signals[name].yy = '1010';
                 signals[name].yfy = '2010';
                 break;
+            case 'zR':
             case 'ZR':
                 signals[name].def = '00';
                 signals[name].ro = '01';
