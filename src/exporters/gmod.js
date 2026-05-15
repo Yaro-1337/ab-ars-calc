@@ -376,21 +376,31 @@ function signals() { //Исправить это. Что исправить?
                 signals[name].yfy = '2010';
                 break;
             case 'ZR':
+                signals[name].def = '00';
                 signals[name].ro = '01';
                 break;
             case 'Zr':
+                signals[name].def = '00';
                 signals[name].rf = '02';
                 break;
             case 'Rw':
+                signals[name].def = '0';
                 signals[name].ro = '1';
                 break;
             case 'YG':
+                signals[name].def = '00';
                 signals[name].yo = '10';
                 signals[name].go = '01';
                 break;
             case 'GY':
+                signals[name].def = '00';
                 signals[name].yo = '01';
                 signals[name].go = '10';
+            case 'YR':
+                signals[name].def = '00';
+                signals[name].ro = '01';
+                signals[name].ry = '11';
+                signals[name].yo = '10';
                 break;
 
         }
