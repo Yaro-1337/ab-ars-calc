@@ -14,8 +14,12 @@ function sections() {
         if (peregon.joints[jointI - 1]) {
             sections.prev = 'rc' + peregon.joints[jointI - 1].name;
             sections.st = cra?.after;
+            sections.stRc = cra?.after;
             if (jointI < craIndex) {
                 sections.st = cra?.before;
+            }
+            if (jointI - 1 < craIndex) {
+                sections.stRc = cra?.before;
             }
         }
 
@@ -420,7 +424,7 @@ function arsRcCopy() {
     for (section of sections()) {
         if (!section.prev) continue;
         const signal = rtl(section.nm.toUpperCase());
-        const st = section.st ?? signal.slice(0, 2);
+        const st = section.stRc ?? signal.slice(0, 2);
         resultText += `gmod['${st}'].arsRc['${section.prev}'] = '${signal}';\n`
     }
     console.log(resultText);
