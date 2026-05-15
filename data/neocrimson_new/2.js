@@ -64,9 +64,9 @@ lines['neocrimson_new']['2'] = [
             { joint: '404с', name: '400м', lenses: 'X', guard: 35, shift: 0 },
             { joint: '430', name: 'СТ4', lenses: 'Rw' },
             { joint: '428', name: 'Г', gmod: { name: 'СТ-Г', AutostopBehind: true }, lenses: 'BW-Rw', autostop: 1, shift: 0, row: -1.5 },
-            { joint: '426', name: 'Д', gmod: { name: 'СТ-Д', PoleHeight: 2 }, lenses: 'BW-Rw-M', autostop: 1, shift: 0, back: true, row: -3 },
+            { joint: '426', name: 'Д', gmod: { name: 'СТ-Д', PoleHeight: 2 }, lenses: 'BW-Rw-M', back: true, row: -3 },
             { joint: '418', name: 'В', gmod: { name: 'СТ-В', PoleHeight: 2 }, lenses: 'BW-Rw-M', autostop: 1, shift: 0, back: true, left: true },
-            { joint: '408', name: 'Д', gmod: { name: 'ФН-Д', UnderHeadSign: true }, lenses: 'BW-Rw', autostop: 1, shift: 0, back: true, row: -3 },
+            { joint: '408', name: 'Д', gmod: { name: 'ФН-Д', UnderHeadSign: true }, lenses: 'BW-Rw', back: true, row: -3 },
         ],
         mks: [
         ],
