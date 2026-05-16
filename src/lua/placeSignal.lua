@@ -100,6 +100,7 @@ function placeSignal(position, angles, options)
     ent.Double = options.Double
     ent.DoubleL = options.DoubleL
     ent.Left = options.Left
+    ent.PassOcc= options.PassOcc
     ent.NonAutoStop = options.NonAutoStop
     ent.RouteNumberSetup = options.RouteNumberSetup
     ent.Routes = options.Routes
@@ -115,10 +116,6 @@ function placeSignal(position, angles, options)
     if R50_MODE then
         ent.IsolateSwitches.FrontArsName = options.FrontArsName
         ent.IsolateSwitches.SlowBlinking = true
-    end
-
-    if R50_MODE then and options.PassOcc then
-        ent.PassOcc = true
     end
 
     if R50_MODE and options.RearArsName then
