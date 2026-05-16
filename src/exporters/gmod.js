@@ -539,6 +539,45 @@ function lightsCode(signal) {
     return signal.calc.lights;
 }
 
+function applyMkSig(el, target) {
+    if (!el.mkSig) return;
+    target.HideDTM = true;
+    if (target.Routes?.[0]) {
+        target.Routes[0].Lights = '0';
+    }
+}
+
+function applyArsCodes(el, target, result) {
+    if (el.mkSig || !target.Routes?.[0] || target.Routes[0].ARSCodes) return;
+
+    const signalX = el.x;
+    let joint = peregon.joints.find((j, i) => i > 0 && j.x === signalX);
+    if (!joint) {
+        for (let i = 1; i < peregon.joints.length; i++) {
+            if (peregon.joints[i].x <= signalX) {
+                joint = peregon.joints[i];
+            } else {
+                break;
+            }
+        }
+    }
+
+    if (!joint) {
+        target.Routes[0].ARSCodes = '1';
+        return;
+    }
+
+    const jointKey = rtl(joint.gmod?.name ?? joint.name);
+    const fromJoint = result[jointKey]?.Routes?.[0]?.ARSCodes;
+    if (fromJoint) {
+        target.Routes[0].ARSCodes = fromJoint;
+        return;
+    }
+
+    const ARSCode = arsCode(joint);
+    target.Routes[0].ARSCodes = ARSCode === 'N' ? '1' : ARSCode;
+}
+
 function trackPeregon() {
     const result = {};
     peregon.joints.forEach((el, i, arr) => {
@@ -650,6 +689,8 @@ function trackPeregon() {
                 }
             }
 
+            applyMkSig(el, result[joint + '_back']);
+
             if (el.autostop && el.shift && Math.abs(el.shift) > 0) {
                 result[joint + '_back'].NonAutoStop = true;
                 result[joint + '_back' + '_autostop'] = {
@@ -696,6 +737,8 @@ function trackPeregon() {
             result[joint].Routes[0].Lights = (lenses.includes('R') && lenses.includes('G')) ? lightsCode(el) : (hasYR ? `${redLense}-${redLense}${redLense - 2}` : `${redLense}`);
         }
 
+        applyMkSig(el, result[joint]);
+
         if (el.autostop && el.shift && Math.abs(el.shift) > 0) {
             result[joint].NonAutoStop = true;
             result[joint + '_autostop'] = {
@@ -714,6 +757,115 @@ function trackPeregon() {
         if (!result[joint + '_ray']) return;
         console.log(result[joint]);
         result[joint + '_ray'].AdjacentSignalName = result[joint].Name;
+    });
+
+    peregon.signals.forEach((el) => {
+        if (el.joint || el.x == null) return;
+        if (el.lenses === 'x') return;
+
+        const key = rtl(el.name);
+        const x = station1X + el.x;
+
+        const lenses = el.lenses.toUpperCase().replaceAll('Z', 'X').replaceAll('-', '').replaceAll('|', '').replaceAll('M', '');
+        const redLense = lenses.lastIndexOf('R') + 1;
+        const hasYR = lenses[redLense - 3] === 'Y';
+        const lights = (lenses.includes('R') && lenses.includes('G')) ? lightsCode(el) : (hasYR ? `${redLense}-${redLense}${redLense - 2}` : `${redLense}`);
+
+        if (el.back) {
+            result[key + '_back'] = {
+                x,
+                Name: rtl(el.gmod?.name ?? el.name).replaceAll('-', '').toUpperCase(),
+                ARSOnly: false,
+                LensesStr: el.lenses.toUpperCase().replaceAll('Z', 'X'),
+                SignalType: el.macht ? (el.assembl ? 2 : 1) : (el.assembl ? 5 : 0),
+                Left: !el.left ? true : false,
+                Back: true,
+                Routes: [
+                    {
+                        NextSignal: '*',
+                        Lights: redLense,
+                    }
+                ],
+                NonAutoStop: !el.autostop,
+            };
+
+            if (el.gmod) {
+                if (el.gmod.Routes && el.gmod.Routes[0]) {
+                    Object.assign(el.gmod.Routes[0], result[key + '_back'].Routes[0]);
+                }
+                Object.assign(result[key + '_back'], el.gmod);
+                if (el.gmod.name) {
+                    result[key + '_back'].SignalName = rtl(el.name).replaceAll('-', '').toUpperCase();
+                    if (result[key + '_back'].SignalName === 'DOP') {
+                        result[key + '_back'].Routes[0].Lights = '';
+                    }
+                }
+            }
+
+            applyArsCodes(el, result[key + '_back'], result);
+            applyMkSig(el, result[key + '_back']);
+
+            if (el.autostop && el.shift && Math.abs(el.shift) > 0) {
+                result[key + '_back'].NonAutoStop = true;
+                result[key + '_back' + '_autostop'] = {
+                    x: x - el.shift,
+                    Name: 'A' + result[key + '_back'].Name,
+                    SignalName: result[key + '_back'].Name,
+                    IsAutostop: true,
+                    Back: true,
+                };
+            }
+
+            return;
+        }
+
+        result[key] = {
+            x,
+            Name: rtl(el.gmod?.name ?? el.name).replaceAll('-', '').toUpperCase(),
+            ARSOnly: false,
+            LensesStr: el.lenses.toUpperCase().replaceAll('Z', 'X'),
+            SignalType: el.macht ? (el.assembl ? 2 : 1) : (el.assembl ? 5 : 0),
+            Left: el.left ? true : false,
+            Double: el.double ? true : false,
+            DoubleL: el.doubleL ? true : false,
+            Routes: [
+                {
+                    NextSignal: '*',
+                    Lights: lights,
+                }
+            ],
+            NonAutoStop: !el.autostop,
+        };
+
+        if (el.double) {
+            result[key].Name += el.doubleL ? '/' : '//';
+        }
+        if (el.wall) {
+            result[key].Invisible = true;
+        }
+
+        if (el.gmod) {
+            if (el.gmod.Routes && el.gmod.Routes[0]) {
+                Object.assign(el.gmod.Routes[0], result[key].Routes[0]);
+            }
+            Object.assign(result[key], el.gmod);
+            if (el.gmod.name) {
+                result[key].SignalName = rtl(el.name).replaceAll('-', '').toUpperCase();
+            }
+        }
+
+        applyArsCodes(el, result[key], result);
+        applyMkSig(el, result[key]);
+
+        if (el.autostop && el.shift && Math.abs(el.shift) > 0) {
+            result[key].NonAutoStop = true;
+            result[key + '_autostop'] = {
+                x: x - el.shift,
+                Name: 'A' + result[key].Name,
+                SignalName: result[key].Name,
+                IsAutostop: true,
+            };
+        }
     });
 
     return result;

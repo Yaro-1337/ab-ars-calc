@@ -1,7 +1,8 @@
 R50_MODE = true
 RAYS = true
 NEW_ERA = false
-TwoToSix_MODE = true
+TwoToSix_MODE = false
+MSK_SPB_FIX = true
 
 function getSignalTrackRerailTrace(trackID, x, isBack)
     local downVector = Vector(0, 0, -300)
@@ -107,9 +108,69 @@ function placeSignal(position, angles, options)
         ent.IsolateSwitches = ent.IsolateSwitches or {}
     end
 
+    if R50_MODE and MSK_SPB_FIX then
+        ent.Approve0 = true
+    end
+
     if R50_MODE then
         ent.IsolateSwitches.FrontArsName = options.FrontArsName
         ent.IsolateSwitches.SlowBlinking = true
+    end
+
+    if R50_MODE and options.RearArsName then
+        ent.IsolateSwitches.RearArsName = options.RearArsName
+    end
+
+    if R50_MODE and options.ISMPL then
+        ent.IsolateSwitches.ISMPL = true
+    end
+
+    if R50_MODE and options.Caps then
+        ent.IsolateSwitches.Caps = true
+    end
+
+    if R50_MODE and options.Shields then
+        ent.IsolateSwitches.Shields = true
+    end
+
+    if R50_MODE and options.SST then
+        ent.IsolateSwitches.SST = true
+    end
+
+    if R50_MODE and options.DoubleLetters then
+        ent.IsolateSwitches.DoubleLetters = true
+    end
+
+    if R50_MODE and options.UnderHeadSign then
+        ent.IsolateSwitches.UnderHeadSign = true
+    end
+
+    if R50_MODE and options.AutostopSign then
+        ent.IsolateSwitches.AutostopSign = true
+    end
+
+    if R50_MODE and options.CenteredArsName then
+        ent.IsolateSwitches.CenteredArsName = true
+    end
+
+    if R50_MODE and options.HideDTM then
+        ent.IsolateSwitches.HideDTM = true
+    end
+
+    if R50_MODE and options.NotRightDTM then
+        ent.IsolateSwitches.NotRightDTM = true
+    end
+
+    if R50_MODE and options.AutostopBehind then
+        ent.IsolateSwitches.AutostopBehind = true
+    end
+
+    if R50_MODE and options.Approve0 then
+        ent.IsolateSwitches.Approve0 = true
+    end
+
+    if R50_MODE and options.PoleHeight then
+        ent.IsolateSwitches.PoleHeight = options.PoleHeight
     end
 
     if TwoToSix_MODE then
@@ -236,7 +297,8 @@ function importSignalData(fileName, trackID)
     Metrostroi.PostSignalInitialize()
 end
 
-importSignalData("signals-crossline-redux-1.json", 6)
--- importSignalData("signals-crossline-redux-2.json", 7)
--- importSignalData("signals-crossline-redux-3.json", 4)
--- importSignalData("signals-crossline-redux-4.json", 5)
+concommand.Add( "metrostroi_signal_import", function(ply, args)
+    if IsValid(ply) and not ply:IsAdmin() then return end
+    importSignalData(args[1], tonumber(args[2]))
+end )
+
