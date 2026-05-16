@@ -397,6 +397,7 @@ function signals() { //Исправить это. Что исправить?
                 signals[name].def = '00';
                 signals[name].yo = '01';
                 signals[name].go = '10';
+                break;
             case 'YR':
                 signals[name].def = '00';
                 signals[name].ro = '01';
