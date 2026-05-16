@@ -47,7 +47,7 @@ lines['neocrimson_new']['1'] = [
             { joint: '2969', name: 'ПН-2905', gmod: { ISMPL: true, DoubleLetters: true }, lenses: 'YYG-Rw', autostop: 3, guard: 75, service: 25, y: '329', yg: 'NEXT_y', g: 'NEXT_yg', shift: 0, assembl: true },
             { joint: '327', name: 'ПН-2907', gmod: { ISMPL: true, DoubleLetters: true }, lenses: 'BYY-GRw', autostop: 1, guard: 66, service: 25, y: '331', yg: 'NEXT_y', g: 'NEXT_g', shift: 0, assembl: true },
             { joint: '327а', name: 'ПН-333', lenses: 'YY-GR-w', autostop: 1, guard: 66, service: 25, y: '333', g: 'NEXT_yg', macht: true, row: -1.5 },
-            { joint: '329', name: 'ПН-335', lenses: 'BYY-GR-w', autostop: 1, guard: 66, yg: '335а', macht: true },
+            { joint: '329', name: 'ПН-335', lenses: 'YY-GR-w', autostop: 1, guard: 66, yg: '335а', macht: true },
 
             { joint: '335', name: 'ПН-337м', lenses: '', guard: 35, shift: 0, macht: true },
             { joint: '2915', name: 'В', gmod: { name: 'БР-В', ISMPL: true }, lenses: 'BWR-wM', autostop: 1, shift: 0, assembl: true, back: true, left: true },
