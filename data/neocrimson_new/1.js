@@ -43,7 +43,7 @@ lines['neocrimson_new']['1'] = [
         signals: [
             { joint: '2911', name: 'БР-2901м', gmod: { ISMPL: true, DoubleLetters: true }, lenses: 'BWYY-GRwM', autostop: 3, guard: 60, service: 25, y: '2969', yg: 'NEXT_y', g: 'NEXT_yg', shift: 0, assembl: true },
 
-            { joint: '2967', name: 'ПН-2903', gmod: { ISMPL: true, DoubleLetters: true }, lenses: 'YYG-Rw', autostop: 3, guard: 80, service: 25, y: '327а', yg: 'NEXT_y', g: 'NEXT_yg', shift: 17.5, assembl: true },
+            { joint: '2967', name: 'ПН-2903м', gmod: { ISMPL: true, DoubleLetters: true }, lenses: 'YYG-Rw', autostop: 3, guard: 80, service: 25, y: '327а', yg: 'NEXT_y', g: 'NEXT_yg', shift: 17.5, assembl: true },
             { joint: '2969', name: 'ПН-2905', gmod: { ISMPL: true, DoubleLetters: true }, lenses: 'YYG-Rw', autostop: 3, guard: 75, service: 25, y: '329', yg: 'NEXT_y', g: 'NEXT_yg', shift: 0, assembl: true },
             { joint: '327', name: 'ПН-2907', gmod: { ISMPL: true, DoubleLetters: true }, lenses: 'BYY-GRw', autostop: 1, guard: 66, service: 25, y: '331', yg: 'NEXT_y', g: 'NEXT_g', shift: 0, assembl: true },
             { joint: '327а', name: 'ПН-333', lenses: 'YY-GR-w', autostop: 1, guard: 66, service: 25, y: '333', g: 'NEXT_yg', macht: true, row: -1.5 },
@@ -116,6 +116,8 @@ lines['neocrimson_new']['1'] = [
 
             { x: 310 - 30, name: 'М253', lenses: 'zR', mkSig: true, row: -3 },
             { x: 310 + 30, name: 'МК253', lenses: 'zR', gmod: { DoubleLetters: true }, back: true, left: true, mkSig: true, row: -3 },
+
+            { x: 706 + 2.5 + 25 - 37.5 - 37.5 - 12.5, name: '351м//', lenses: 'zR', gmod: { name: '351м//', Inactive: true }, double: true, left: true, mkSig: true, row: -3 },
         ],
         mks: [
             { x: 0 - 4 + 62.5 + 50 + 37.5 + 62.5 + 62.5 + 39.2, name: '253МК' },

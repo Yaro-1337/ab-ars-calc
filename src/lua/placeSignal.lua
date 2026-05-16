@@ -162,8 +162,12 @@ function placeSignal(position, angles, options)
         ent.IsolateSwitches.AutostopBehind = true
     end
 
-    if R50_MODE and options.Approve0 then
+    if options.Approve0 then
         ent.IsolateSwitches.Approve0 = true
+    end
+
+    if R50_MODE and options.Inactive then
+        ent.IsolateSwitches.Inactive = true
     end
 
     if R50_MODE and options.PoleHeight then
