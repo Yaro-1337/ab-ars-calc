@@ -70,6 +70,7 @@ function signals() { //Исправить это. Что исправить?
             case 'YYGRZ':
                 signals[name].def = '0000';
                 signals[name].ro = '0001';
+                signals[name].rr = '0001';
                 signals[name].ry = '0101';
                 signals[name].ya = '0100';
                 signals[name].yo = '1000';
@@ -79,6 +80,7 @@ function signals() { //Исправить это. Что исправить?
             case 'BYYGRw':
                 signals[name].def = '00000';
                 signals[name].ro = '00001';
+                signals[name].rr = '00001';
                 signals[name].ry = '00101';
                 signals[name].ya = '00100';
                 signals[name].yo = '01000';
@@ -89,6 +91,7 @@ function signals() { //Исправить это. Что исправить?
             case 'ZYYGRZ':
                 signals[name].def = '00000';
                 signals[name].ro = '00001';
+                signals[name].rr = '00001';
                 signals[name].ry = '00101';
                 signals[name].ya = '00100';
                 signals[name].yo = '01000';
@@ -99,6 +102,7 @@ function signals() { //Исправить это. Что исправить?
             case 'WYYGRw':
                 signals[name].def = '00000';
                 signals[name].ro = '00001';
+                signals[name].rr = '00001';
                 signals[name].ry = '00101';
                 signals[name].ya = '00100';
                 signals[name].yo = '01000';
@@ -110,6 +114,7 @@ function signals() { //Исправить это. Что исправить?
             case 'YGRw':
                 signals[name].def = '000';
                 signals[name].ro = '001';
+                signals[name].rr = '001';
                 signals[name].ry = '101';
                 signals[name].ya = '100';
                 signals[name].yo = '100';
@@ -120,6 +125,7 @@ function signals() { //Исправить это. Что исправить?
             case 'BYGRw':
                 signals[name].def = '0000';
                 signals[name].ro = '0001';
+                signals[name].rr = '0001';
                 signals[name].ry = '0101';
                 signals[name].ya = '0100';
                 signals[name].yo = '0100';
@@ -142,6 +148,7 @@ function signals() { //Исправить это. Что исправить?
             case 'WYGRw':
                 signals[name].def = '0000';
                 signals[name].ro = '0001';
+                signals[name].rr = '0001';
                 signals[name].ry = '0101';
                 signals[name].ya = '0010';
                 signals[name].yo = '0100';
@@ -153,6 +160,7 @@ function signals() { //Исправить это. Что исправить?
             case 'BWYGRw':
                 signals[name].def = '00000';
                 signals[name].ro = '00001';
+                signals[name].rr = '00001';
                 signals[name].ry = '00101';
                 signals[name].ya = '00010';
                 signals[name].yo = '00100';
@@ -165,6 +173,7 @@ function signals() { //Исправить это. Что исправить?
             case 'ZYGRw':
                 signals[name].def = '0000';
                 signals[name].ro = '0001';
+                signals[name].rr = '0001';
                 signals[name].ry = '0101';
                 signals[name].ya = '0010';
                 signals[name].yo = '0100';
@@ -175,6 +184,7 @@ function signals() { //Исправить это. Что исправить?
             case 'WYYYGRw':
                 signals[name].def = '000000';
                 signals[name].ro = '000001';
+                signals[name].rr = '000001';
                 signals[name].ry = '001001';
                 signals[name].ya = '001000';
                 signals[name].yo = '010000';
@@ -188,6 +198,7 @@ function signals() { //Исправить это. Что исправить?
             case 'BWYYYGRw':
                 signals[name].def = '0000000';
                 signals[name].ro = '0000001';
+                signals[name].rr = '0000001';
                 signals[name].ry = '0001001';
                 signals[name].ya = '0001000';
                 signals[name].yo = '0010000';
@@ -202,6 +213,7 @@ function signals() { //Исправить это. Что исправить?
             case 'BYYYGRw':
                 signals[name].def = '000000';
                 signals[name].ro = '000001';
+                signals[name].rr = '000001';
                 signals[name].ry = '001001';
                 signals[name].ya = '001000';
                 signals[name].yo = '010000';
@@ -215,6 +227,7 @@ function signals() { //Исправить это. Что исправить?
             case 'BYYYRw':
                 signals[name].def = '00000';
                 signals[name].ro = '00001';
+                signals[name].rr = '00001';
                 signals[name].ry = '00101';
                 signals[name].ya = '00100';
                 signals[name].yy = '01010';
@@ -225,6 +238,7 @@ function signals() { //Исправить это. Что исправить?
             case 'YYYYGRw':
                 signals[name].def = '000000';
                 signals[name].ro = '000001';
+                signals[name].rr = '000001';
                 signals[name].ry = '001001';
                 signals[name].ya = '001000';
                 signals[name].yo = '010000';
@@ -237,6 +251,7 @@ function signals() { //Исправить это. Что исправить?
             case 'BYYYYGRw':
                 signals[name].def = '0000000';
                 signals[name].ro = '0000001';
+                signals[name].rr = '0000001';
                 signals[name].ry = '0001001';
                 signals[name].ya = '0001000';
                 signals[name].yo = '0010000';
@@ -250,6 +265,7 @@ function signals() { //Исправить это. Что исправить?
             case 'YYYGRw':
                 signals[name].def = '00000';
                 signals[name].ro = '00001';
+                signals[name].rr = '00001';
                 signals[name].ry = '01001';
                 signals[name].ya = '01000';
                 signals[name].yo = '10000';
@@ -261,6 +277,7 @@ function signals() { //Исправить это. Что исправить?
             case 'BYWRw':
                 signals[name].def = '0000';
                 signals[name].ro = '0001';
+                signals[name].rr = '0001';
                 signals[name].ry = '0101';
                 signals[name].wo = '0010';
                 signals[name].bo = '1000';
@@ -269,6 +286,7 @@ function signals() { //Исправить это. Что исправить?
             case 'BWRw':
                 signals[name].def = '000';
                 signals[name].ro = '001';
+                signals[name].rr = '001';
                 signals[name].wo = '010';
                 signals[name].bo = '100';
                 break;
@@ -276,6 +294,7 @@ function signals() { //Исправить это. Что исправить?
             case 'BWYYGRw':
                 signals[name].def = '000000';
                 signals[name].ro = '000001';
+                signals[name].rr = '000001';
                 signals[name].ry = '000101';
                 signals[name].ya = '000100';
                 signals[name].yo = '001000';
@@ -286,8 +305,8 @@ function signals() { //Исправить это. Что исправить?
                 break;
             case 'RBWYYGR':
             case 'RBWYYGRw':
-                signals[name].def = '000000';
-                signals[name].ro = '000001';
+                signals[name].def = '0000000';
+                signals[name].ro = '0000001';
                 signals[name].ry = '0000101';
                 signals[name].ya = '0000100';
                 signals[name].yo = '0001000';
@@ -335,6 +354,7 @@ function signals() { //Исправить это. Что исправить?
             case 'ByWRYw':
                 signals[name].def = '00000';
                 signals[name].ro = '00010';
+                signals[name].rr = '00010';
                 signals[name].wo = '00100';
                 signals[name].bo = '10000';
                 signals[name].yy = '01001';
@@ -344,6 +364,7 @@ function signals() { //Исправить это. Что исправить?
             case 'ByRYw':
                 signals[name].def = '0000';
                 signals[name].ro = '0010';
+                signals[name].rr = '0010';
                 signals[name].bo = '1000';
                 signals[name].yy = '0101';
                 signals[name].yfy = '0201';
@@ -352,6 +373,7 @@ function signals() { //Исправить это. Что исправить?
             case 'BWyYYRw':
                 signals[name].def = '000000';
                 signals[name].ro = '000001';
+                signals[name].rr = '000001';
                 signals[name].ry = '000101';
                 signals[name].wo = '010000';
                 signals[name].bo = '100000';
@@ -362,6 +384,7 @@ function signals() { //Исправить это. Что исправить?
             case 'ByYYRw':
                 signals[name].def = '00000';
                 signals[name].ro = '00001';
+                signals[name].rr = '00001';
                 signals[name].ry = '00101';
                 signals[name].bo = '10000';
                 signals[name].yy = '01010';
@@ -371,6 +394,7 @@ function signals() { //Исправить это. Что исправить?
             case 'yYYRw':
                 signals[name].def = '0000';
                 signals[name].ro = '0001';
+                signals[name].rr = '0001';
                 signals[name].ry = '0101';
                 signals[name].yy = '1010';
                 signals[name].yfy = '2010';
