@@ -117,6 +117,10 @@ function placeSignal(position, angles, options)
         ent.IsolateSwitches.SlowBlinking = true
     end
 
+    if R50_MODE then and options.PassOcc then
+        ent.PassOcc = true
+    end
+
     if R50_MODE and options.RearArsName then
         ent.IsolateSwitches.RearArsName = options.RearArsName
     end

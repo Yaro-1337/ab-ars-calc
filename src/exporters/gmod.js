@@ -542,8 +542,10 @@ function lightsCode(signal) {
 function applyMkSig(el, target) {
     if (!el.mkSig) return;
     target.HideDTM = true;
+    target.PassOcc = true;
     if (target.Routes?.[0]) {
         target.Routes[0].Lights = '0';
+        target.Routes[0].Repeater = true;
     }
 }
 
