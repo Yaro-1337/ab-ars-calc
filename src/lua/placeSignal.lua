@@ -142,10 +142,6 @@ function placeSignal(position, angles, options)
         ent.IsolateSwitches.DoubleLetters = true
     end
 
-    if R50_MODE and options.UnderHeadSign then
-        ent.IsolateSwitches.UnderHeadSign = true
-    end
-
     if R50_MODE and options.AutostopSign then
         ent.IsolateSwitches.AutostopSign = true
     end
@@ -180,10 +176,17 @@ function placeSignal(position, angles, options)
 
     if R50_MODE and options.Invisible then
         ent.IsolateSwitches.Invisible = true
-        ent.IsolateSwitches.UnderHeadSign = true
         ent.IsolateSwitches.HeadsHeightOffset = -20
         ent.IsolateSwitches.HeadsXOffset = options.HeadsXOffset
         ent.IsolateSwitches.CenteredArsName = true
+    end
+
+    if R50_MODE and options.HeadsHeightOffset then
+        ent.IsolateSwitches.HeadsHeightOffset = options.HeadsHeightOffset
+    end
+
+    if R50_MODE and options.UnderHeadSign then
+        ent.IsolateSwitches.UnderHeadSign = options.UnderHeadSign
     end
 
     if R50_MODE and options.Back then

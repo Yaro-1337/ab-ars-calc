@@ -59,7 +59,7 @@ lines['neocrimson_new']['2'] = [
             { joint: '412а', name: 'ФН-408', lenses: 'YYG-Rw', gmod: { DoubleLetters: true }, autostop: 1, guard: 66, service: 35, y: '408', yg: 'NEXT_y', g: 'NEXT_g', left: true, double: true },
             { joint: '410', name: 'ФН-406', lenses: 'YYG-Rw', gmod: { DoubleLetters: true, NotRightDTM: true }, autostop: 1, guard: 66, service: 35, y: '406с', yg: 'NEXT_y', g: 'NEXT_g', left: true },
             { joint: '410а', name: 'ФН-404', lenses: 'BYY-GRw', gmod: { DoubleLetters: true, HeadsXOffset: -10 }, autostop: 1, guard: 65, service: 35, y: '404с', g: 'NEXT_yg', row: -1.5, wall: true },
-            { joint: '406', name: '402', lenses: 'YY-GR', gmod: { HeadsXOffset: 2 }, autostop: 1, guard: 64, yg: '402с', shift: 19.5, wall: true },
+            { joint: '406', name: '402', lenses: 'YY-GR', gmod: { HeadsXOffset: 2, UnderHeadSign: true }, autostop: 1, guard: 64, yg: '402с', shift: 19.5, wall: true },
 
             { joint: '404с', name: '400м', lenses: 'X', guard: 35, shift: 0 },
             { joint: '430', name: 'СТ4', lenses: 'Rw' },
@@ -67,6 +67,9 @@ lines['neocrimson_new']['2'] = [
             { joint: '426', name: 'Д', gmod: { name: 'СТ-Д', PoleHeight: 2 }, lenses: 'BW-Rw-M', back: true, row: -3 },
             { joint: '418', name: 'В', gmod: { name: 'СТ-В', PoleHeight: 2 }, lenses: 'BW-Rw-M', autostop: 1, shift: 0, back: true, left: true },
             { joint: '408', name: 'Д', gmod: { name: 'ФН-Д', UnderHeadSign: true }, lenses: 'BW-Rw', back: true, row: -3 },
+
+            { x: 600 - 50, name: 'М262', lenses: 'zR', left: true, mkSig: true, row: -3 },
+            { x: 600 + 50, name: 'МК262', lenses: 'zR', gmod: { DoubleLetters: true }, back: true, left: true, mkSig: true, row: -3 },
         ],
         mks: [
         ],
@@ -120,6 +123,9 @@ lines['neocrimson_new']['2'] = [
             { joint: '386', name: '382', lenses: 'YY-GR', autostop: 1, guard: 68, yg: '382' },
 
             { joint: '382', name: 'МТ-380м', lenses: '', guard: 35, shift: 0 },
+
+            { x: 320 - 50, name: 'М260', lenses: 'zR', left: true, mkSig: true, row: -3 },
+            { x: 320 + 50, name: 'МК260', lenses: 'zR', gmod: { DoubleLetters: true }, back: true, left: true, mkSig: true, row: -3 },
         ],
         mks: [
         ],
@@ -226,6 +232,12 @@ lines['neocrimson_new']['2'] = [
             { joint: '356', name: '352', lenses: 'YY-GR', autostop: 1, guard: 66, yg: '352' },
 
             { joint: '352', name: '350м', lenses: '', guard: 35, shift: 0 },
+
+            { x: 900 - 50, name: 'М258', lenses: 'zR', mkSig: true, row: -3 },
+            { x: 900 + 50, name: 'МК258', lenses: 'zR', gmod: { DoubleLetters: true }, back: true, mkSig: true, row: -3 },
+
+            { x: 1273 - 5.5 - 12.5 - 75 + 14 - 35, name: 'М256', lenses: 'zR', mkSig: true, row: -3 },
+            { x: 1273 - 5.5 - 12.5 - 75 + 14 + 32.5, name: 'МК256', lenses: 'zR', gmod: { HeadsXOffset: 0, DoubleLetters: true, UnderHeadSign: true }, wall: true, back: true, mkSig: true, row: -3 },
         ],
         mks: [
         ],
@@ -271,12 +283,15 @@ lines['neocrimson_new']['2'] = [
             { joint: '350в', name: 'ПН-346', lenses: 'YYG-Rw', gmod: { DoubleLetters: true }, autostop: 1, guard: 80, service: 25, y: '346', yg: 'NEXT_y', g: 'NEXT_yg' },
             { joint: '350г', name: 'ПН-344', lenses: 'YYG-Rw', gmod: { DoubleLetters: true }, autostop: 1, guard: 70, service: 25, y: '344', yg: 'NEXT_y', g: 'NEXT_yg' },
             { joint: '350д', name: 'ПН-342', lenses: 'YY-GR-w', gmod: { DoubleLetters: true, PoleHeight: 2 }, autostop: 1, guard: 68, service: 25, y: '342', yg: 'NEXT_y', g: 'NEXT_g', macht: true },
-            { joint: '348', name: 'ПН-340', lenses: 'YY-GR-w', autostop: 1, guard: 66, service: 25, y: '340', g: 'NEXT_g', macht: true, row: -1.5 },
-            { joint: '346', name: 'ПН-338', lenses: 'BYY-GR-w', autostop: 1, guard: 60, g: '338', macht: true },
+            { joint: '348', name: 'ПН-340', lenses: 'YY-GR-w', gmod: { Caps: true }, autostop: 1, guard: 66, service: 25, y: '340', g: 'NEXT_g', macht: true, row: -1.5 },
+            { joint: '346', name: 'ПН-338', lenses: 'BYY-GR-w', gmod: { Caps: true }, autostop: 1, guard: 60, g: '338', macht: true },
             { joint: '344', name: '338д', lenses: 'YY-GR', autostop: 1, guard: 60, yg: '338', macht: true, row: -1.5, shift: 12.5 },
 
             { joint: '340', name: 'ПН-336м', lenses: '', guard: 35, shift: 0 },
-            { joint: '344', name: 'Дм', gmod: { name: 'ПН-Дм', DoubleLetters: true, PoleHeight: 1 }, lenses: 'By-RY-w', autostop: 1, shift: 0, back: true, macht: true, left: true },
+            { joint: '344', name: 'Дм', gmod: { name: 'ПН-Дм', DoubleLetters: true, PoleHeight: 1, Caps: true }, lenses: 'By-RY-w', autostop: 1, shift: 0, back: true, macht: true, left: true },
+
+            { x: 410 - 35, name: 'М254', lenses: 'zR', mkSig: true, row: -3 },
+            { x: 410 + 35, name: 'МК254', lenses: 'zR', gmod: { DoubleLetters: true }, back: true, mkSig: true, row: -3 },
         ],
         mks: [
         ],
@@ -325,7 +340,9 @@ lines['neocrimson_new']['2'] = [
             { joint: '2974', name: 'БР-2906', lenses: 'BYYY-GRwM', gmod: { DoubleLetters: true }, autostop: 1, guard: 66, yg: '3014', assembl: true },
 
             { joint: '2922', name: 'ДОП4', gmod: { name: 'ПН-ДОП4', ISMPL: true }, lenses: 'R', assembl: true, back: true, row: -1.5 },
-            { joint: '2978', name: 'БР-2м', lenses: 'BWyY-YRwM', gmod: { DoubleLetters: true, ISMPL: true, AutostopBehind: true }, autostop: 1, shift: 0, assembl: true, back: true, row: -1.5  },
+            { joint: '2978', name: 'БР-2м', lenses: 'BWyY-YRwM', gmod: { DoubleLetters: true, ISMPL: true, AutostopBehind: true }, autostop: 1, shift: 0, assembl: true, back: true, row: -1.5 },
+            
+            { x: 380 - 20, name: 'МК252', lenses: 'R', gmod: { DoubleLetters: true, ISMPL: true }, assembl: true, back: true, mkSig: true, row: -3 },
         ],
         mks: [
         ],

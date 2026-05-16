@@ -549,6 +549,11 @@ function applyMkSig(el, target) {
     }
 }
 
+function applyWall(el, target) {
+    if (!el.wall) return;
+    target.Invisible = true;
+}
+
 function applyArsCodes(el, target, result) {
     if (el.mkSig || !target.Routes?.[0] || target.Routes[0].ARSCodes) return;
 
@@ -692,6 +697,7 @@ function trackPeregon() {
             }
 
             applyMkSig(el, result[joint + '_back']);
+            applyWall(el, result[joint + '_back']);
 
             if (el.autostop && el.shift && Math.abs(el.shift) > 0) {
                 result[joint + '_back'].NonAutoStop = true;
@@ -721,9 +727,6 @@ function trackPeregon() {
             result[joint].Name += el.doubleL ? '/' : '//';
         }
         result[joint].NonAutoStop = !el.autostop;
-        if (el.wall) {
-            result[joint].Invisible = true;
-        }
 
         if (el.gmod) {
             if (el.gmod.Routes && el.gmod.Routes[0]) {
@@ -740,6 +743,7 @@ function trackPeregon() {
         }
 
         applyMkSig(el, result[joint]);
+        applyWall(el, result[joint]);
 
         if (el.autostop && el.shift && Math.abs(el.shift) > 0) {
             result[joint].NonAutoStop = true;
@@ -806,6 +810,7 @@ function trackPeregon() {
 
             applyArsCodes(el, result[key + '_back'], result);
             applyMkSig(el, result[key + '_back']);
+            applyWall(el, result[key + '_back']);
 
             if (el.autostop && el.shift && Math.abs(el.shift) > 0) {
                 result[key + '_back'].NonAutoStop = true;
@@ -842,9 +847,6 @@ function trackPeregon() {
         if (el.double) {
             result[key].Name += el.doubleL ? '/' : '//';
         }
-        if (el.wall) {
-            result[key].Invisible = true;
-        }
 
         if (el.gmod) {
             if (el.gmod.Routes && el.gmod.Routes[0]) {
@@ -858,6 +860,7 @@ function trackPeregon() {
 
         applyArsCodes(el, result[key], result);
         applyMkSig(el, result[key]);
+        applyWall(el, result[key]);
 
         if (el.autostop && el.shift && Math.abs(el.shift) > 0) {
             result[key].NonAutoStop = true;
