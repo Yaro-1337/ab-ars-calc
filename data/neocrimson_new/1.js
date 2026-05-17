@@ -117,7 +117,7 @@ lines['neocrimson_new']['1'] = [
             { x: 310 - 30, name: 'М253', lenses: 'zR', mkSig: true, row: -3 },
             { x: 310 + 30, name: 'МК253', lenses: 'zR', gmod: { DoubleLetters: true }, back: true, left: true, mkSig: true, row: -3 },
 
-            { x: 706 + 2.5 + 25 - 37.5 - 37.5 - 12.5, name: '351м//', lenses: 'zR', gmod: { name: '351м//', Inactive: true }, double: true, left: true, mkSig: true, row: -3 },
+            { x: 706 + 2.5 + 25 - 37.5 - 37.5 - 12.5, name: '351м//', lenses: 'YY-GR', gmod: { name: '351м//', Inactive: true }, double: true, left: true, mkSig: true, row: -3 },
         ],
         mks: [
             { x: 0 - 4 + 62.5 + 50 + 37.5 + 62.5 + 62.5 + 39.2, name: '253МК' },
