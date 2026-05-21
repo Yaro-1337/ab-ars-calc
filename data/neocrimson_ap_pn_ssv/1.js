@@ -46,7 +46,7 @@ lines['neocrimson_ap_pn_ssv']['1'] = [
         },
         joints: [
 
-            { x: 1198 - 4 - 12.5 - 87.5 - 62.5 - 75 - 75 - 150 - 100 - 125 - 175 - 100 - 75 - 75 - 75, name: '319', limit: 60 },
+            { x: 1198 - 4 - 12.5 - 87.5 - 62.5 - 75 - 75 - 150 - 100 - 125 - 175 - 100 - 75 - 75 - 75, name: '319а', limit: 60 },
             { x: 1198 - 4 - 12.5 - 87.5 - 62.5 - 75 - 75 - 150 - 100 - 125 - 175 - 100 - 75 - 75, name: '321', limit: 40 },
             { x: 1198 - 4 - 12.5 - 87.5 - 62.5 - 75 - 75 - 150 - 100 - 125 - 175 - 100 - 75, name: '323', limit: 40, later: { 40: 2 } },
             { x: 1198 - 4 - 12.5 - 87.5 - 62.5 - 75 - 75 - 150 - 100 - 125 - 175 - 100, name: '323а', limit: 70, later: { 40: 1, 60: 3, 70: 2 } },
@@ -69,13 +69,15 @@ lines['neocrimson_ap_pn_ssv']['1'] = [
             { joint: '321', name: 'АП-323М', lenses: 'YYY-YG-Rw', autostop: 1, guard: 35, service: 35, y: '323в', g: 'NEXT_y' },
             { joint: '323б', name: '325', lenses: 'YY-GR', autostop: 1, guard: 80, service: 70, y: '325а', yg: 'NEXT_y', g: 'NEXT_yg' },
             // { joint: '325', name: '325', lenses: 'YY-GR', autostop: 1, guard: 70, service: 25, y: '325', yg: 'NEXT_y', g: 'NEXT_yg' },
-            { joint: '325', name: 'ПН-327', lenses: 'YYG-Rw', autostop: 1, guard: 70, service: 35, y: '327а', yg: 'NEXT_y', g: 'NEXT_yg' },
+            { joint: '325', name: 'ПН-327', lenses: 'YYG-Rw', autostop: 1, guard: 70, service: 35, y: '327а', yg: 'NEXT_y', double: true, left: true },
             { joint: '325а', name: 'ПН-329', lenses: 'YYG-Rw', autostop: 1, guard: 60, service: 35, y: '329', yg: 'NEXT_y', shift: 11 },
             { joint: '327', name: 'ПН-331', lenses: 'BYY-YRw', autostop: 1, guard: 61, service: 25, y: '331', g: 'NEXT_y' },
             { joint: '327а', name: 'ПН-333', lenses: 'YY-GR-w', autostop: 1, guard: 64, service: 25, y: '333', g: 'NEXT_yg', macht: true, row: -1.5 },
             { joint: '329', name: 'ПН-335', lenses: 'YY-GR-w', autostop: 1, guard: 64, yg: '335a', macht: true },
 
             { joint: '335', name: 'ПН-337М', lenses: '', guard: 35, shift: 0, macht: true },
+
+            { joint: '323', name: 'ДОП3', gmod: { name: 'АП-ДОП3' }, lenses: 'zr', back: true, left: true },
         ],
         mks: [
         ],
