@@ -331,7 +331,7 @@ lines['neoorange_r50']['1'] = [
         //СХЕМА на 75
 
         joints: [
-            { x: 0 - 2, name: '319', limit: 60 },
+            { x: 0 - 2, name: '319а', limit: 60 },
             { x: 0 - 2 + 75, name: '321', limit: 60, later: { 60: 2 } },
             { x: 0 - 2 + 75 + 75, name: '1001', limit: 60, later: { 40: 1, 60: 1 } },
             { x: 0 - 2 + 75 + 75 + 62.5, name: '1001а', limit: 60, later: { 40: 1, 60: 1 } },
