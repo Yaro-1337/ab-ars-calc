@@ -48,13 +48,13 @@ lines['neoorange_r50']['2'] = [
             { joint: '1106', name: '1108', lenses: 'YY-GR', autostop: 1, guard: 80, service: 80, y: '1108', g: 'NEXT_y' },
             { joint: '1108', name: '1110', lenses: 'YY-GR', autostop: 1, guard: 80, service: 80, y: '1110а', yg: 'NEXT_y', g: 'NEXT_yg' },
 
-            { joint: '1110', name: '1002', lenses: 'YY-GR', autostop: 1, guard: 60, service: 35, y: '1002а', yg: 'NEXT_y', g: 'NEXT_yg' },
-            { joint: '1110а', name: 'АП-1004', lenses: 'YYG-Rw', autostop: 1, guard: 80, service: 35, y: '1004', yg: 'NEXT_y', g: 'NEXT_yg' },
-            { joint: '1002', name: 'АП-1006', lenses: 'YYG-Rw', autostop: 1, guard: 75, service: 35, y: '1006', yg: 'NEXT_y', g: 'NEXT_yg' },
-            { joint: '1002а', name: 'АП-1008', lenses: 'YYG-Rw', autostop: 1, guard: 65, service: 35, y: '1008', yg: 'NEXT_y', g: 'NEXT_g' },
-            { joint: '1004', name: 'АП-1010', lenses: 'YYG-Rw', autostop: 1, guard: 61, service: 35, y: '1010', g: 'NEXT_g' },
-            { joint: '1006', name: 'АП-1012', lenses: 'YYG-Rw', autostop: 1, guard: 60, g: '1012' },
-            
+            { joint: '1110', name: '1002', lenses: 'YY-GR', autostop: 1, guard: 80, service: 35, shift: 7, y: '1002а', yg: 'NEXT_y', g: 'NEXT_yg' },
+            { joint: '1110а', name: '1004', lenses: 'YY-GR', autostop: 1, guard: 80, service: 35, y: '1004', yg: 'NEXT_y', g: 'NEXT_yg' },
+            { joint: '1002', name: '1006', lenses: 'YY-GR', autostop: 1, guard: 75, service: 35, y: '1006', yg: 'NEXT_y', g: 'NEXT_yg' },
+            { joint: '1002а', name: '1008', lenses: 'YY-GR', autostop: 1, guard: 65, service: 35, y: '1008', yg: 'NEXT_y', g: 'NEXT_g' },
+            { joint: '1004', name: '1010', lenses: 'YY-GR', autostop: 1, guard: 61, service: 35, y: '1010', g: 'NEXT_g' },
+            { joint: '1006', name: '1012', lenses: 'YY-GR', autostop: 1, guard: 60, g: '1012' },
+
             { joint: '1012', name: 'АП-902м', lenses: '', guard: 35, shift: 0 },
         ],
         mks: [
@@ -178,7 +178,7 @@ lines['neoorange_r50']['2'] = [
             { x: 1028 + 75 - 62.5, name: '300а', limit: 60 },
             { x: 1028 + 75, name: '298', limit: 40 },
             { x: 1028 + 75 + 75, name: '296', limit: 0 },
-            { x: 1028 + 75 + 75 + 75, name: '296а', limit: 0},
+            { x: 1028 + 75 + 75 + 75, name: '296а', limit: 0 },
         ],
         signals: [
             { joint: '306', name: '304', lenses: 'YGR', autostop: 1, guard: 80, service: 70, y: '304г', g: 'NEXT_y' },
