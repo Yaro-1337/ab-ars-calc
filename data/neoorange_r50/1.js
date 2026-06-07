@@ -60,7 +60,7 @@ lines['neoorange_r50']['1'] = [
             { joint: '283', name: 'ПК-287д', gmod: { DoubleLetters: true, RouteNumberSetup: 'W' }, lenses: 'YGR', autostop: 1, guard: 60, service: 25, y: '287дс', g: 'NEXT_g', shift: 16 },
             { joint: '285', name: 'ПК-287', gmod: { DoubleLetters: true, RouteNumberSetup: 'W' }, lenses: 'YGR', autostop: 1, guard: 60, g: '287с', shift: 2.5 },
 
-            { joint: '287', name: 'ПК-289МГ', lenses: '', guard: 35, shift: -2.5 },
+            { joint: '287', name: 'ПК-289мГ', lenses: '', guard: 35, shift: -2.5 },
             // { joint: '281а', name: 'ПК-15м', gmod: { DoubleLetters: true }, lenses: 'yZY-RwM', autostop: 1, back: true, left: true, macht: true, assembl: true },
             // { joint: '281в', name: 'ПК-13', gmod: { DoubleLetters: true }, lenses: 'YGR', autostop: 1, back: true, row: -1.5 },
             { joint: '1285', name: 'ОП', gmod: { name: 'ПК-ОП' }, lenses: 'zR', autostop: 1, back: true, left: true },
@@ -109,7 +109,7 @@ lines['neoorange_r50']['1'] = [
             { x: 1114 + 65.5 + 12.5 + 62.5 + 75 + 12.5, name: '297а', limit: 0 },
         ],
         signals: [
-            { joint: '287', name: 'ПК-289МГ', gmod: { DoubleLetters: true, RouteNumberSetup: '134VWK' }, lenses: 'ZW-YY-GR', autostop: 1, shift: -2.5, guard: 60, service: 70, y: '289в', yg: 'NEXT_y', left: true },
+            { joint: '287', name: 'ПК-289мГ', gmod: { DoubleLetters: true, RouteNumberSetup: '134VWK' }, lenses: 'ZW-YY-GR', autostop: 1, shift: -2.5, guard: 60, service: 70, y: '289в', yg: 'NEXT_y', left: true },
             { joint: '289б', name: 'ПК-291д', gmod: { DoubleLetters: true, RouteNumberSetup: 'W' }, lenses: 'YGR', autostop: 1, guard: 60, service: 80, y: '291да', g: 'NEXT_g' },
             { joint: '291д', name: '291', lenses: 'YGR', autostop: 1, guard: 60, service: 80, g: '291а' },
             { joint: '291', name: '293', lenses: 'YGR', autostop: 1, guard: 60, service: 71, y: '293а', g: 'NEXT_g' },
@@ -166,7 +166,7 @@ lines['neoorange_r50']['1'] = [
             { joint: '301', name: '303д', lenses: 'YGR', autostop: 1, guard: 60, service: 35, y: '303дс', g: 'NEXT_g' },
             { joint: '1301', name: '303', lenses: 'YGR', autostop: 1, guard: 60, g: '303с', shift: 10 },
 
-            { joint: '303с', name: '305', lenses: '', guard: 35, shift: 0 },
+            { joint: '303с', name: '305м', lenses: '', guard: 35, shift: 0 },
         ],
         mks: [
             // { x: 0 - 4 + 62.5 + 50 + 37.5 + 62.5 + 62.5 + 39.2, name: '553МК' },
@@ -207,13 +207,13 @@ lines['neoorange_r50']['1'] = [
             { x: 935 + 3.5 + 75 + 75 + 75 + 12.5, name: '313а', limit: 0 },
         ],
         signals: [
-            { joint: '303с', name: '305', lenses: 'YGR', autostop: 1, guard: 80, service: 70, y: '305в', g: 'NEXT_y' },
-            { joint: '305б', name: 'СР-307', gmod: { DoubleLetters: true, RouteNumberSetup: 'W' }, lenses: 'YGR', autostop: 1, guard: 80, service: 70, y: '307', g: 'NEXT_y', shift: 22.5 },
+            { joint: '303с', name: '305м', lenses: 'YGR', autostop: 1, guard: 80, service: 70, y: '305в', g: 'NEXT_y' },
+            { joint: '305б', name: 'СР-307м', gmod: { DoubleLetters: true, RouteNumberSetup: 'W' }, lenses: 'YGR', autostop: 1, guard: 80, service: 70, y: '307', g: 'NEXT_y', shift: 22.5 },
             { joint: '307', name: 'СР-309', gmod: { DoubleLetters: true, RouteNumberSetup: 'W' }, lenses: 'YGR', autostop: 1, guard: 60, service: 35, y: '309с', g: 'NEXT_g', shift: 20 },
             { joint: '309', name: '311', lenses: 'GR', autostop: 1, guard: 63, g: '311с', shift: 13, noRY: true },
 
-            { joint: '311с', name: '313М', lenses: '', guard: 35, shift: 0 },
-            { joint: '309', name: 'ДМ', gmod: { name: 'СР-ДМ', RouteNumberSetup: 'W' }, lenses: 'ZyZ-YR', autostop: 1, back: true, left: true, shift: -0.35 },
+            { joint: '311с', name: '313м', lenses: '', guard: 35, shift: 0 },
+            { joint: '309', name: 'Дм', gmod: { name: 'СР-ДМ', RouteNumberSetup: 'W' }, lenses: 'ZyZ-YR', autostop: 1, back: true, left: true, shift: -0.35 },
         ],
         /*Этот вариант потребовал слишком много переебок
         joints: [
@@ -288,7 +288,7 @@ lines['neoorange_r50']['1'] = [
             { x: 991 + 75 + 75 + 62.5, name: '1001а', limit: 0 },
         ],
         signals: [
-            { joint: '311с', name: '313М', lenses: 'zzY-GR', autostop: 1, guard: 35, y: '313б', g: 'NEXT_g' },
+            { joint: '311с', name: '313м', lenses: 'zzY-GR', autostop: 1, guard: 35, y: '313б', g: 'NEXT_g' },
             // { joint: '307б', name: '309', lenses: 'zYY-GRz', autostop: 1, guard: 76, service: 35, y: '309', yg: 'NEXT_y', g: 'NEXT_yg' },
             // { joint: '307в', name: 'АП-311', lenses: 'YYG-Rw', autostop: 1, shift: 13, guard: 78, service: 35, y: '311', yg: 'NEXT_y', g: 'NEXT_yg' },
             // { joint: '309', name: 'АП-313', lenses: 'YYG-Rw', autostop: 1, guard: 76, service: 35, y: '313', yg: 'NEXT_y', g: 'NEXT_yg' },
@@ -299,7 +299,7 @@ lines['neoorange_r50']['1'] = [
             { joint: '317', name: '319', lenses: 'WY-GR', autostop: 1, guard: 60, service: 55, y: '319а', g: 'NEXT_g' },
             { joint: '319', name: 'АП-321', gmod: { DoubleLetters: true, RouteNumberSetup: 'W' }, lenses: 'GR', autostop: 1, guard: 63, g: '321', left: true, double: true },
 
-            { joint: '321', name: 'АП-323М', lenses: '', guard: 35, shift: 0 },
+            { joint: '321', name: 'АП-323м', lenses: '', guard: 35, shift: 0 },
             { joint: '319', name: 'Д', gmod: { name: 'АП-Д', RouteNumberSetup: 'W' }, lenses: 'WY-RY', autostop: 1, back: true, row: -1.5 },
         ],
         mks: [

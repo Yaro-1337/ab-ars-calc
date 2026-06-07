@@ -94,8 +94,8 @@ lines['neoorange_r50']['2'] = [
             { x: 1001 + 4.5 + 62.5 + 75 + 50 + 37.5, name: '312б', limit: 0 },
         ],
         signals: [
-            { joint: '1012', name: 'АП-902М', lenses: 'WYY-GRw-M', gmod: { DoubleLetters: true }, autostop: 1, guard: 35, service: 35, y: '320г', g: 'NEXT_g' },
-            { joint: '320б', name: 'АП-904М', lenses: 'WYY-GRw-M', gmod: { DoubleLetters: true }, autostop: 1, guard: 80, service: 80, g: '318дб' },
+            { joint: '1012', name: 'АП-902м', lenses: 'WYY-GRw-M', gmod: { DoubleLetters: true }, autostop: 1, guard: 35, service: 35, y: '320г', g: 'NEXT_g' },
+            { joint: '320б', name: 'АП-904м', lenses: 'WYY-GRw-M', gmod: { DoubleLetters: true }, autostop: 1, guard: 80, service: 80, g: '318дб' },
 
             { joint: '318д', name: '318', lenses: 'YGR', autostop: 1, guard: 80, service: 70, y: '318', g: 'NEXT_y' },
             { joint: '318', name: '316', lenses: 'YGR', autostop: 1, guard: 60, service: 60, y: '316а', g: 'NEXT_g', left: true },
@@ -235,7 +235,7 @@ lines['neoorange_r50']['2'] = [
             { joint: '292д', name: 'ПК-290д', gmod: { DoubleLetters: true, RouteNumberSetup: 'W' }, lenses: 'yz-GR', autostop: 1, guard: 60, service: 35, y: '290дс', yg: 'NEXT_g' },
             { joint: '292', name: '290', lenses: 'YGR', autostop: 1, guard: 60, g: '290', double: true, doubleL: true },
 
-            { joint: '290', name: 'ПК-288мг', lenses: '', guard: 35, shift: 0 },
+            { joint: '290', name: 'ПК-288мГ', lenses: '', guard: 35, shift: 0 },
             { joint: '292', name: 'Д', gmod: { name: 'ПК-Д', RouteNumberSetup: '34VW' }, lenses: 'WR', autostop: 1, back: true, left: true, row: -1.5 },
         ],
         mks: [
@@ -282,7 +282,7 @@ lines['neoorange_r50']['2'] = [
             { x: 2102 - 2 + 75 + 87.5 + 75 + 62.5, name: '274б', limit: 0 },
         ],
         signals: [
-            { joint: '290', name: '288мг', lenses: 'zzY-GR', autostop: 1, guard: 35, service: 35, y: '288в', g: 'NEXT_y' },
+            { joint: '290', name: '288мГ', lenses: 'zzY-GR', autostop: 1, guard: 35, service: 35, y: '288в', g: 'NEXT_y' },
 
             // { joint: '301д', name: '1301', lenses: 'YY-GR', autostop: 1, guard: 60, service: 35, y: '1301с', yg: 'NEXT_y', g: 'NEXT_g' },
             { joint: '288б', name: '286', lenses: 'WY-GR', autostop: 1, guard: 80, service: 80, y: '286а', g: 'NEXT_y' },
