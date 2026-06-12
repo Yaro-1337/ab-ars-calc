@@ -60,7 +60,7 @@ class DrawJoints extends Draw {
                     y = (this.graphY - 7.5 * (nextJointI - breakPoint + 1) * this.Ky);
                 }
 
-                if (this.peregon.joints[nextJointI - 1].vksCalc) {
+                if (this.peregon.joints[nextJointI - 1]?.vksCalc) {
                     this.drawArsVksArrow(x, y, nextJointX, nextJointI);
                 } else {
                     this.drawArrow(this.x(x), y, this.x(nextJointX), y);
