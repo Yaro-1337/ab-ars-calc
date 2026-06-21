@@ -27,7 +27,7 @@ function iSignals() {
         const nextString = nextSignal ? `next: 'sig${nextSignal.name.replaceAll('-', '')}', ` : '';
         const rc = signalRcs(signal.name);
         const rcString = "['" + rc.join("', '") + "']";
-        const resultString = `{ scheme: 'YYGR', name: 'sig${signal.name.replaceAll('-', '')}', params: {${nextString} rc: ${rcString}, aspectsNum: ${aspectsNum}} },\n`;
+        const resultString = `{ scheme: 'YYGR', name: 'sig${signal.name.replaceAll('-', '')}', params: {${nextString} rc: ${rcString}, aspectsNum: ${aspectsNum}}, lenses: '${signal.lenses ?? ''}' },\n`;
 
         result += resultString;
     }
