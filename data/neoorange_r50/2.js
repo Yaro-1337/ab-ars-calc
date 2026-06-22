@@ -101,7 +101,7 @@ lines['neoorange_r50']['2'] = [
             { joint: '318', name: '316', lenses: 'YGR', autostop: 1, guard: 60, service: 60, y: '316а', g: 'NEXT_g', left: true },
             { joint: '316', name: '314', lenses: 'GR', autostop: 1, guard: 60, g: '314', left: true },
 
-            { joint: '314', name: 'СР-312', lenses: '', guard: 35, shift: 0 },
+            { joint: '314', name: 'СР-312м', lenses: '', guard: 35, shift: 0 },
             { joint: '312а', name: 'СР-310д', lenses: '', shift: 0 },
 
             { joint: '320г', name: 'В', gmod: { name: 'АП-В', RouteNumberSetup: 'W' }, lenses: 'WR', back: true, left: true },
@@ -140,7 +140,7 @@ lines['neoorange_r50']['2'] = [
             { x: 864 - 9.5 + 12.5 + 75 + 75 + 75, name: '304а', limit: 0 },
         ],
         signals: [
-            { joint: '314', name: 'СР-312', lenses: 'WY-GR', gmod: { DoubleLetters: true, RouteNumberSetup: '1ВW' }, autostop: 1, guard: 80, service: 35, g: '312в' },
+            { joint: '314', name: 'СР-312м', lenses: 'WY-GR', gmod: { DoubleLetters: true, RouteNumberSetup: '1ВW' }, autostop: 1, guard: 80, service: 35, g: '312в' },
             { joint: '312а', name: 'СР-310д', lenses: 'WY-GR', gmod: { DoubleLetters: true, RouteNumberSetup: '1ВW' }, autostop: 1, guard: 80, service: 70, y: '310да', g: 'NEXT_y' },
             { joint: '310д', name: '310', lenses: 'YGR', autostop: 1, guard: 80, service: 70, y: '310', g: 'NEXT_y', left: true },
             { joint: '310', name: '308', lenses: 'YGR', autostop: 1, guard: 60, service: 70, y: '308а', g: 'NEXT_g', left: true },
