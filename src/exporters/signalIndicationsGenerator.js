@@ -15,14 +15,6 @@ class SignalIndicationsGenerator {
             normalized = normalized.slice(0, -1);
         }
 
-        while (normalized.at(-1) === 'Z' || normalized.at(-1) === 'z') {
-            normalized = normalized.slice(0, -1);
-        }
-
-        if (normalized.length > 1) {
-            normalized = normalized[0] + normalized.slice(1).replaceAll('Z', '').replaceAll('z', '');
-        }
-
         return normalized;
     }
 
