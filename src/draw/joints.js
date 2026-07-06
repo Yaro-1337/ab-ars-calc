@@ -1,7 +1,7 @@
 class DrawJoints extends Draw {
 
     drawJoints() {
-        for (let i = 0; i < this.peregon.joints.length; i++) {
+        for (let i = 0; i < this.peregon.joints?.length; i++) {
             const group = this.two.makeGroup();
 
             let x = this.peregon.joints[i].x;
@@ -40,6 +40,11 @@ class DrawJoints extends Draw {
 
             group.add(joint, textGroup, lengText, dash, code);
 
+            const cra = this.peregon.joints[i].cra;
+            if (cra) {
+                group.add(this.drawCra(this.x(x), cra));
+            }
+
             let arsS = this.peregon.joints[i].arsCalc;
 
             if (!arsS) continue;
@@ -55,7 +60,7 @@ class DrawJoints extends Draw {
                     y = (this.graphY - 7.5 * (nextJointI - breakPoint + 1) * this.Ky);
                 }
 
-                if (this.peregon.joints[nextJointI - 1].vksCalc) {
+                if (this.peregon.joints[nextJointI - 1]?.vksCalc) {
                     this.drawArsVksArrow(x, y, nextJointX, nextJointI);
                 } else {
                     this.drawArrow(this.x(x), y, this.x(nextJointX), y);
@@ -123,6 +128,9 @@ class DrawJoints extends Draw {
         const ray = this.drawRay(x + l);
         const y = vf;
         const vFactText = this.two.makeText(`Vф=${vf}км/ч`, this.x(x + l) + 4, this.graphY - y * this.Ky, { size: 10, alignment: 'left' });
+        if (vf < v) {
+            vFactText.fill = 'red';
+        }
         const vAssumedText = this.two.makeText(`Vр=${v}км/ч`, this.x(x + l) + 4, this.graphY + 12 - y * this.Ky, { size: 10, alignment: 'left' });
         const sText = this.two.makeText(`S=${l.toFixed(2)}+${s.toFixed(2)}=${Math.floor((l + s + 1.38))}`, this.x(x + l) + 4, this.graphY + 24 - y * this.Ky, { size: 10, alignment: 'left' });
         const vksDash = this.two.makeLine(this.x(x + l), this.graphY, this.x(x + l), 0);
@@ -142,5 +150,16 @@ class DrawJoints extends Draw {
         const arrow = this.drawArrow(this.x(nextJointX), y, this.x(nextJointX), y);
 
         return this.two.makeGroup(line, dashedLine, circle, arrow);
+    }
+
+    drawCra(x, craObj) {
+        const y = this.trackY - 35;
+
+        const line1 = this.two.makeLine(x, y - 15, x, y + 15);
+        const circle = this.two.makeCircle(x, y, 1.5).fill = '#000';
+        const arrow1 = this.drawArrow(x, y, x - 30, y);
+        const arrow2 = this.drawArrow(x, y, x + 30, y);
+
+        // return this.two.makeGroup(line1);
     }
 }

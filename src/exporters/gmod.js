@@ -3,6 +3,8 @@ function sections() {
         if (el.back) return;
         let sections = {};
         sections.nm = (el.gmod?.name ?? el.name).replace('-', '');
+        if (el.double && el.doubleL) sections.nm += '/';
+        if (el.double && !el.doubleL) sections.nm += '//';
         sections.rc = 'rc' + el.joint;
 
         const jointI = Object.values(peregon.joints).findIndex(elem => elem.name == el.joint);
@@ -20,237 +22,16 @@ function signals() {
     peregon.signals.forEach(el => {
         let nm = el.name.replaceAll('-', '');
         let name = 'sig' + nm;
-        if (el.double && el.doubleL) name += '/';
-        if (el.double && !el.doubleL) name += '//';
         if (el.lenses == 'x') return;
+        let sigName = el.gmod?.name ?? el.name;
+        if (el.double && el.doubleL) sigName += '/';
+        if (el.double && !el.doubleL) sigName += '//';
         signals[name] = {
-            name: rtl((el.gmod?.name ?? el.name).replaceAll('-', '').toUpperCase()),
+            name: rtl(sigName.replaceAll('-', '').toUpperCase().replaceAll('|', '').replaceAll('M', '')),
         };
-        switch (el.lenses.replaceAll('-', '').replaceAll('M', '')) {
-            case 'RYYGR':
-            case 'RYYGRw':
-                signals[name].def = '00000';
-                signals[name].ro = '00001';
-                signals[name].rr = '10001';
-                signals[name].ry = '00101';
-                signals[name].ya = '00100';
-                signals[name].yo = '01000';
-                signals[name].yg = '01010';
-                signals[name].go = '00010';
-                break;
-            case 'RBYYGR':
-            case 'RBYYGRw':
-                signals[name].def = '000000';
-                signals[name].ro =  '000001';
-                signals[name].rr =  '100001';
-                signals[name].ry =  '000101';
-                signals[name].ya =  '000100';
-                signals[name].yo =  '001000';
-                signals[name].yg =  '001010';
-                signals[name].go =  '000010';
-                signals[name].bo =  '010000';
-                break;
-            case 'YYGR':
-            case 'YYGRw':
-            case 'YYGRZ':
-                signals[name].def = '0000';
-                signals[name].ro = '0001';
-                signals[name].ry = '0101';
-                signals[name].ya = '0100';
-                signals[name].yo = '1000';
-                signals[name].yg = '1010';
-                signals[name].go = '0010';
-                break;
-            case 'BYYGRw':
-                signals[name].def = '00000';
-                signals[name].ro = '00001';
-                signals[name].ry = '00101';
-                signals[name].ya = '00100';
-                signals[name].yo = '01000';
-                signals[name].yg = '01010';
-                signals[name].go = '00010';
-                signals[name].bo = '10000';
-                break;
-            case 'ZYYGRZ':
-                signals[name].def = '00000';
-                signals[name].ro = '00001';
-                signals[name].ry = '00101';
-                signals[name].ya = '00100';
-                signals[name].yo = '01000';
-                signals[name].yg = '01010';
-                signals[name].go = '00010';
-                break;
-            case 'WYYGR':
-            case 'WYYGRw':
-                signals[name].def = '00000';
-                signals[name].ro = '00001';
-                signals[name].ry = '00101';
-                signals[name].ya = '00100';
-                signals[name].yo = '01000';
-                signals[name].yg = '01010';
-                signals[name].go = '00010';
-                signals[name].wo = '10000';
-                break;
-            case 'YGR':
-            case 'YGRw':
-                signals[name].def = '000';
-                signals[name].ro = '001';
-                signals[name].ry = '101';
-                signals[name].ya = '100';
-                signals[name].yo = '100';
-                signals[name].yg = '110';
-                signals[name].go = '010';
-                break
-            case 'BYGR':
-            case 'BYGRw':
-                signals[name].def = '0000';
-                signals[name].ro = '0001';
-                signals[name].ry = '0101';
-                signals[name].ya = '0100';
-                signals[name].yo = '0100';
-                signals[name].yg = '0110';
-                signals[name].go = '0010';
-                signals[name].bo = '1000';
-                break;
-            case 'RYGR':
-            case 'RYGRw':
-                signals[name].def = '0000';
-                signals[name].ro = '0001';
-                signals[name].rr = '1001';
-                signals[name].ry = '0101';
-                signals[name].ya = '0100';
-                signals[name].yo = '0100';
-                signals[name].yg = '0110';
-                signals[name].go = '0010';
-                break;
-            case 'WYGR':
-            case 'WYGRw':
-                signals[name].def = '0000';
-                signals[name].ro = '0001';
-                signals[name].ry = '0101';
-                signals[name].ya = '0010';
-                signals[name].yo = '0100';
-                signals[name].yg = '0110';
-                signals[name].go = '0010';
-                signals[name].wo = '1000';
-                break;
-            case 'ZYGRZ':
-            case 'ZYGRw':
-                signals[name].def = '0000';
-                signals[name].ro = '0001';
-                signals[name].ry = '0101';
-                signals[name].ya = '0010';
-                signals[name].yo = '0100';
-                signals[name].yg = '0110';
-                signals[name].go = '0010';
-                break;
-            case 'WyYYGRw':
-                signals[name].def = '000000';
-                signals[name].ro = '000001';
-                signals[name].ry = '001001';
-                signals[name].ya = '001000';
-                signals[name].yo = '010000';
-                signals[name].yg = '010010';
-                signals[name].go = '000010';
-                signals[name].wo = '100000';
-                signals[name].yy = '010100';
-                signals[name].yfy = '020100';
-                break;
-            case 'yYYYGRw':
-            case 'YYYYGRw':
-                signals[name].def = '000000';
-                signals[name].ro = '000001';
-                signals[name].ry = '001001';
-                signals[name].ya = '001000';
-                signals[name].yo = '010000';
-                signals[name].yg = '010010';
-                signals[name].go = '000010';
-                signals[name].yy = '100100';
-                signals[name].yfy = '200100';
-                break;
-            case 'BYWRw':
-                signals[name].def = '0000';
-                signals[name].ro = '0001';
-                signals[name].ry = '0101';
-                signals[name].wo = '0010';
-                signals[name].bo = '1000';
-                break;
-            case 'BWR':
-            case 'BWRw':
-                signals[name].def = '000';
-                signals[name].ro = '001';
-                signals[name].wo = '010';
-                signals[name].bo = '100';
-                break;
-            case 'RBWYYGR':
-            case 'RBWYYGRw':
-                signals[name].def = '000000';
-                signals[name].ro = '000001';
-                signals[name].ry = '0000101';
-                signals[name].ya = '0000100';
-                signals[name].yo = '0001000';
-                signals[name].yg = '0001010';
-                signals[name].go = '0000010';
-                signals[name].wo = '0010000';
-                signals[name].bo = '0100000';
-                signals[name].rr = '1000001';
-                break;
-            case 'RBWyYGRYw':
-                signals[name].def = '00000000';
-                signals[name].ro = '00000010';
-                signals[name].ry = '00001010';
-                signals[name].ya = '00001000';
-                signals[name].yo = '00001000';
-                signals[name].yg = '00001100';
-                signals[name].go = '00000100';
-                signals[name].wo = '00100000';
-                signals[name].bo = '01000000';
-                signals[name].rr = '10000010';
-                signals[name].yy = '00010001';
-                signals[name].yfy = '00020001';
-                break;
-            case 'RZZYYGRZ':
-                signals[name].def = '000000';
-                signals[name].ro = '000001';
-                signals[name].ry = '0000101';
-                signals[name].ya = '0000100';
-                signals[name].yo = '0001000';
-                signals[name].yg = '0001010';
-                signals[name].go = '0000010';
-                signals[name].rr = '1000001';
-                break;
-            case 'RByWRY':
-            case 'RByWRYw':
-                signals[name].def = '000000';
-                signals[name].ro = '000010';
-                signals[name].wo = '000100';
-                signals[name].bo = '010000';
-                signals[name].rr = '100010';
-                signals[name].yy = '001001';
-                signals[name].yfy = '002001';
-                break;
-            case 'BWyYYR':
-            case 'BWyYYRw':
-                signals[name].def = '000000';
-                signals[name].ro = '000001';
-                signals[name].ry = '000101';
-                signals[name].wo = '010000';
-                signals[name].bo = '100000';
-                signals[name].yy = '001010';
-                signals[name].yfy = '002010';
-                break;
-            case 'ZR':
-                signals[name].ro = '01';
-                break;
-            case 'Zr':
-                signals[name].rf = '02';
-                break;
-            case 'Rw':
-                signals[name].ro = '1';
-                break;
-
-        }
-        if (el.lenses[el.lenses.length - 1] == 'w') {
+        const lenses = el.lenses.replaceAll('-', '').replaceAll('|', '').replaceAll('M', '');
+        Object.assign(signals[name], SignalIndicationsGenerator.generate(lenses));
+        if (lenses.at(-1) === 'w') {
             signals[name].ps = '';
         }
     });
@@ -343,24 +124,28 @@ function lightsCode(signal) {
 
     signal.calc.sequence.push(lastIndication);
 
-    const ygrIndex = signal.lenses.replaceAll('-', '').toUpperCase().indexOf('YGR');
+    lens = signal.lenses.replaceAll('-', '').toUpperCase()
+    const RIndex = lens.lastIndexOf('R') + 1;
+    const YIndex = lens.indexOf('Y') + 1;
+    const Y2Index = (lens.split('Y').length - 1) > 1 ? lens.indexOf('Y', YIndex) + 1: YIndex;
+    const GIndex = lens.indexOf('G') + 1;
 
     if (!signal.noRY) {
         signal.calc.lightsArray = signal.calc.sequence.map((el) => {
-            if (el === 'r') return `${ygrIndex + 3}`;
-            if (el === 'yr') return `${ygrIndex + 1}${ygrIndex + 3}`;
-            if (el === 'y') return `${ygrIndex}`;
-            if (el === 'yg') return `${ygrIndex}${ygrIndex + 2}`;
-            if (el === 'g') return `${ygrIndex + 2}`;
+            if (el === 'r') return `${RIndex}`;
+            if (el === 'yr') return `${RIndex}${Y2Index}`;
+            if (el === 'y') return `${YIndex}`;
+            if (el === 'yg') return `${YIndex}${GIndex}`;
+            if (el === 'g') return `${GIndex}`;
             return el;
         });
     } else {
         signal.calc.lightsArray = signal.calc.sequence.map((el) => {
-            if (el === 'r') return `${ygrIndex + 3}`;
-            if (el === 'yr') return `${ygrIndex + 3}`;
-            if (el === 'y') return `${ygrIndex + 1}`;
-            if (el === 'yg') return `${ygrIndex + 1}${ygrIndex + 2}`;
-            if (el === 'g') return `${ygrIndex + 2}`;
+            if (el === 'r') return `${RIndex}`;
+            if (el === 'yr') return `${RIndex}`;
+            if (el === 'y') return `${YIndex}`;
+            if (el === 'yg') return `${YIndex}${GIndex}`;
+            if (el === 'g') return `${GIndex}`;
         });
     }
 
@@ -407,6 +192,12 @@ function trackPeregon() {
 
         if (el.gmod) {
             Object.assign(result[origName], el.gmod);
+            if (!result[origName].Routes[0].ARSCodes) {
+                result[origName].Routes[0].ARSCodes = ARSCodes;
+            }
+            if (!result[origName].Routes[0].NextSignal) {
+                result[origName].Routes[0].NextSignal = "*";
+            }
         }
 
         if (el.bothDirections || el.back) {
@@ -493,7 +284,6 @@ function trackPeregon() {
         if (el.double) {
             result[joint].Name += el.doubleL ? '/' : '//';
         }
-        result[joint].Routes[0].Lights = ~lenses.indexOf('YGR') ? lightsCode(el) : (hasYR ? `${redLense}-${redLense}${redLense - 2}` : `${redLense}`);
         result[joint].NonAutoStop = !el.autostop;
         if (el.wall) {
             result[joint].Invisible = true;
@@ -508,6 +298,10 @@ function trackPeregon() {
                 result[joint].SignalName = rtl(el.name).replaceAll('-', '').toUpperCase();
             }
         }
+
+        if (!result[joint].Routes[0].Lights) {
+                result[joint].Routes[0].Lights = (lenses.includes('R') && lenses.includes('G')) ? lightsCode(el) : (hasYR ? `${redLense}-${redLense}${redLense - 2}` : `${redLense}`);
+            }
 
         if (el.autostop && el.shift && Math.abs(el.shift) > 0) {
             result[joint].NonAutoStop = true;
@@ -579,7 +373,8 @@ function rtl(gmodRc) {
         .replaceAll('Ф', 'F')
         .replaceAll('Х', 'H')
         .replaceAll('Ц', 'C')
-        .replaceAll('Ч', 'X');
+        .replaceAll('Ч', 'X')
+        .replaceAll('Я', 'Q');
 }
 
 

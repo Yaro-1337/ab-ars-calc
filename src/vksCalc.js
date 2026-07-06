@@ -7,7 +7,7 @@ class VksCalculator {
     }
 
     calc() {
-        for (let i = 0; i < this.peregon.joints.length; i++) {
+        for (let i = 0; i < this.peregon.joints?.length; i++) {
             const joint = this.peregon.joints[i];
             if (!joint?.vks) continue;
             if (joint.vks.prev) {
@@ -23,7 +23,7 @@ class VksCalculator {
             const nextJoint = this.peregon.joints[i + numJoints];
             const x = joint.x;
 
-            const vksLength = nextJoint.x - joint.x;
+            const vksLength = joint.vks.reductionDistance ?? (nextJoint.x - joint.x);
             const { v, l, s } = this.vks(x, vksLength);
             const vf = Math.floor(this.tractionCalculator.V(x + trainHalf));
 

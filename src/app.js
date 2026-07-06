@@ -1,8 +1,13 @@
 class App {
 
     async init(line, track, n, paImport, noTimeoutDraw) {
-        const peregon = lines[line][track][Number(n) || 0];
-        const nextPeregon = lines[line][track][Number(n) + 1 || 1];
+        const lineTrack = lines[line][track];
+        const peregon = lineTrack[Number(n) || 0];
+        const nextPeregon = lineTrack[Number(n) + 1 || 1];
+
+        const lineConfig = lines[line]['config'] || {};
+        wagonCount = lineConfig.wagonCount ?? wagonCount;
+        trainHalf = wagonLength * wagonCount / 2;
 
         window.peregon = peregon;
         window.nextPeregon = nextPeregon;
@@ -16,7 +21,7 @@ class App {
         const tractionCalculator = new TractionCalculator();
         tractionCalculator.setPeregon(peregon);
         const peregonCalc = tractionCalculator.calc(this.stepNum);
-
+        console.log(peregonCalc);
         const K = 1;
         const Ky = K * 3;
 
@@ -117,6 +122,7 @@ class App {
         two.update();
 
         setupSignalEvents();
+        this.setupAdjacentStationsEvents(lineTrack);
     }
 
     concatPeregon(peregonCalc, nextPeregonCalc) {
@@ -143,5 +149,23 @@ class App {
         this.stepNum = Math.round(this.trackLength / stepLength);
         this.KS = peregon.K || 1;
         KS = this.KS;
+    }
+
+    setupAdjacentStationsEvents(lineTrack) {
+        document.querySelector('#stationName').addEventListener('click', (e) => {
+            const params = new URLSearchParams(document.location.search);
+            const n = parseInt(params.get('n')) || 0;
+            if (n <= 0) return;
+            params.set('n', n - 1);
+            document.location.href = `${document.location.origin}${document.location.pathname}?${params.toString()}`
+        });
+
+        document.querySelector('#nextStationName').addEventListener('click', (e) => {
+            const params = new URLSearchParams(document.location.search);
+            const n = parseInt(params.get('n')) || 0;
+            if (n >= lineTrack.length - 2) return;
+            params.set('n', n + 1);
+            document.location.href = `${document.location.origin}${document.location.pathname}?${params.toString()}`;
+        });
     }
 }
