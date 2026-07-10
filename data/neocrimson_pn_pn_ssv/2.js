@@ -52,7 +52,8 @@ lines['neocrimson_pn_pn_ssv']['2'] = [
 
             { joint: '322', name: 'АП-320м', lenses: '', guard: 35, shift: 0 },
             { joint: '320а', name: 'АП-318дм', lenses: '' },
-            { joint: '326', name: 'ОП', gmod: { name: 'АП-ОП' }, left: true, lenses: 'zR', autostop: 1, shift: 0, back: true, row: -1.5 },
+            { joint: '330', name: 'ОП4', gmod: { name: 'АП-ОП4' }, left: true, lenses: 'zR', shift: 0, back: true },
+            { joint: '326', name: 'ОП', gmod: { name: 'АП-ОП' }, left: true, lenses: 'YR', autostop: 1, shift: 0, back: true },
             { joint: '336в', name: 'ДОП2', gmod: { name: 'АП-ДОП2' }, lenses: 'zr', back: true },
         ],
         mks: [

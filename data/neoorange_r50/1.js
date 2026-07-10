@@ -297,7 +297,7 @@ lines['neoorange_r50']['1'] = [
             { joint: '313б', name: 'АП-315', gmod: { DoubleLetters: true, RouteNumberSetup: '14W' }, lenses: 'zY-RG', autostop: 1, guard: 80, service: 60, g: '315а', shift: 20 },
             { joint: '315', name: 'АП-317', gmod: { DoubleLetters: true, RouteNumberSetup: '14OW' }, lenses: 'yG-RY', autostop: 1, guard: 80, service: 70, g: '317' },
             { joint: '317', name: '319', lenses: 'WY-GR', autostop: 1, guard: 60, service: 55, y: '319а', g: 'NEXT_g' },
-            { joint: '319', name: 'АП-321', gmod: { DoubleLetters: true, RouteNumberSetup: 'W' }, lenses: 'GR', autostop: 1, guard: 63, g: '321', left: true, double: true },
+            { joint: '319', name: 'АП-321', gmod: { DoubleLetters: true, RouteNumberSetup: 'W' }, lenses: 'GR', autostop: 1, guard: 63, g: '321', left: true, double: true, doubleL: true },
 
             { joint: '321', name: 'АП-323м', lenses: '', guard: 35, shift: 0 },
             { joint: '319', name: 'Дм', gmod: { name: 'АП-ДМ', RouteNumberSetup: 'W' }, lenses: 'WY-RY', autostop: 1, back: true, row: -1.5 },
