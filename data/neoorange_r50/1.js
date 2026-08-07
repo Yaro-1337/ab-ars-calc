@@ -109,7 +109,7 @@ lines['neoorange_r50']['1'] = [
             { x: 1114 + 65.5 + 12.5 + 62.5 + 75 + 12.5, name: '297а', limit: 0 },
         ],
         signals: [
-            { joint: '287', name: 'ПК-289мГ', gmod: { DoubleLetters: true, RouteNumberSetup: '134VWK' }, lenses: 'ZWY-YYG-RY', autostop: 1, shift: -2.5, guard: 60, service: 70, y: '289в', yg: 'NEXT_y', left: true },
+            { joint: '287', name: 'ПК-289мГ', gmod: { DoubleLetters: true, RouteNumberSetup: '134VWK' }, lenses: 'ZWY-YYY-GR', autostop: 1, shift: -2.5, guard: 60, service: 70, y: '289в', yg: 'NEXT_y', left: true },
             { joint: '289б', name: 'ПК-291д', gmod: { DoubleLetters: true, RouteNumberSetup: 'W' }, lenses: 'YGR', autostop: 1, guard: 60, service: 80, y: '291да', g: 'NEXT_g' },
             { joint: '291д', name: '291', lenses: 'YGR', autostop: 1, guard: 60, service: 80, g: '291а' },
             { joint: '291', name: '293', lenses: 'YGR', autostop: 1, guard: 60, service: 71, y: '293а', g: 'NEXT_g' },
