@@ -66,7 +66,7 @@ lines['neocrimson_ap_pn_ssv']['1'] = [
             { x: 1198 - 4 + 62.5 + 50 + 37.5 + 62.5 + 62.5, name: '337б', limit: 0 },
         ],
         signals: [
-            { joint: '321', name: 'АП-323М', lenses: 'YYY-YG-Rw', autostop: 1, guard: 35, service: 35, y: '323в', g: 'NEXT_y' },
+            { joint: '321', name: 'АП-323М', lenses: 'yYY-YG-Rw', autostop: 1, guard: 35, service: 35, y: '323в', g: 'NEXT_y' },
             { joint: '323б', name: '325', lenses: 'YY-GR', autostop: 1, guard: 80, service: 70, y: '325а', yg: 'NEXT_y', g: 'NEXT_yg' },
             // { joint: '325', name: '325', lenses: 'YY-GR', autostop: 1, guard: 70, service: 25, y: '325', yg: 'NEXT_y', g: 'NEXT_yg' },
             { joint: '325', name: 'ПН-327', lenses: 'YYG-Rw', autostop: 1, guard: 70, service: 35, y: '327а', yg: 'NEXT_y', double: true, left: true },
