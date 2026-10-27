@@ -124,6 +124,24 @@ async function importTrackPlanProfile(name, track, n, peregon, nextPeregon) {
         Object.assign(nextPeregon.slopes, nextPeregon.slopesOverride);
     }
 
+    console.log(peregon, nextPeregon)
+
+    if (peregon.curvesOverride) {
+        Object.assign(peregon.curves, peregon.curvesOverride);
+    }
+
+    if (nextPeregon.curvesOverride) {
+        Object.assign(nextPeregon.curves, nextPeregon.curvesOverride);
+    }
+
+    if (peregon.slopesOverride) {
+        Object.assign(peregon.slopes, peregon.slopesOverride);
+    }
+
+    if (nextPeregon.slopesOverride) {
+        Object.assign(nextPeregon.slopes, nextPeregon.slopesOverride);
+    }
+
     return paths[track];
 }
 

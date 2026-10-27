@@ -1,0 +1,143 @@
+var lines = lines || {};
+lines['imagine_line_2'] = lines['imagine_line_2'] || {};
+lines['imagine_line_2']['1'] = [
+  {
+    name: 'Проспект Энергетиков',
+    arsDrawBreakpoint: 7,
+    arsAllSteps: false,
+    tStay: 25,
+    K: 1,
+    modes: {
+      0: 'H',
+      100: '0',
+      1854: 'T',
+    },
+    joints: [
+      { x: 0, name: '2179', limit: 40 },
+      { x: 0 + 75, name: '2211', limit: 40 },
+      { x: 0 + 75 + 87.5, name: '2213', limit: 60, later: { 40: 1, 60: 1 } },
+      { x: 0 + 75 + 87.5 + 87.5, name: '2215', limit: 60, later: { 60: 1 } },
+      { x: 0 + 75 + 87.5 + 87.5 + 100, name: '2217', limit: 60 },
+      { x: 0 + 75 + 87.5 + 87.5 + 100 + 225, name: '2219', limit: 60 },
+      { x: 0 + 75 + 87.5 + 87.5 + 100 + 225 + 225, name: '2221', limit: 60 },
+      { x: 0 + 75 + 87.5 + 87.5 + 100 + 225 + 225 + 200, name: '2223', limit: 80 },
+
+      { x: 1941 - 75 - 75 - 75 - 150 - 150 - 200, name: '2267', limit: 80 },
+      { x: 1941 - 75 - 75 - 75 - 150 - 150, name: '2269', limit: 80 },
+      { x: 1941 - 75 - 75 - 75 - 150, name: '2271', limit: 80 },
+      { x: 1941 - 75 - 75 - 75, name: '2273', limit: 80 },
+      { x: 1941 - 75 - 75, name: '2275', limit: 70 },
+      { x: 1941 - 75, name: '2277', limit: 70 },
+      { x: 1941, name: '2279', limit: 60 },
+      { x: 1941 + 75, name: '2311', limit: 40 },
+      { x: 1941 + 75 + 75, name: '2313', limit: 0 },
+      { x: 1941 + 75 + 75 + 75, name: '2315', limit: 0 },
+    ],
+    signals: [
+      { joint: '2211', name: '2211М', lenses: 'YGR', left: true },
+      { joint: '2311', name: '2311М', lenses: 'YGR', left: true },
+    ],
+  },
+  {
+    name: 'Владимирская',
+    arsDrawBreakpoint: 7,
+    arsAllSteps: false,
+    tStay: 25,
+    K: 1,
+    modes: {
+      0: 'H',
+      150: '0',
+      1380: 'T',
+    },
+    joints: [
+      { x: 0, name: '2279', limit: 60 },
+      { x: 0 + 75, name: '2311', limit: 40 },
+      { x: 0 + 75 + 75 + 12.5, name: '2313', limit: 60, later: { 40: 1, 60: 1 } },
+      { x: 0 + 75 + 75 + 75 + 12.5, name: '2315', limit: 60 },
+      { x: 0 + 75 + 75 + 75 + 100 + 12.5 + 12.5, name: '2317', limit: 60 },
+      { x: 0 + 75 + 75 + 75 + 100 + 137.5, name: '2319', limit: 60 },
+
+      { x: 1490 - 75 - 75 - 75 - 150 - 150 - 250, name: '2321', limit: 80 },
+      { x: 1490 - 75 - 75 - 75 - 150 - 150, name: '2369', limit: 80 },
+      { x: 1490 - 75 - 75 - 75 - 150, name: '2371', limit: 80 },
+      { x: 1490 - 75 - 75 - 75, name: '2373', limit: 80 },
+      { x: 1490 - 75 - 75, name: '2375', limit: 70 },
+      { x: 1490 - 75, name: '2377', limit: 70 },
+      { x: 1490, name: '2379', limit: 60 },
+      { x: 1490 + 75, name: '2411', limit: 40 },
+      { x: 1490 + 75 + 75, name: '2413', limit: 0 },
+      { x: 1490 + 75 + 75 + 75, name: '2415', limit: 0 },
+    ],
+    signals: [
+      { joint: '2311', name: '2311М', lenses: 'YGR', left: true },
+      { joint: '2411', name: '2411М', lenses: 'YGR', left: true },
+    ],
+  },
+    {
+    name: 'Селигерская роща',
+    arsDrawBreakpoint: 7,
+    arsAllSteps: false,
+    tStay: 25,
+    K: 1,
+    modes: {
+      0: 'H',
+      220: '0',
+      1211: 'T',
+    },
+    joints: [
+      { x: 0, name: '2379', limit: 60 },
+      { x: 0 + 75, name: '2411', limit: 40 },
+      { x: 0 + 75 + 75, name: '2413', limit: 60, later: { 40: 1, 60: 1 } },
+      { x: 0 + 75 + 75 + 75, name: '2415', limit: 60 },
+      { x: 0 + 75 + 75 + 75 + 100, name: '2417', limit: 60 },
+      { x: 0 + 75 + 75 + 75 + 100 + 100, name: '2419', limit: 60 },
+
+      { x: 1298 - 12.5 - 75 - 75 - 75 - 125 - 125 - 125 - 150, name: '2421', limit: 60 },
+      { x: 1298 - 12.5 - 75 - 75 - 75 - 125 - 125 - 125, name: '2423', limit: 80, later: { 80: 2 } },
+      { x: 1298 - 12.5 - 75 - 75 - 75 - 125 - 125, name: '2469', limit: 80, later: { 70: 1 } },
+      { x: 1298 - 12.5 - 75 - 75 - 75 - 125, name: '2471', limit: 80 },
+      { x: 1298 - 12.5 - 75 - 75 - 75, name: '2473', limit: 80 },
+      { x: 1298 - 12.5 - 75 - 75, name: '2475', limit: 70 },
+      { x: 1298 - 12.5 - 75, name: '2477', limit: 70 },
+      { x: 1298 - 12.5, name: '2479', limit: 60 },
+      { x: 1298 + 62.5, name: '2511', limit: 40 },
+      { x: 1298 + 62.5 + 75, name: '2513', limit: 0 },
+      { x: 1298 + 62.5 + 75 + 75, name: '2515', limit: 0 },
+      { x: 1298 + 62.5 + 75 + 75 + 62.5, name: '2517', limit: 0 },
+    ],
+    signals: [
+      { joint: '2411', name: '2411М', lenses: 'YGR', left: true },
+      { joint: '2473', name: 'ВС2421', lenses: 'BYz-Rw', left: true, back: false, row: 1 },
+      { joint: '2473', name: 'ОП', lenses: 'R', left: true, back: true, row: 0 },
+      { joint: '2511', name: 'ВС2511', lenses: 'BWY-zRw', left: false },
+    ],
+  },
+  {
+    name: 'Восход',
+    arsDrawBreakpoint: 6,
+    arsAllSteps: true,
+    tStay: 25,
+    K: 1,
+    modes: {
+      0: 'H',
+      43: '0',
+    },
+    joints: [
+    ],
+    signals: [
+    ],
+  },
+  {
+    name: 'Восход - Оборот',
+    arsDrawBreakpoint: 6,
+    arsAllSteps: true,
+    tStay: 25,
+    K: 1,
+    modes: {
+    },
+    joints: [
+    ],
+    signals: [
+    ],
+  },
+]
