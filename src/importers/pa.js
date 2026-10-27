@@ -23,7 +23,9 @@ async function importTrackPlanProfile(name, track, n, peregon, nextPeregon) {
 
     const gmTrack = paths[track][0].TrackPath;
 
-    const { plan, prof } = await getPlanProfileFromTrack(name, gmTrack);
+    const legacyPlanProfile = await getLegacyPlanProfile(name, gmTrack);
+    const legacyMode = legacyPlanProfile !== null;
+    const { plan, prof } = legacyPlanProfile ?? await getPlanProfileFromTrack(name, gmTrack);
 
     console.log(plan);
     console.log(prof);
@@ -48,35 +50,61 @@ async function importTrackPlanProfile(name, track, n, peregon, nextPeregon) {
     const planBeginEnd = findBeginEnd(plan, station1X, station2X);
     const planBegin = planBeginEnd.begin;
     const planEnd = planBeginEnd.end;
-    const peregonPlan = buildPeregonPlan(plan, planBegin, planEnd, station1X, station2X);
+    const peregonPlan = buildPeregonPlan(
+        plan,
+        planBegin,
+        planEnd,
+        station1X,
+        legacyMode ? undefined : station2X,
+    );
     peregon.curves = peregonPlan;
 
     const nextPlanBeginEnd = findBeginEnd(plan, station2X, X3);
     const nextPlanBegin = nextPlanBeginEnd.begin;
     const nextPlanEnd = nextPlanBeginEnd.end;
     if (nextPlanBegin != null && nextPlanEnd != null) {
-        const nextPeregonPlan = buildPeregonPlan(plan, nextPlanBegin, nextPlanEnd, station2X, X3);
+        const nextPeregonPlan = buildPeregonPlan(
+            plan,
+            nextPlanBegin,
+            nextPlanEnd,
+            station2X,
+            legacyMode ? undefined : X3,
+        );
         nextPeregon.curves = nextPeregonPlan;
     }
 
     const profBeginEnd = findBeginEnd(prof, station1X, station2X);
     const profBegin = profBeginEnd.begin;
     const profEnd = profBeginEnd.end;
-    const peregonProf = buildPeregonProf(prof, profBegin, profEnd, station1X, station2X);
+    const peregonProf = buildPeregonProf(
+        prof,
+        profBegin,
+        profEnd,
+        station1X,
+        legacyMode ? undefined : station2X,
+    );
     peregon.slopes = peregonProf;
 
     const nextProfBeginEnd = findBeginEnd(prof, station2X, X3);
     const nextProfBegin = nextProfBeginEnd.begin;
     const nextProfEnd = nextProfBeginEnd.end;
     if (nextProfBegin != null && nextProfEnd != null) {
-        const nextPeregonProf = buildPeregonProf(prof, nextProfBegin, nextProfEnd, station2X, X3);
+        const nextPeregonProf = buildPeregonProf(
+            prof,
+            nextProfBegin,
+            nextProfEnd,
+            station2X,
+            legacyMode ? undefined : X3,
+        );
         nextPeregon.slopes = nextPeregonProf;
     }
 
     filterSlopesSharp(peregon);
     filterSlopesSharp(nextPeregon);
-    filterSlopesSharp(peregon);
-    filterSlopesSharp(nextPeregon);
+    if (!legacyMode) {
+        filterSlopesSharp(peregon);
+        filterSlopesSharp(nextPeregon);
+    }
 
     // console.log(peregon, nextPeregon)
 
@@ -97,6 +125,34 @@ async function importTrackPlanProfile(name, track, n, peregon, nextPeregon) {
     }
 
     return paths[track];
+}
+
+async function getLegacyPlanProfile(name, gmTrack) {
+    const planUrl = `/data/metrostroi_data/plan_${name}_${gmTrack}.json`;
+    const profUrl = `/data/metrostroi_data/prof_${name}_${gmTrack}.json`;
+    const [planRes, profRes] = await Promise.all([fetch(planUrl), fetch(profUrl)]);
+    const responses = [planRes, profRes];
+    const unavailable = responses.filter(response => !response.ok);
+
+    for (const response of unavailable) {
+        if (response.status !== 404 && response.status !== 410) {
+            throw new Error(`Failed to check legacy plan/profile files: HTTP ${response.status}`);
+        }
+    }
+
+    if (unavailable.length > 0) {
+        if (unavailable.length === 1) {
+            console.warn(`Incomplete legacy plan/profile pair for ${name} track ${gmTrack}; using track data instead.`);
+        }
+        return null;
+    }
+
+    const [plan, prof] = await Promise.all([planRes.json(), profRes.json()]);
+    if (!Array.isArray(plan) || !Array.isArray(prof)) {
+        throw new Error(`Legacy plan/profile files for ${name} track ${gmTrack} must contain arrays.`);
+    }
+
+    return { plan, prof };
 }
 
 function filterSlopesSharp(peregon) {
@@ -165,12 +221,12 @@ function findBeginEnd(planOrProf, station1X, station2X) {
 }
 
 function buildPeregonPlan(plan, begin, end, station1X, station2X) {
-    const trackLength = station2X - station1X;
+    const trackLength = station2X == null ? null : station2X - station1X;
     if (begin < 0) begin = 0;
     const peregonPlan = {};
     for (let i = begin; i <= end; i++) {
         const x = Math.round(plan[i].ordinate - station1X > 0 ? plan[i].ordinate - station1X : 0);
-        if (x >= trackLength) return peregonPlan;
+        if (trackLength !== null && x >= trackLength) return peregonPlan;
         const radius = plan[i].elementType === 'straight' ? 0 : Math.round(plan[i].radius);
         const sign = plan[i].elementType === 'left' ? -1 : 1;
         peregonPlan[x] = radius * sign;
@@ -180,12 +236,12 @@ function buildPeregonPlan(plan, begin, end, station1X, station2X) {
 }
 
 function buildPeregonProf(prof, begin, end, station1X, station2X) {
-    const trackLength = station2X - station1X;
+    const trackLength = station2X == null ? null : station2X - station1X;
     if (begin < 0) begin = 0;
     const peregonProf = {};
     for (let i = begin; i <= end; i++) {
         const x = Math.round(prof[i].ordinate - station1X > 0 ? prof[i].ordinate - station1X : 0);
-        if (x >= trackLength) return peregonProf;
+        if (trackLength !== null && x >= trackLength) return peregonProf;
         const slope = Math.round(prof[i].slope * 1000);
         peregonProf[x] = slope;
         // console.log(i, x, prof[i], slope);
