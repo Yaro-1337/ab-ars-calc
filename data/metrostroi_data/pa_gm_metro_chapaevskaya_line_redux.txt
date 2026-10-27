@@ -1,0 +1,1668 @@
+{
+	"1": [
+		[
+			{
+				"slopes": [
+					[
+						-35,
+						145.3781339705578
+					],
+					[
+						0,
+						400.88528058870054
+					],
+					[
+						5,
+						449.93790035298025,
+						1
+					],
+					[
+						0,
+						486.8544973605508
+					],
+					[
+						5,
+						890.4145026257881,
+						2
+					],
+					[
+						0,
+						929.9133546375193
+					],
+					[
+						-5,
+						1082.2106868498759,
+						1
+					],
+					[
+						0,
+						1116.750688555411
+					],
+					[
+						-25,
+						1293.7195182927262,
+						1
+					],
+					[
+						0,
+						1471.5011892045063
+					],
+					[
+						-5,
+						1511.1106538201266,
+						0
+					],
+					[
+						0,
+						1629.2372486756767
+					],
+					[
+						-5,
+						1766.7883139491594,
+						0
+					],
+					[
+						0,
+						1815.78874461665
+					],
+					[
+						-15,
+						1904.567066195843
+					],
+					[
+						0,
+						2226.802618013096
+					],
+					[
+						-5,
+						2236.7263466023487,
+						0
+					],
+					[
+						0,
+						2272.054555256145
+					],
+					[
+						-15,
+						2319.794407985973
+					],
+					[
+						0,
+						2435.9435211479304
+					],
+					[
+						-15,
+						2495.442417483782
+					],
+					[
+						0,
+						2610.733318187224
+					],
+					[
+						-25,
+						0
+					],
+					[
+						-55,
+						2630.5644940369225
+					],
+					[
+						5,
+						2650.265540300461
+					],
+					[
+						0,
+						2818.3815252594577
+					],
+					[
+						-15,
+						3015.714339909734
+					],
+					[
+						0,
+						3141.9410563879364
+					],
+					[
+						-25,
+						3614.8201829346335,
+						1
+					],
+					[
+						0,
+						3793.0613268170473
+					],
+					[
+						15,
+						3931.1028062299556,
+						3
+					],
+					[
+						0,
+						3980.285172230737
+					],
+					[
+						-35,
+						3988.795780314284
+					],
+					[
+						-60,
+						4046.626136921392
+					],
+					[
+						20,
+						4066.36829900506
+					],
+					[
+						-15,
+						4224.411787292667
+					],
+					[
+						0,
+						4350.179747427979
+					],
+					[
+						-10,
+						4527.345236263055,
+						1
+					],
+					[
+						0,
+						4642.894628353249
+					],
+					[
+						5,
+						4780.9515897448755,
+						1
+					],
+					[
+						0,
+						4820.293905864838
+					],
+					[
+						-35,
+						5981.878139072007
+					],
+					[
+						0,
+						6248.295471406359
+					],
+					[
+						-35,
+						6957.31087353705
+					],
+					[
+						0,
+						7204.752887164638
+					],
+					[
+						-5,
+						7758.094733943166,
+						4
+					],
+					[
+						0,
+						7807.269526911768
+					],
+					[
+						5,
+						7885.93861154036,
+						3
+					],
+					[
+						0,
+						7925.720817110216
+					],
+					[
+						-5,
+						7955.664647704441,
+						1
+					],
+					[
+						0,
+						8005.217322493834
+					],
+					[
+						5,
+						8716.806103005816,
+						0
+					],
+					[
+						0,
+						8815.620737090783
+					],
+					[
+						-35,
+						9092.67669268953
+					],
+					[
+						0,
+						9319.956917208634
+					],
+					[
+						-35,
+						11611.209509412633
+					],
+					[
+						0,
+						11829.368967910343
+					],
+					[
+						-30,
+						0
+					],
+					[
+						-55,
+						12551.486783872671
+					],
+					[
+						5,
+						12571.085217392312
+					],
+					[
+						0,
+						12679.61076668992
+					],
+					[
+						-10,
+						13439.064228148865,
+						1
+					],
+					[
+						0,
+						13537.7214610485
+					],
+					[
+						-35,
+						14257.883440046156
+					],
+					[
+						0,
+						14484.815933586415
+					]
+				],
+				"signals": [
+					[
+						"TеST",
+						759.8281753593373
+					],
+					[
+						"9",
+						822.3277859624706
+					],
+					[
+						"7",
+						884.829202077094
+					],
+					[
+						"5",
+						947.33719444544
+					],
+					[
+						"3",
+						1022.3288207941454
+					],
+					[
+						"99",
+						1097.3024856337836
+					],
+					[
+						"101",
+						1172.3273860391769
+					],
+					[
+						"103",
+						1247.3279002055856
+					],
+					[
+						"105",
+						1309.417510252506
+					],
+					[
+						"107",
+						1359.4660867141192
+					],
+					[
+						"109",
+						1409.4643578112657
+					],
+					[
+						"111",
+						1459.4097045923756
+					],
+					[
+						"111а",
+						1534.3451378808365
+					],
+					[
+						"111б",
+						1671.8513466467248
+					],
+					[
+						"111в",
+						1784.3496231387574
+					],
+					[
+						"113",
+						1896.8482290725094
+					],
+					[
+						"113а",
+						2009.4701419925557
+					],
+					[
+						"115",
+						2234.342046295616
+					],
+					[
+						"115а",
+						2346.8129181570466
+					],
+					[
+						"117",
+						2459.3498758454493
+					],
+					[
+						"117а",
+						2521.806997472486
+					],
+					[
+						"119а",
+						2659.4687527046094
+					],
+					[
+						"121",
+						2734.468657673257
+					],
+					[
+						"123",
+						2809.3362088752087
+					],
+					[
+						"125",
+						2884.3501783524584
+					],
+					[
+						"125S",
+						2934.4282966006485
+					],
+					[
+						"127S",
+						2984.425950714745
+					],
+					[
+						"129",
+						3021.9176030923463
+					],
+					[
+						"131",
+						3059.4021341358607
+					],
+					[
+						"133",
+						3109.4605686254517
+					],
+					[
+						"133а",
+						3171.9266119823974
+					],
+					[
+						"133б",
+						3334.4278512898372
+					],
+					[
+						"135",
+						3559.4226417172476
+					],
+					[
+						"137",
+						3784.482944823424
+					],
+					[
+						"139",
+						3859.4251751209113
+					],
+					[
+						"139а",
+						3971.9045293770446
+					],
+					[
+						"139б",
+						4084.543139262007
+					],
+					[
+						"141",
+						4196.997381395336
+					],
+					[
+						"141а",
+						4296.959468958949
+					],
+					[
+						"143",
+						4384.4263241188955
+					],
+					[
+						"145",
+						4421.922964558594
+					],
+					[
+						"147",
+						4471.927045953422
+					],
+					[
+						"147а",
+						4522.316468171247
+					],
+					[
+						"149",
+						4559.799164922323
+					],
+					[
+						"151",
+						4597.350915886645
+					],
+					[
+						"153",
+						4672.31613902767
+					],
+					[
+						"153а",
+						4722.315618651797
+					],
+					[
+						"153б",
+						4772.315915624393
+					],
+					[
+						"153в",
+						4909.816511172231
+					],
+					[
+						"153г",
+						5084.816267479544
+					],
+					[
+						"155",
+						5259.815404804504
+					],
+					[
+						"157",
+						5434.814229545999
+					],
+					[
+						"159",
+						5609.815886309488
+					],
+					[
+						"161",
+						5784.819466728354
+					],
+					[
+						"163",
+						5947.309591483174
+					],
+					[
+						"165",
+						6109.89291785235
+					],
+					[
+						"167",
+						6209.894767385199
+					],
+					[
+						"167а",
+						6284.814060386461
+					],
+					[
+						"167б",
+						6359.818812616877
+					],
+					[
+						"169",
+						6434.814415685253
+					],
+					[
+						"171",
+						6509.815758250422
+					],
+					[
+						"173",
+						6572.304794258808
+					],
+					[
+						"175",
+						6609.814268605714
+					],
+					[
+						"177",
+						6647.3150552225325
+					],
+					[
+						"177S",
+						6697.1095799337
+					],
+					[
+						"179S",
+						6759.609820877707
+					],
+					[
+						"181S",
+						6797.110988445903
+					],
+					[
+						"183",
+						6872.1052720444295
+					],
+					[
+						"183а",
+						6959.621209778823
+					],
+					[
+						"183б",
+						7134.686668745278
+					],
+					[
+						"183в",
+						7309.608456350388
+					],
+					[
+						"185",
+						7609.603175196974
+					],
+					[
+						"187",
+						7909.597924155694
+					],
+					[
+						"189",
+						8197.111091530822
+					],
+					[
+						"191",
+						8272.112993288756
+					],
+					[
+						"191а",
+						8359.603401293507
+					],
+					[
+						"191б",
+						8434.608030834359
+					],
+					[
+						"193",
+						8509.611613363752
+					],
+					[
+						"195",
+						8559.615295608972
+					],
+					[
+						"197",
+						8597.109237569935
+					],
+					[
+						"199",
+						8634.607647338267
+					],
+					[
+						"199S",
+						8672.341268351727
+					],
+					[
+						"201S",
+						8709.840935302587
+					],
+					[
+						"203S",
+						8784.886050732253
+					],
+					[
+						"205",
+						8847.342166150545
+					],
+					[
+						"205а",
+						8909.842369766538
+					],
+					[
+						"205б",
+						9034.84011963921
+					],
+					[
+						"205в",
+						9197.429344744483
+					],
+					[
+						"205г",
+						9359.842539834273
+					],
+					[
+						"207",
+						9647.344965617447
+					],
+					[
+						"209",
+						9909.839910985598
+					],
+					[
+						"211",
+						10172.344548385483
+					],
+					[
+						"213",
+						10284.841661979855
+					],
+					[
+						"213а",
+						10397.34301605926
+					],
+					[
+						"215",
+						10484.824394487821
+					],
+					[
+						"217",
+						10559.837943987994
+					],
+					[
+						"219",
+						10634.842686332284
+					],
+					[
+						"221",
+						10709.842048142084
+					],
+					[
+						"223",
+						10784.84065083364
+					],
+					[
+						"711",
+						10859.841666101227
+					]
+				],
+				"sensors": [],
+				"slope": [
+					[
+						14257.883440046156,
+						-4.563554217448678
+					],
+					[
+						14267.710961130817,
+						-7.413935875947487
+					],
+					[
+						14277.578638221557,
+						-13.025251897617078
+					],
+					[
+						14287.505796357764,
+						-27.041512540076972
+					],
+					[
+						14297.301162129375,
+						-40.85860227022177
+					],
+					[
+						14307.229409463907,
+						-33.728493480591595
+					],
+					[
+						14317.074186542457,
+						-35.79141809237873
+					],
+					[
+						14326.862345915968,
+						-34.900065898754285
+					],
+					[
+						14336.81627408422,
+						-34.54316987568755
+					],
+					[
+						14346.701514220715,
+						-34.17544491148784
+					],
+					[
+						14356.505180753662,
+						-35.97658734851175
+					],
+					[
+						14366.466994923663,
+						-34.664818610431034
+					],
+					[
+						14376.329619974167,
+						-35.46734914791649
+					],
+					[
+						14386.340444182657,
+						-34.371047731673954
+					],
+					[
+						14396.23608157923,
+						-35.13970390008013
+					],
+					[
+						14406.005789014474,
+						-35.079409278808775
+					],
+					[
+						14415.907236775922,
+						-35.30769365360271
+					],
+					[
+						14425.661943211931,
+						-33.609896416088596
+					],
+					[
+						14435.515167048736,
+						-36.26715857852621
+					],
+					[
+						14445.462441363565,
+						-28.1780336239913
+					],
+					[
+						14455.22155091533,
+						-9.273204226554542
+					],
+					[
+						14465.04921888656,
+						-6.356646869314872
+					],
+					[
+						14474.924380097838,
+						-2.924562540179541
+					]
+				],
+				"slopeLength": 226.93249354025667,
+				"stations": [
+					{
+						"path": 1,
+						"pos": 15.070068004985576,
+						"hasSwitches": true,
+						"id": 110,
+						"name_last": "Депо",
+						"rightDoors": true,
+						"name": "Депо",
+						"isLast": false
+					},
+					{
+						"path": 1,
+						"pos": 748.2278033315903,
+						"hasSwitches": false,
+						"id": 100,
+						"rightDoors": true,
+						"name": "Оборот Заря",
+						"isLast": false
+					},
+					{
+						"path": 1,
+						"pos": 1282.749310394301,
+						"hasSwitches": false,
+						"id": 101,
+						"rightDoors": true,
+						"name": "Заря",
+						"isLast": false
+					},
+					{
+						"path": 1,
+						"pos": 2918.826404877793,
+						"hasSwitches": false,
+						"id": 102,
+						"rightDoors": true,
+						"name": "Чапаевский Парк",
+						"isLast": false
+					},
+					{
+						"path": 1,
+						"pos": 4504.216100121413,
+						"hasSwitches": false,
+						"id": 103,
+						"rightDoors": true,
+						"name": "Ярославская",
+						"isLast": false
+					},
+					{
+						"id": 104,
+						"path": 1,
+						"pos": 6684.00772254025,
+						"hasSwitches": false,
+						"isInWrong": true,
+						"name_last": "Перловской",
+						"rightDoors": true,
+						"name": "Перловская",
+						"isLast": true
+					},
+					{
+						"path": 1,
+						"pos": 8688.2415058079,
+						"hasSwitches": false,
+						"id": 105,
+						"rightDoors": false,
+						"name": "Куликовская",
+						"isLast": false
+					},
+					{
+						"id": 106,
+						"path": 1,
+						"pos": 10695.325780959573,
+						"hasSwitches": true,
+						"isInWrong": false,
+						"name_last": "Токоями",
+						"rightDoors": false,
+						"name": "Токоями",
+						"isLast": true
+					},
+					{
+						"path": 1,
+						"pos": 12790.545102258158,
+						"hasSwitches": false,
+						"id": 107,
+						"rightDoors": false,
+						"name": "Есенинская",
+						"isLast": false
+					},
+					{
+						"id": 108,
+						"path": 1,
+						"pos": 15385.262789501608,
+						"hasSwitches": true,
+						"isInWrong": false,
+						"name_last": "Красноярской",
+						"rightDoors": false,
+						"name": "Красноярская",
+						"isLast": true
+					}
+				]
+			},
+			15700.577218247523
+		],
+		[
+			{
+				"slopes": [
+					[
+						40,
+						895.8664737533646
+					],
+					[
+						0,
+						1122.8528641115106
+					],
+					[
+						25,
+						2662.7888941398883
+					],
+					[
+						50,
+						2682.344241477048
+					],
+					[
+						0,
+						2800.7954404791135
+					],
+					[
+						40,
+						3560.388476538094
+					],
+					[
+						0,
+						3797.23803840204
+					],
+					[
+						40,
+						6151.184381459288
+					],
+					[
+						0,
+						6377.822356493485
+					],
+					[
+						20,
+						6637.423782514899,
+						2
+					],
+					[
+						0,
+						6726.498811944878
+					],
+					[
+						-5,
+						7427.3251728315,
+						3
+					],
+					[
+						0,
+						7466.630529111943
+					],
+					[
+						5,
+						7496.187353417066,
+						2
+					],
+					[
+						0,
+						7526.231725383177
+					],
+					[
+						-5,
+						7615.599712023246,
+						2
+					],
+					[
+						0,
+						7675.351215815069
+					],
+					[
+						40,
+						8210.51487277552
+					],
+					[
+						0,
+						8477.539926369984
+					],
+					[
+						40,
+						9208.446827532982
+					],
+					[
+						0,
+						9484.415858959439
+					],
+					[
+						-5,
+						10442.91510875329
+					],
+					[
+						0,
+						10558.949458348045
+					],
+					[
+						-10,
+						10598.343712927986,
+						0
+					],
+					[
+						0,
+						10714.56351559982
+					],
+					[
+						5,
+						10916.84450670289,
+						0
+					],
+					[
+						0,
+						10954.823430875846
+					],
+					[
+						15,
+						11206.650320031327
+					],
+					[
+						60,
+						11253.541248919735
+					],
+					[
+						30,
+						11411.42491295887
+					],
+					[
+						0,
+						11440.905091909632
+					],
+					[
+						-5,
+						11480.372281170577,
+						2
+					],
+					[
+						0,
+						11522.961990943215
+					],
+					[
+						15,
+						11660.428943817513,
+						0
+					],
+					[
+						0,
+						11857.263052976958
+					],
+					[
+						5,
+						11975.65451890243,
+						2
+					],
+					[
+						0,
+						12051.594163407533
+					],
+					[
+						5,
+						12392.700062337637,
+						0
+					],
+					[
+						0,
+						12430.487718057408
+					],
+					[
+						25,
+						12628.130882250443
+					],
+					[
+						0,
+						12825.402640166558
+					],
+					[
+						5,
+						12864.782250209233,
+						0
+					],
+					[
+						0,
+						12899.473662644481
+					],
+					[
+						5,
+						12909.284171458195,
+						0
+					],
+					[
+						0,
+						12947.366608302129
+					],
+					[
+						-5,
+						13055.772127582237,
+						2
+					],
+					[
+						0,
+						13098.46499372337
+					],
+					[
+						15,
+						13108.327995451453,
+						3
+					],
+					[
+						0,
+						13167.185567574203
+					],
+					[
+						-5,
+						13174.954213009756,
+						0
+					],
+					[
+						0,
+						13233.82205285732
+					],
+					[
+						5,
+						13243.628187254231,
+						0
+					],
+					[
+						0,
+						13287.401545044497
+					],
+					[
+						15,
+						13326.303765310535,
+						0
+					],
+					[
+						0,
+						13533.250635336452
+					],
+					[
+						-5,
+						13612.070958846794,
+						0
+					],
+					[
+						0,
+						13670.82170568988
+					],
+					[
+						0,
+						13835.707222107249
+					],
+					[
+						0,
+						13941.630541013634
+					],
+					[
+						25,
+						0
+					],
+					[
+						55,
+						13951.589406336785
+					],
+					[
+						0,
+						14128.757922407502
+					],
+					[
+						15,
+						14276.49756876108,
+						3
+					],
+					[
+						0,
+						14335.582005552706
+					],
+					[
+						-15,
+						14343.423924406356
+					],
+					[
+						0,
+						14402.646316759634
+					],
+					[
+						-10,
+						14432.081765062736,
+						0
+					],
+					[
+						0,
+						14547.74228254603
+					],
+					[
+						5,
+						14901.824905500418,
+						2
+					],
+					[
+						0,
+						14970.86963139567
+					],
+					[
+						35,
+						15049.09989540766
+					],
+					[
+						0,
+						15265.741057770068
+					],
+					[
+						-5,
+						15324.312866455903,
+						1
+					],
+					[
+						0,
+						15373.531345166111
+					]
+				],
+				"signals": [],
+				"sensors": [],
+				"slope": [
+					[
+						15471.568226334082,
+						2.786272558515723
+					],
+					[
+						15481.341043854445,
+						-2.034081138152677
+					]
+				],
+				"slopeLength": 19.540645516419705,
+				"stations": [
+					{
+						"path": 2,
+						"pos": 109.80649884292457,
+						"hasSwitches": false,
+						"id": 108,
+						"rightDoors": false,
+						"name": "Красноярская",
+						"isLast": false
+					},
+					{
+						"path": 2,
+						"pos": 2651.4012697894796,
+						"hasSwitches": false,
+						"id": 107,
+						"rightDoors": false,
+						"name": "Есенинская",
+						"isLast": false
+					},
+					{
+						"id": 106,
+						"path": 2,
+						"pos": 4849.801071704859,
+						"hasSwitches": false,
+						"isInWrong": true,
+						"name_last": "Токоями",
+						"rightDoors": false,
+						"name": "Токоями",
+						"isLast": true
+					},
+					{
+						"path": 2,
+						"pos": 6852.123493243155,
+						"hasSwitches": false,
+						"id": 105,
+						"rightDoors": false,
+						"name": "Куликовская",
+						"isLast": false
+					},
+					{
+						"id": 104,
+						"path": 2,
+						"pos": 8855.685129938172,
+						"hasSwitches": false,
+						"isInWrong": false,
+						"name_last": "Перловской",
+						"rightDoors": true,
+						"name": "Перловская",
+						"isLast": true
+					},
+					{
+						"path": 2,
+						"pos": 11072.635702362857,
+						"hasSwitches": false,
+						"id": 103,
+						"rightDoors": true,
+						"name": "Ярославская",
+						"isLast": false
+					},
+					{
+						"path": 2,
+						"pos": 12626.655632421642,
+						"hasSwitches": false,
+						"id": 102,
+						"rightDoors": true,
+						"name": "Чапаевский Парк",
+						"isLast": false
+					},
+					{
+						"path": 2,
+						"pos": 14231.862137359321,
+						"hasSwitches": true,
+						"id": 101,
+						"name_last": "Зари",
+						"rightDoors": true,
+						"name": "Заря",
+						"isLast": true
+					},
+					{
+						"path": 2,
+						"pos": 14780.986954878925,
+						"hasSwitches": true,
+						"id": 100,
+						"name_last": "Зари",
+						"rightDoors": true,
+						"name": "Оборот Заря",
+						"isLast": true
+					},
+					{
+						"path": 2,
+						"pos": 15439.444935961086,
+						"hasSwitches": true,
+						"id": 110,
+						"name_last": "Депо",
+						"rightDoors": true,
+						"name": "Депо",
+						"isLast": true
+					}
+				]
+			},
+			15738.973779168573
+		]
+	],
+	"markers": [
+		{
+			"PAWrongPath": false,
+			"TrackPath": 1,
+			"PAStationHasSwtiches": false,
+			"PADeadlockEnd": false,
+			"TrackX": 1569.0072546503302,
+			"PAStationRightDoors": true,
+			"PALastStation": false,
+			"PAStationID": 101,
+			"PADeadlockStart": false,
+			"PALineChangeStationID": false,
+			"PAStationPath": 1,
+			"Angles": "{0.0055 89.9425 0}",
+			"PAStationName": "Заря",
+			"Pos": "[3587.0608 522.7451 270.7526]",
+			"PAType": 1,
+			"PALineChange": false,
+			"PALineChangeStationPath": false
+		},
+		{
+			"TrackPath": 2,
+			"PAStationHasSwtiches": true,
+			"TrackX": 14527.711457892245,
+			"PAStationRightDoors": true,
+			"PALastStation": true,
+			"PAStationID": 101,
+			"PAStationPath": 2,
+			"Angles": "{0.0144 269.9377 0}",
+			"PAStationName": "Заря",
+			"Pos": "[3323.8657 -4280.8242 270.807]",
+			"PAType": 1,
+			"PALastStationName": "Зари"
+		},
+		{
+			"PAWrongPath": false,
+			"TrackPath": 1,
+			"PAStationHasSwtiches": false,
+			"PADeadlockEnd": false,
+			"TrackX": 3205.084353777692,
+			"PAStationRightDoors": true,
+			"PALastStation": false,
+			"PAStationID": 102,
+			"PADeadlockStart": false,
+			"PALineChangeStationID": false,
+			"PAStationPath": 1,
+			"Angles": "{359.9678 90.08 0}",
+			"PAStationName": "Чапаевский Парк",
+			"Pos": "[9129.5557 6147.6313 -940.963]",
+			"PAType": 1,
+			"PALineChange": false,
+			"PALineChangeStationPath": false
+		},
+		{
+			"PAWrongPath": false,
+			"TrackPath": 2,
+			"PAStationHasSwtiches": false,
+			"PADeadlockEnd": false,
+			"TrackX": 12922.504950955206,
+			"PAStationRightDoors": true,
+			"PALastStation": false,
+			"PAStationID": 102,
+			"PADeadlockStart": false,
+			"PALineChangeStationID": false,
+			"PAStationPath": 2,
+			"Angles": "{0.1282 270.0297 0}",
+			"PAStationName": "Чапаевский Парк",
+			"Pos": "[8865.6553 1378.9972 -941.0272]",
+			"PAType": 1,
+			"PALineChange": false,
+			"PALineChangeStationPath": false
+		},
+		{
+			"PAWrongPath": false,
+			"TrackPath": 1,
+			"PAStationHasSwtiches": false,
+			"PADeadlockEnd": false,
+			"TrackX": 4790.474045042589,
+			"PAStationRightDoors": true,
+			"PALastStation": false,
+			"PAStationID": 103,
+			"PADeadlockStart": false,
+			"PALineChangeStationID": false,
+			"PAStationPath": 1,
+			"Angles": "{359.9948 90.0433 0}",
+			"PAStationName": "Ярославская",
+			"Pos": "[3161.3708 -265.4001 -1749.2614]",
+			"PAType": 1,
+			"PALineChange": false,
+			"PALineChangeStationPath": false
+		},
+		{
+			"PAWrongPath": false,
+			"TrackPath": 2,
+			"PAStationHasSwtiches": false,
+			"PADeadlockEnd": false,
+			"TrackX": 11368.485017718378,
+			"PAStationRightDoors": true,
+			"PALastStation": false,
+			"PAStationID": 103,
+			"PADeadlockStart": false,
+			"PALineChangeStationID": false,
+			"PAStationPath": 2,
+			"Angles": "{0.0386 270.0204 0}",
+			"PAStationName": "Ярославская",
+			"Pos": "[2897.052 -5036.2549 -1748.8693]",
+			"PAType": 1,
+			"PALineChange": false,
+			"PALineChangeStationPath": false
+		},
+		{
+			"PAWrongPath": true,
+			"TrackPath": 1,
+			"PAStationHasSwtiches": false,
+			"TrackX": 6970.265672046403,
+			"PAStationRightDoors": true,
+			"PALastStation": true,
+			"PAStationID": 104,
+			"PAStationPath": 1,
+			"Angles": "{0.0174 89.9698 0}",
+			"PAStationName": "Перловская",
+			"Pos": "[-14630.7471 6125.2012 -2166.8887]",
+			"PAType": 1,
+			"PALastStationName": "Перловской"
+		},
+		{
+			"PAWrongPath": false,
+			"TrackPath": 2,
+			"PAStationHasSwtiches": false,
+			"TrackX": 9151.53445068144,
+			"PAStationRightDoors": true,
+			"PALastStation": true,
+			"PAStationID": 104,
+			"PAStationPath": 2,
+			"Angles": "{0.0151 269.9099 0}",
+			"PAStationName": "Перловская",
+			"Pos": "[-14894.5391 1292.1633 -2167.1145]",
+			"PAType": 1,
+			"PALastStationName": "Перловской"
+		},
+		{
+			"PAWrongPath": false,
+			"TrackPath": 2,
+			"PAStationHasSwtiches": false,
+			"PADeadlockEnd": false,
+			"TrackX": 7147.972814029282,
+			"PAStationRightDoors": false,
+			"PALastStation": false,
+			"PAStationID": 105,
+			"PADeadlockStart": false,
+			"PALineChangeStationID": false,
+			"PAStationPath": 2,
+			"Angles": "{0.0039 180.1562 0}",
+			"PAStationName": "Куликовская",
+			"Pos": "[-5540.1499 -14904.4697 -2550.9656]",
+			"PAType": 1,
+			"PALineChange": false,
+			"PALineChangeStationPath": false
+		},
+		{
+			"PAWrongPath": false,
+			"TrackPath": 1,
+			"PAStationHasSwtiches": false,
+			"PADeadlockEnd": false,
+			"TrackX": 8974.499452093383,
+			"PAStationRightDoors": false,
+			"PALastStation": false,
+			"PAStationID": 105,
+			"PADeadlockStart": false,
+			"PALineChangeStationID": false,
+			"PAStationPath": 1,
+			"Angles": "{359.9822 359.9069 0}",
+			"PAStationName": "Куликовская",
+			"Pos": "[-773.7905 -15568.3262 -2551.0042]",
+			"PAType": 1,
+			"PALineChange": false,
+			"PALineChangeStationPath": false
+		},
+		{
+			"PAWrongPath": false,
+			"TrackPath": 1,
+			"PAStationHasSwtiches": true,
+			"TrackX": 10981.583724325465,
+			"PAStationRightDoors": false,
+			"PALastStation": true,
+			"PAStationID": 106,
+			"PAStationPath": 1,
+			"Angles": "{0.0037 90.0059 0}",
+			"PAStationName": "Токоями",
+			"Pos": "[-8576.7852 -4989.938 -2949.2412]",
+			"PAType": 1,
+			"PALastStationName": "Токоями"
+		},
+		{
+			"PAWrongPath": true,
+			"TrackPath": 2,
+			"PAStationHasSwtiches": false,
+			"TrackX": 5145.650396316398,
+			"PAStationRightDoors": false,
+			"PALastStation": true,
+			"PAStationID": 106,
+			"PAStationPath": 2,
+			"Angles": "{359.998 270.1192 0}",
+			"PAStationName": "Токоями",
+			"Pos": "[-9371.2969 -9758.374 -2949.2024]",
+			"PAType": 1,
+			"PALastStationName": "Токоями"
+		},
+		{
+			"PAWrongPath": false,
+			"TrackPath": 2,
+			"PAStationHasSwtiches": false,
+			"PADeadlockEnd": false,
+			"TrackX": 2947.2505889107406,
+			"PAStationRightDoors": false,
+			"PALastStation": false,
+			"PAStationID": 107,
+			"PADeadlockStart": false,
+			"PALineChangeStationID": false,
+			"PAStationPath": 2,
+			"Angles": "{0.0123 269.9088 0}",
+			"PAStationName": "Есенинская",
+			"Pos": "[-13593.8701 1113.3446 -3517.135]",
+			"PAType": 1,
+			"PALineChange": false,
+			"PALineChangeStationPath": false
+		},
+		{
+			"PAWrongPath": false,
+			"TrackPath": 1,
+			"PAStationHasSwtiches": false,
+			"PADeadlockEnd": false,
+			"TrackX": 13076.803046868608,
+			"PAStationRightDoors": false,
+			"PALastStation": false,
+			"PAStationID": 107,
+			"PADeadlockStart": false,
+			"PALineChangeStationID": false,
+			"PAStationPath": 1,
+			"Angles": "{359.991 89.9911 0}",
+			"PAStationName": "Есенинская",
+			"Pos": "[-12570.6553 5883.6582 -3516.8816]",
+			"PAType": 1,
+			"PALineChange": false,
+			"PALineChangeStationPath": false
+		},
+		{
+			"PAWrongPath": false,
+			"TrackPath": 2,
+			"PAStationHasSwtiches": false,
+			"PADeadlockEnd": false,
+			"TrackX": 405.65582053291104,
+			"PAStationRightDoors": false,
+			"PALastStation": false,
+			"PAStationID": 108,
+			"PADeadlockStart": false,
+			"PALineChangeStationID": false,
+			"PAStationPath": 2,
+			"Angles": "{359.9652 89.7421 0}",
+			"PAStationName": "Красноярская",
+			"Pos": "[-14344.2383 7204.9048 -3923.5071]",
+			"PAType": 1,
+			"PALineChange": false,
+			"PALineChangeStationPath": false
+		},
+		{
+			"PAWrongPath": false,
+			"TrackPath": 1,
+			"PAStationHasSwtiches": true,
+			"TrackX": 15671.520734512998,
+			"PAStationRightDoors": false,
+			"PALastStation": true,
+			"PAStationID": 108,
+			"PAStationPath": 1,
+			"Angles": "{359.9828 270.0832 0}",
+			"PAStationName": "Красноярская",
+			"Pos": "[-15137.5137 2436.8174 -3923.302]",
+			"PAType": 1,
+			"PALastStationName": "Красноярской"
+		},
+		{
+			"TrackPath": 2,
+			"PAStationHasSwtiches": true,
+			"TrackX": 15076.83627004376,
+			"PAStationRightDoors": true,
+			"PALastStation": true,
+			"PAStationID": 100,
+			"PAStationPath": 2,
+			"Angles": "{359.9859 89.9571 0}",
+			"PAStationName": "Оборот Заря",
+			"Pos": "[12801.5273 5004.5435 270.7144]",
+			"PAType": 1,
+			"PALastStationName": "Зари"
+		},
+		{
+			"PAWrongPath": false,
+			"TrackPath": 1,
+			"PAStationHasSwtiches": false,
+			"PADeadlockEnd": false,
+			"TrackX": 1034.4857478681145,
+			"PAStationRightDoors": true,
+			"PALastStation": false,
+			"PAStationID": 100,
+			"PADeadlockStart": false,
+			"PALineChangeStationID": false,
+			"PAStationPath": 1,
+			"Angles": "{0.001 269.9118 0}",
+			"PAStationName": "Оборот Заря",
+			"Pos": "[12538.0967 256.8135 270.8389]",
+			"PAType": 1,
+			"PALineChange": false,
+			"PALineChangeStationPath": false
+		},
+		{
+			"TrackPath": 2,
+			"PAStationHasSwtiches": true,
+			"TrackX": 15735.29425525561,
+			"PAStationRightDoors": true,
+			"PALastStation": true,
+			"PAStationID": 110,
+			"PAStationPath": 2,
+			"Angles": "{0.0004 269.9534 0}",
+			"PAStationName": "Депо",
+			"Pos": "[-6484.3374 8507.5088 546.6882]",
+			"PAType": 1,
+			"PALastStationName": "Депо"
+		},
+		{
+			"PAWrongPath": false,
+			"TrackPath": 1,
+			"PAStationHasSwtiches": true,
+			"PADeadlockEnd": false,
+			"TrackX": 301.32801301637386,
+			"PAStationRightDoors": true,
+			"PALastStation": false,
+			"PAStationID": 110,
+			"PADeadlockStart": false,
+			"PALineChangeStationID": false,
+			"PAStationPath": 1,
+			"Angles": "{359.9986 89.9298 0}",
+			"PAStationName": "Депо",
+			"Pos": "[-6220.4243 8504.3037 546.918]",
+			"PAType": 1,
+			"PALineChange": false,
+			"PALineChangeStationPath": false
+		}
+	]
+}

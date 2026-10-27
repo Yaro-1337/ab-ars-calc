@@ -1,0 +1,817 @@
+[
+	{
+		"ordinate": 0,
+		"endIndex": 2,
+		"length": 1.930091346359253,
+		"elementType": "straight",
+		"startIndex": 1
+	},
+	{
+		"radius": 124.72150213271337,
+		"angle": 0.15646638681328323,
+		"endIndex": 4,
+		"angleDeg": 8.964863600062527,
+		"curveLen": 19.51472279663086,
+		"startIndex": 2,
+		"elementType": "left",
+		"ordinate": 1.930091346359253
+	},
+	{
+		"ordinate": 21.44481414299011,
+		"endIndex": 26,
+		"length": 215.9134011199951,
+		"elementType": "straight",
+		"startIndex": 4
+	},
+	{
+		"radius": 153.8094974002077,
+		"angle": 0.19057910954329288,
+		"endIndex": 29,
+		"angleDeg": -10.919378640192072,
+		"curveLen": 29.312877053833006,
+		"startIndex": 26,
+		"elementType": "right",
+		"ordinate": 237.3582152629852
+	},
+	{
+		"ordinate": 266.6710923168182,
+		"endIndex": 38,
+		"length": 88.34274370422365,
+		"elementType": "straight",
+		"startIndex": 29
+	},
+	{
+		"radius": 91.97251136071385,
+		"angle": 1.581905633797715,
+		"endIndex": 53,
+		"angleDeg": -90.63651640457664,
+		"curveLen": 145.4918338760376,
+		"startIndex": 38,
+		"elementType": "right",
+		"ordinate": 355.01383602104187
+	},
+	{
+		"ordinate": 500.50566989707943,
+		"endIndex": 72,
+		"length": 186.5497521652222,
+		"elementType": "straight",
+		"startIndex": 53
+	},
+	{
+		"radius": 87.88332975336652,
+		"angle": 1.5368781085930734,
+		"endIndex": 86,
+		"angleDeg": -88.05662924843172,
+		"curveLen": 135.06596560821532,
+		"startIndex": 72,
+		"elementType": "right",
+		"ordinate": 687.0554220623017
+	},
+	{
+		"ordinate": 822.1213876705169,
+		"endIndex": 121,
+		"length": 344.59420472717295,
+		"elementType": "straight",
+		"startIndex": 86
+	},
+	{
+		"radius": 77.29175535901537,
+		"angle": 1.591388215797188,
+		"endIndex": 134,
+		"angleDeg": -91.17982833203315,
+		"curveLen": 123.00118865661621,
+		"startIndex": 121,
+		"elementType": "right",
+		"ordinate": 1166.7155923976898
+	},
+	{
+		"ordinate": 1289.716781054306,
+		"endIndex": 136,
+		"length": 19.58290235595703,
+		"elementType": "straight",
+		"startIndex": 134
+	},
+	{
+		"radius": 77.72354478240092,
+		"angle": 1.583794673442253,
+		"endIndex": 149,
+		"angleDeg": -90.74475040354153,
+		"curveLen": 123.098136227417,
+		"startIndex": 136,
+		"elementType": "right",
+		"ordinate": 1309.299683410263
+	},
+	{
+		"ordinate": 1432.39781963768,
+		"endIndex": 184,
+		"length": 344.9679981903076,
+		"elementType": "straight",
+		"startIndex": 149
+	},
+	{
+		"radius": 94.54926974192267,
+		"angle": 1.5625284534519062,
+		"endIndex": 199,
+		"angleDeg": 89.52628575189794,
+		"curveLen": 147.73592422485353,
+		"startIndex": 184,
+		"elementType": "left",
+		"ordinate": 1777.3658178279875
+	},
+	{
+		"ordinate": 1925.101742052841,
+		"endIndex": 204,
+		"length": 49.112902203369146,
+		"elementType": "straight",
+		"startIndex": 199
+	},
+	{
+		"radius": 94.27509993461435,
+		"angle": 1.5637796122499985,
+		"endIndex": 219,
+		"angleDeg": 89.5979718705293,
+		"curveLen": 147.42547922058108,
+		"startIndex": 204,
+		"elementType": "left",
+		"ordinate": 1974.2146442562102
+	},
+	{
+		"ordinate": 2121.6401234767914,
+		"endIndex": 246,
+		"length": 265.90208009948725,
+		"elementType": "straight",
+		"startIndex": 219
+	},
+	{
+		"radius": 81.01258863009167,
+		"angle": 1.5436852784866648,
+		"endIndex": 259,
+		"angleDeg": 88.44665135376302,
+		"curveLen": 125.05794044036867,
+		"startIndex": 246,
+		"elementType": "left",
+		"ordinate": 2387.5422035762786
+	},
+	{
+		"radius": 72.74395521434978,
+		"angle": 1.413035633306116,
+		"endIndex": 270,
+		"angleDeg": -80.96097809003587,
+		"curveLen": 102.78980082550049,
+		"startIndex": 259,
+		"elementType": "right",
+		"ordinate": 2512.6001440166474
+	},
+	{
+		"radius": 77.9643899470125,
+		"angle": 1.4915332796774323,
+		"endIndex": 282,
+		"angleDeg": 85.4585619288227,
+		"curveLen": 116.2864822357178,
+		"startIndex": 270,
+		"elementType": "left",
+		"ordinate": 2615.389944842148
+	},
+	{
+		"ordinate": 2731.676427077866,
+		"endIndex": 287,
+		"length": 49.55275093688965,
+		"elementType": "straight",
+		"startIndex": 282
+	},
+	{
+		"radius": 79.84644787884802,
+		"angle": 1.567996604536386,
+		"endIndex": 300,
+		"angleDeg": 89.8395877307785,
+		"curveLen": 125.19895915832522,
+		"startIndex": 287,
+		"elementType": "left",
+		"ordinate": 2781.2291780147552
+	},
+	{
+		"ordinate": 2906.4281371730804,
+		"endIndex": 340,
+		"length": 394.8820700958252,
+		"elementType": "straight",
+		"startIndex": 300
+	},
+	{
+		"radius": 79.86498569893698,
+		"angle": 1.5803769134278294,
+		"endIndex": 353,
+		"angleDeg": 90.54892717932653,
+		"curveLen": 126.21677958984375,
+		"startIndex": 340,
+		"elementType": "left",
+		"ordinate": 3301.3102072689057
+	},
+	{
+		"ordinate": 3427.5269868587493,
+		"endIndex": 380,
+		"length": 266.35534080505374,
+		"elementType": "straight",
+		"startIndex": 353
+	},
+	{
+		"radius": 94.52934901551897,
+		"angle": 1.5600751335733989,
+		"endIndex": 395,
+		"angleDeg": 89.38572087706393,
+		"curveLen": 147.4728867919922,
+		"startIndex": 380,
+		"elementType": "left",
+		"ordinate": 3693.882327663803
+	},
+	{
+		"ordinate": 3841.3552144557952,
+		"endIndex": 432,
+		"length": 365.2207224517823,
+		"elementType": "straight",
+		"startIndex": 395
+	},
+	{
+		"radius": 80.50561330589136,
+		"angle": 1.5582125131604703,
+		"endIndex": 445,
+		"angleDeg": 89.2790005885682,
+		"curveLen": 125.44485403289796,
+		"startIndex": 432,
+		"elementType": "left",
+		"ordinate": 4206.575936907578
+	},
+	{
+		"ordinate": 4332.020790940475,
+		"endIndex": 462,
+		"length": 167.70959517059327,
+		"elementType": "straight",
+		"startIndex": 445
+	},
+	{
+		"radius": 79.69886606977627,
+		"angle": 1.5778871256872093,
+		"endIndex": 475,
+		"angleDeg": 90.40627284990558,
+		"curveLen": 125.75581470336914,
+		"startIndex": 462,
+		"elementType": "left",
+		"ordinate": 4499.730386111069
+	},
+	{
+		"ordinate": 4625.486200814437,
+		"endIndex": 494,
+		"length": 187.06289002990724,
+		"elementType": "straight",
+		"startIndex": 475
+	},
+	{
+		"radius": 80.33103604759044,
+		"angle": 1.5618272361354268,
+		"endIndex": 507,
+		"angleDeg": 89.4861089591422,
+		"curveLen": 125.46320000610353,
+		"startIndex": 494,
+		"elementType": "left",
+		"ordinate": 4812.549090844344
+	},
+	{
+		"ordinate": 4938.012290850448,
+		"endIndex": 519,
+		"length": 118.27623287658692,
+		"elementType": "straight",
+		"startIndex": 507
+	},
+	{
+		"radius": 77.35921729549331,
+		"angle": 1.5878090043990105,
+		"endIndex": 532,
+		"angleDeg": -90.97475462493247,
+		"curveLen": 122.83166179504394,
+		"startIndex": 519,
+		"elementType": "right",
+		"ordinate": 5056.288523727035
+	},
+	{
+		"ordinate": 5179.120185522079,
+		"endIndex": 535,
+		"length": 29.358490548706058,
+		"elementType": "straight",
+		"startIndex": 532
+	},
+	{
+		"radius": 72.92979917448719,
+		"angle": 1.5414446961682238,
+		"endIndex": 547,
+		"angleDeg": -88.31827544326474,
+		"curveLen": 112.41725213012697,
+		"startIndex": 535,
+		"elementType": "right",
+		"ordinate": 5208.478676070785
+	},
+	{
+		"ordinate": 5320.895928200912,
+		"endIndex": 570,
+		"length": 226.44856387939456,
+		"elementType": "straight",
+		"startIndex": 547
+	},
+	{
+		"radius": 160.7722462310382,
+		"angle": 1.5339259774203884,
+		"endIndex": 595,
+		"angleDeg": -87.8874845916679,
+		"curveLen": 246.61272494201663,
+		"startIndex": 570,
+		"elementType": "right",
+		"ordinate": 5547.344492080307
+	},
+	{
+		"ordinate": 5793.957217022324,
+		"endIndex": 617,
+		"length": 217.13718572387694,
+		"elementType": "straight",
+		"startIndex": 595
+	},
+	{
+		"radius": 163.356468957877,
+		"angle": 1.5669716577690012,
+		"endIndex": 643,
+		"angleDeg": -89.78086260678181,
+		"curveLen": 255.97495697021492,
+		"startIndex": 617,
+		"elementType": "right",
+		"ordinate": 6011.094402746201
+	},
+	{
+		"ordinate": 6267.069359716416,
+		"endIndex": 671,
+		"length": 276.1911793899537,
+		"elementType": "straight",
+		"startIndex": 643
+	},
+	{
+		"radius": 87.71054297221058,
+		"angle": 1.57367506826207,
+		"endIndex": 685,
+		"angleDeg": -90.16493973637834,
+		"curveLen": 138.0278946990967,
+		"startIndex": 671,
+		"elementType": "right",
+		"ordinate": 6543.26053910637
+	},
+	{
+		"ordinate": 6681.288433805466,
+		"endIndex": 698,
+		"length": 127.74840121765139,
+		"elementType": "straight",
+		"startIndex": 685
+	},
+	{
+		"radius": 155.6974377557564,
+		"angle": 0.1886664183042806,
+		"endIndex": 701,
+		"angleDeg": 10.809789504685021,
+		"curveLen": 29.374877920532228,
+		"startIndex": 698,
+		"elementType": "left",
+		"ordinate": 6809.036835023117
+	},
+	{
+		"radius": 155.97224536393628,
+		"angle": 0.18898661737859404,
+		"endIndex": 704,
+		"angleDeg": -10.828135560247176,
+		"curveLen": 29.476667056274415,
+		"startIndex": 701,
+		"elementType": "right",
+		"ordinate": 6838.41171294365
+	},
+	{
+		"ordinate": 6867.888379999924,
+		"endIndex": 717,
+		"length": 127.80416990661622,
+		"elementType": "straight",
+		"startIndex": 704
+	},
+	{
+		"radius": 160.64513544022842,
+		"angle": 1.535524215621149,
+		"endIndex": 742,
+		"angleDeg": -87.97905689522803,
+		"curveLen": 246.67449559020997,
+		"startIndex": 717,
+		"elementType": "right",
+		"ordinate": 6995.69254990654
+	},
+	{
+		"ordinate": 7242.3670454967505,
+		"endIndex": 768,
+		"length": 257.17508720397956,
+		"elementType": "straight",
+		"startIndex": 742
+	},
+	{
+		"radius": 161.00846245295412,
+		"angle": 1.533768824454636,
+		"endIndex": 793,
+		"angleDeg": -87.87848038999228,
+		"curveLen": 246.94976018371582,
+		"startIndex": 768,
+		"elementType": "right",
+		"ordinate": 7499.54213270073
+	},
+	{
+		"ordinate": 7746.491892884445,
+		"endIndex": 794,
+		"length": 9.96117453918457,
+		"elementType": "straight",
+		"startIndex": 793
+	},
+	{
+		"radius": 163.55385164006802,
+		"angle": 1.5720415134018613,
+		"endIndex": 820,
+		"angleDeg": -90.07134393728529,
+		"curveLen": 257.11344445495604,
+		"startIndex": 794,
+		"elementType": "right",
+		"ordinate": 7756.45306742363
+	},
+	{
+		"ordinate": 8013.566511878586,
+		"endIndex": 821,
+		"length": 9.826349047851563,
+		"elementType": "straight",
+		"startIndex": 820
+	},
+	{
+		"radius": 171.426387252615,
+		"angle": 0.8031851891227029,
+		"endIndex": 835,
+		"angleDeg": -46.019121504147705,
+		"curveLen": 137.68713526611327,
+		"startIndex": 821,
+		"elementType": "right",
+		"ordinate": 8023.392860926438
+	},
+	{
+		"ordinate": 8161.079996192551,
+		"endIndex": 836,
+		"length": 9.790444262695313,
+		"elementType": "straight",
+		"startIndex": 835
+	},
+	{
+		"radius": 162.88288240484508,
+		"angle": 2.310934140122369,
+		"endIndex": 874,
+		"angleDeg": 132.4067729617057,
+		"curveLen": 376.41161379089357,
+		"startIndex": 836,
+		"elementType": "left",
+		"ordinate": 8170.870440455246
+	},
+	{
+		"ordinate": 8547.28205424614,
+		"endIndex": 880,
+		"length": 58.86288614501953,
+		"elementType": "straight",
+		"startIndex": 874
+	},
+	{
+		"radius": 162.76293567195836,
+		"angle": 1.5836399451149132,
+		"endIndex": 906,
+		"angleDeg": 90.73588512341385,
+		"curveLen": 257.7578865142823,
+		"startIndex": 880,
+		"elementType": "left",
+		"ordinate": 8606.14494039116
+	},
+	{
+		"ordinate": 8863.902826905442,
+		"endIndex": 931,
+		"length": 246.40632474975587,
+		"elementType": "straight",
+		"startIndex": 906
+	},
+	{
+		"radius": 162.81580863407686,
+		"angle": 1.5210979555793438,
+		"endIndex": 956,
+		"angleDeg": 87.15249308067436,
+		"curveLen": 247.658793649292,
+		"startIndex": 931,
+		"elementType": "left",
+		"ordinate": 9110.309151655198
+	},
+	{
+		"ordinate": 9357.96794530449,
+		"endIndex": 982,
+		"length": 256.7538071044922,
+		"elementType": "straight",
+		"startIndex": 956
+	},
+	{
+		"radius": 165.3711420119641,
+		"angle": 1.5534023945307571,
+		"endIndex": 1008,
+		"angleDeg": 89.0034010921284,
+		"curveLen": 256.88792798767093,
+		"startIndex": 982,
+		"elementType": "left",
+		"ordinate": 9614.721752408983
+	},
+	{
+		"ordinate": 9871.609680396654,
+		"endIndex": 1010,
+		"length": 20.027775201416016,
+		"elementType": "straight",
+		"startIndex": 1008
+	},
+	{
+		"radius": 162.26156235850382,
+		"angle": 1.5253764329718413,
+		"endIndex": 1035,
+		"angleDeg": 87.39763177800661,
+		"curveLen": 247.50996319885255,
+		"startIndex": 1010,
+		"elementType": "left",
+		"ordinate": 9891.63745559807
+	},
+	{
+		"ordinate": 10139.147418796922,
+		"endIndex": 1036,
+		"length": 9.807207192993165,
+		"elementType": "straight",
+		"startIndex": 1035
+	},
+	{
+		"radius": 135.86701117781777,
+		"angle": 0.7265833664186655,
+		"endIndex": 1046,
+		"angleDeg": 41.63016036019695,
+		"curveLen": 98.71871036682128,
+		"startIndex": 1036,
+		"elementType": "left",
+		"ordinate": 10148.954625989914
+	},
+	{
+		"ordinate": 10247.673336356736,
+		"endIndex": 1057,
+		"length": 108.84090647277831,
+		"elementType": "straight",
+		"startIndex": 1046
+	},
+	{
+		"radius": 147.0244389028598,
+		"angle": 0.8045282286053407,
+		"endIndex": 1069,
+		"angleDeg": -46.0960719982223,
+		"curveLen": 118.28531139221192,
+		"startIndex": 1057,
+		"elementType": "right",
+		"ordinate": 10356.514242829515
+	},
+	{
+		"radius": 160.23834431005042,
+		"angle": 1.4789201948831652,
+		"endIndex": 1093,
+		"angleDeg": -84.73588540347055,
+		"curveLen": 236.97972339477548,
+		"startIndex": 1069,
+		"elementType": "right",
+		"ordinate": 10474.799554221727
+	},
+	{
+		"ordinate": 10711.779277616502,
+		"endIndex": 1094,
+		"length": 9.846201324462891,
+		"elementType": "straight",
+		"startIndex": 1093
+	},
+	{
+		"radius": 91.72234760511542,
+		"angle": 1.5862008587963699,
+		"endIndex": 1109,
+		"angleDeg": -90.88261466905861,
+		"curveLen": 145.49006654205323,
+		"startIndex": 1094,
+		"elementType": "right",
+		"ordinate": 10721.625478940965
+	},
+	{
+		"ordinate": 10867.115545483019,
+		"endIndex": 1144,
+		"length": 344.96140905761723,
+		"elementType": "straight",
+		"startIndex": 1109
+	},
+	{
+		"radius": 162.1416727329312,
+		"angle": 1.5263294650437877,
+		"endIndex": 1169,
+		"angleDeg": -87.45223649346974,
+		"curveLen": 247.4816126037598,
+		"startIndex": 1144,
+		"elementType": "right",
+		"ordinate": 11212.076954540637
+	},
+	{
+		"ordinate": 11459.558567144397,
+		"endIndex": 1183,
+		"length": 138.7930817138672,
+		"elementType": "straight",
+		"startIndex": 1169
+	},
+	{
+		"radius": 165.1122493678322,
+		"angle": 1.562248088387245,
+		"endIndex": 1209,
+		"angleDeg": -89.51022201696992,
+		"curveLen": 257.94629594421394,
+		"startIndex": 1183,
+		"elementType": "right",
+		"ordinate": 11598.351648858265
+	},
+	{
+		"ordinate": 11856.297944802478,
+		"endIndex": 1236,
+		"length": 267.7283535095215,
+		"elementType": "straight",
+		"startIndex": 1209
+	},
+	{
+		"radius": 162.28840632036835,
+		"angle": 1.5226370709530985,
+		"endIndex": 1261,
+		"angleDeg": -87.24067789577421,
+		"curveLen": 247.10634364929197,
+		"startIndex": 1236,
+		"elementType": "right",
+		"ordinate": 12124.026298312
+	},
+	{
+		"ordinate": 12371.13264196129,
+		"endIndex": 1282,
+		"length": 207.929015222168,
+		"elementType": "straight",
+		"startIndex": 1261
+	},
+	{
+		"radius": 165.63224568978865,
+		"angle": 1.5524274128988378,
+		"endIndex": 1308,
+		"angleDeg": -88.9475387595166,
+		"curveLen": 257.13203866882327,
+		"startIndex": 1282,
+		"elementType": "right",
+		"ordinate": 12579.061657183458
+	},
+	{
+		"ordinate": 12836.193695852282,
+		"endIndex": 1334,
+		"length": 256.1828466064453,
+		"elementType": "straight",
+		"startIndex": 1308
+	},
+	{
+		"radius": 162.07392723744778,
+		"angle": 1.5229955749035209,
+		"endIndex": 1359,
+		"angleDeg": -87.2612186590722,
+		"curveLen": 246.83787398986817,
+		"startIndex": 1334,
+		"elementType": "right",
+		"ordinate": 13092.376542458727
+	},
+	{
+		"ordinate": 13339.214416448596,
+		"endIndex": 1361,
+		"length": 19.808081634521486,
+		"elementType": "straight",
+		"startIndex": 1359
+	},
+	{
+		"radius": 161.68804138276076,
+		"angle": 1.5224503143506907,
+		"endIndex": 1386,
+		"angleDeg": -87.22997753066005,
+		"curveLen": 246.1620094299316,
+		"startIndex": 1361,
+		"elementType": "right",
+		"ordinate": 13359.022498083117
+	},
+	{
+		"radius": 603.4721651205485,
+		"angle": 0.03285449739940345,
+		"endIndex": 1388,
+		"angleDeg": -1.8824240390093567,
+		"curveLen": 19.826774679565432,
+		"startIndex": 1386,
+		"elementType": "right",
+		"ordinate": 13605.18450751305
+	},
+	{
+		"radius": 137.31927413137836,
+		"angle": 0.718461102316761,
+		"endIndex": 1398,
+		"angleDeg": -41.164788907067205,
+		"curveLen": 98.65855706176758,
+		"startIndex": 1388,
+		"elementType": "right",
+		"ordinate": 13625.011282192614
+	},
+	{
+		"ordinate": 13723.669839254382,
+		"endIndex": 1408,
+		"length": 98.64381726379395,
+		"elementType": "straight",
+		"startIndex": 1398
+	},
+	{
+		"radius": 141.10752132582053,
+		"angle": 0.7702217274804617,
+		"endIndex": 1419,
+		"angleDeg": 44.13045427390592,
+		"curveLen": 108.68407883605957,
+		"startIndex": 1408,
+		"elementType": "left",
+		"ordinate": 13822.313656518176
+	},
+	{
+		"ordinate": 13930.997735354234,
+		"endIndex": 1420,
+		"length": 9.970889062500001,
+		"elementType": "straight",
+		"startIndex": 1419
+	},
+	{
+		"radius": 162.84218754544156,
+		"angle": 1.5162737650933342,
+		"endIndex": 1445,
+		"angleDeg": 86.87608732625884,
+		"curveLen": 246.91333682556154,
+		"startIndex": 1420,
+		"elementType": "left",
+		"ordinate": 13940.968624416735
+	},
+	{
+		"ordinate": 14187.881961242296,
+		"endIndex": 1451,
+		"length": 59.034348934936524,
+		"elementType": "straight",
+		"startIndex": 1445
+	},
+	{
+		"radius": 161.97376181685704,
+		"angle": 1.519728688250335,
+		"endIndex": 1476,
+		"angleDeg": 87.07403984169702,
+		"curveLen": 246.1561725769043,
+		"startIndex": 1451,
+		"elementType": "left",
+		"ordinate": 14246.916310177232
+	},
+	{
+		"ordinate": 14493.072482754136,
+		"endIndex": 1504,
+		"length": 276.2326902282715,
+		"elementType": "straight",
+		"startIndex": 1476
+	},
+	{
+		"radius": 165.07687486639273,
+		"angle": 1.5527343684367731,
+		"endIndex": 1530,
+		"angleDeg": 88.96512601633847,
+		"curveLen": 256.32053703918456,
+		"startIndex": 1504,
+		"elementType": "left",
+		"ordinate": 14769.305172982407
+	},
+	{
+		"ordinate": 15025.625710021592,
+		"endIndex": 1565,
+		"length": 346.5337375030517,
+		"elementType": "straight",
+		"startIndex": 1530
+	},
+	{
+		"radius": 92.04229432150328,
+		"angle": 1.5870031781823126,
+		"endIndex": 1580,
+		"angleDeg": 90.92858418369467,
+		"curveLen": 146.07141361541753,
+		"startIndex": 1565,
+		"elementType": "left",
+		"ordinate": 15372.159447524644
+	},
+	{
+		"ordinate": 15518.230861140062,
+		"endIndex": 1628,
+		"length": 466.8342040901184,
+		"elementType": "straight",
+		"startIndex": 1580
+	}
+]
