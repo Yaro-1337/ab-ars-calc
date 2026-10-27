@@ -41,6 +41,8 @@ class DrawGraph extends Draw {
     drawAxes(peregonCalc, nextPeregon) {
         const axisV = this.offsetX - 40;
         const axisT = this.offsetX - 80;
+        const trainsPerHour = this.peregon.interval || 40;
+        const maxTrainsPerHour = this.peregon.minInterval ?? trainsPerHour;
 
         let grid = this.two.makeGroup();
         let text = this.two.makeGroup();
@@ -93,9 +95,9 @@ class DrawGraph extends Draw {
 
         this.two.makeText(`K=${this.peregon.K}.`, axisT + 6, this.graphY - this.interval * this.Ky + 114, { alignment: 'left' });
 
-        this.two.makeText(`Макс П=${this.peregon.minInterval}/ч.`, axisT + 6, this.graphY - this.interval * this.Ky + 84, { alignment: 'left' });
+        this.two.makeText(`Макс П=${maxTrainsPerHour}/ч.`, axisT + 6, this.graphY - this.interval * this.Ky + 84, { alignment: 'left' });
 
-        this.two.makeText(`П=${this.peregon.interval}/ч.`, axisT + 6, this.graphY - this.interval * this.Ky + 54, { alignment: 'left' });
+        this.two.makeText(`П=${trainsPerHour}/ч.`, axisT + 6, this.graphY - this.interval * this.Ky + 54, { alignment: 'left' });
 
         this.two.makeText(`T=${Math.round(tH)}+${this.peregon.tStay}=${tFull}с.`, axisT + 6, this.graphY - tFull * this.Ky - 6, { alignment: 'left' })
         this.two.makeLine(axisT, this.graphY - tFull * this.Ky, this.offsetX * this.K, this.graphY - tFull * this.Ky);

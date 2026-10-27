@@ -7,7 +7,7 @@ let wagonCount = 6;
 
 const interval = Math.round(3600/40);
 
-const trainHalf = wagonLength * wagonCount / 2;
+let trainHalf = wagonLength * wagonCount / 2;
 
 const FT = -111.6 * 1.1;
 let KS = 1.5;
