@@ -1,6 +1,8 @@
-R50_MODE = false
-RAYS = false
-NEW_ERA = true
+R50_MODE = true
+RAYS = true
+NEW_ERA = false
+TwoToSix_MODE = false
+MSK_SPB_FIX = true
 
 function getSignalTrackRerailTrace(trackID, x, isBack)
     local downVector = Vector(0, 0, -300)
@@ -98,6 +100,7 @@ function placeSignal(position, angles, options)
     ent.Double = options.Double
     ent.DoubleL = options.DoubleL
     ent.Left = options.Left
+    ent.PassOcc= options.PassOcc
     ent.NonAutoStop = options.NonAutoStop
     ent.RouteNumberSetup = options.RouteNumberSetup
     ent.Routes = options.Routes
@@ -106,17 +109,88 @@ function placeSignal(position, angles, options)
         ent.IsolateSwitches = ent.IsolateSwitches or {}
     end
 
+    if R50_MODE and MSK_SPB_FIX then
+        ent.Approve0 = true
+    end
+
     if R50_MODE then
         ent.IsolateSwitches.FrontArsName = options.FrontArsName
         ent.IsolateSwitches.SlowBlinking = true
     end
 
+    if R50_MODE and options.RearArsName then
+        ent.IsolateSwitches.RearArsName = options.RearArsName
+    end
+
+    if R50_MODE and options.ISMPL then
+        ent.IsolateSwitches.ISMPL = true
+    end
+
+    if R50_MODE and options.Caps then
+        ent.IsolateSwitches.Caps = true
+    end
+
+    if R50_MODE and options.Shields then
+        ent.IsolateSwitches.Shields = true
+    end
+
+    if R50_MODE and options.SST then
+        ent.IsolateSwitches.SST = true
+    end
+
+    if R50_MODE and options.DoubleLetters then
+        ent.IsolateSwitches.DoubleLetters = true
+    end
+
+    if R50_MODE and options.AutostopSign then
+        ent.IsolateSwitches.AutostopSign = true
+    end
+
+    if R50_MODE and options.CenteredArsName then
+        ent.IsolateSwitches.CenteredArsName = true
+    end
+
+    if R50_MODE and options.HideDTM then
+        ent.IsolateSwitches.HideDTM = true
+    end
+
+    if R50_MODE and options.NotRightDTM then
+        ent.IsolateSwitches.NotRightDTM = true
+    end
+
+    if R50_MODE and options.AutostopBehind then
+        ent.IsolateSwitches.AutostopBehind = true
+    end
+
+    if options.Approve0 then
+        ent.IsolateSwitches.Approve0 = true
+    end
+
+    if R50_MODE and options.Inactive then
+        ent.IsolateSwitches.Inactive = true
+    end
+
+    if R50_MODE and options.PoleHeight then
+        ent.IsolateSwitches.PoleHeight = options.PoleHeight
+    end
+
+    if TwoToSix_MODE then
+        ent.TwoToSix = true
+    end
+
     if R50_MODE and options.Invisible then
         ent.IsolateSwitches.Invisible = true
-        ent.IsolateSwitches.UnderHeadSign = true
         ent.IsolateSwitches.HeadsHeightOffset = -20
         ent.IsolateSwitches.HeadsXOffset = options.HeadsXOffset
         ent.IsolateSwitches.CenteredArsName = true
+    end
+
+    if R50_MODE and options.HeadsHeightOffset then
+        ent.IsolateSwitches.HeadsHeightOffset = options.HeadsHeightOffset
+    end
+
+    if R50_MODE and options.UnderHeadSign then
+        ent.IsolateSwitches.UnderHeadSign = options.UnderHeadSign
     end
 
     if R50_MODE and options.Back then
@@ -236,7 +310,3 @@ concommand.Add( "metrostroi_signal_import", function(ply, args)
     importSignalData(args[1], tonumber(args[2]))
 end )
 
-importSignalData("signals-crossline-redux-1.json", 6)
--- importSignalData("signals-crossline-redux-2.json", 7)
--- importSignalData("signals-crossline-redux-3.json", 4)
--- importSignalData("signals-crossline-redux-4.json", 5)

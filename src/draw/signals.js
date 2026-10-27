@@ -55,19 +55,58 @@ class DrawSignals extends Draw {
         let signalY = isLeft ? this.trackY - radius * 5 : this.trackY + radius * 5;
         signalY += isLeft ? row * diam * 1.5 : -row * diam * 1.5;
 
-        const textY = isLeft ? (isBack ? signalY + 1 : (signalY - radius * 2.5)) : (isBack ? signalY + 1 : (signalY + radius * 2.5));
-
-        const nameText = this.two.makeText(name, this.x(isBack ? x + name.length * 10 + 5 : x), textY, { alignment: isBack ? 'right' : 'left' });
         group.add(this.two.makeLine(this.x(x), signalY - (isMacht ? half * 2 : half), this.x(x), signalY + (isMacht ? half * 2 : half)));
         if (!isMacht) group.add(this.two.makeLine(this.x(x) - half, isWall ? signalY + half : signalY - half, this.x(x), signalY - half));
         if (!isMacht) group.add(this.two.makeLine(this.x(x) - half, signalY + half, this.x(x), signalY + half));
         group.add(this.two.makeLine(this.x(x), signalY, this.x(x) + half * 2, signalY));
 
-        let reversedFormula = formula.split('').reverse().join('');
-        for (let i = formula.length - 1; i >= 0; i--) {
-            const lenseX = isBack ? (this.x(x)) - diam * (i + 2) : (this.x(x)) + diam * i;
-            const lense = this.drawLense(lenseX, reversedFormula[i], diam, radius, signalY, half);
-            group.add(lense);
+        const topRow = [];
+        const bottomRow = [];
+        let targetRow = topRow;
+        let useSecondRow = false;
+
+        for (const letter of formula) {
+            if (letter == '|') {
+                useSecondRow = true;
+                targetRow = bottomRow;
+                continue;
+            }
+
+            if (letter == '-' && useSecondRow) {
+                bottomRow.push(letter);
+                topRow.push(letter);
+                targetRow = topRow;
+                continue;
+            }
+
+            targetRow.push(letter);
+        }
+
+        const drawRow = (letters, rowY) => {
+            const reversedLetters = letters.slice().reverse();
+            for (let i = letters.length - 1; i >= 0; i--) {
+                const lenseX = isBack ? this.x(x) - diam * (i + 2) : this.x(x) + diam * i;
+                const lense = this.drawLense(lenseX, reversedLetters[i], diam, radius, rowY, half);
+                group.add(lense);
+            }
+        };
+
+        const hasSecondRow = useSecondRow && bottomRow.length;
+        const textY = hasSecondRow
+            ? signalY + diam * 3
+            : (isLeft ? (isBack ? signalY + 1 : (signalY - radius * 2.5)) : (isBack ? signalY + 1 : (signalY + radius * 2.5)));
+
+        const nameText = this.two.makeText(name, this.x(isBack ? x + name.length * 10 + 5 : x), textY, { alignment: isBack ? 'right' : 'left' });
+
+        drawRow(topRow, signalY);
+
+        if (hasSecondRow) {
+            const secondRowY = signalY + diam * 1.5;
+            group.add(this.two.makeLine(this.x(x), secondRowY - (isMacht ? half * 2 : half), this.x(x), secondRowY + (isMacht ? half * 2 : half)));
+            if (!isMacht) group.add(this.two.makeLine(this.x(x) - half, isWall ? secondRowY + half : secondRowY - half, this.x(x), secondRowY - half));
+            if (!isMacht) group.add(this.two.makeLine(this.x(x) - half, secondRowY + half, this.x(x), secondRowY + half));
+            group.add(this.two.makeLine(this.x(x), secondRowY, this.x(x) + half * 2, secondRowY));
+            drawRow(bottomRow, secondRowY);
         }
         group.className = 'signal';
         group.id = name;
@@ -77,7 +116,7 @@ class DrawSignals extends Draw {
     drawLense(x, letter, diam, radius, signalY, half) {
         const group = this.two.makeGroup();
 
-        if (letter == '-') {
+        if (letter == '|' || letter == '-') {
             group.add(this.two.makeLine(x + diam - radius, signalY, x + diam + radius, signalY));
             return;
         }

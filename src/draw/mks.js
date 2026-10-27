@@ -8,7 +8,6 @@ class DrawMKs extends Draw {
     }
 
     drawMK(mkObj) {
-        console.log('drawMK', mkObj);
         const x = this.x(mkObj.x);
         const y = this.trackY;
 

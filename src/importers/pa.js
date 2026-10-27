@@ -19,7 +19,7 @@ async function importTrackPlanProfile(name, track, n, peregon, nextPeregon) {
         });
     }
 
-    console.log(paths[track]);
+    // console.log(paths[track]);
 
     const gmTrack = paths[track][0].TrackPath;
 
@@ -33,8 +33,8 @@ async function importTrackPlanProfile(name, track, n, peregon, nextPeregon) {
     peregon.trackLength = trackLength1;
     nextPeregon.trackLength = trackLength2;
 
-    console.log(`Track length 1: ${trackLength1}`);
-    console.log(`Track length 2: ${trackLength2}`);
+    // console.log(`Track length 1: ${trackLength1}`);
+    // console.log(`Track length 2: ${trackLength2}`);
 
     const station1X = paths[track][Number(n)].TrackX - trainHalf;
     const station2X = paths[track][Number(n) + 1].TrackX - trainHalf;
@@ -78,7 +78,7 @@ async function importTrackPlanProfile(name, track, n, peregon, nextPeregon) {
     filterSlopesSharp(peregon);
     filterSlopesSharp(nextPeregon);
 
-    console.log(peregon, nextPeregon)
+    // console.log(peregon, nextPeregon)
 
     if (peregon.curvesOverride) {
         Object.assign(peregon.curves, peregon.curvesOverride);

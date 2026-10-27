@@ -1,0 +1,88 @@
+var lines = lines || {};
+lines['neocrimson_mt_depo_ssv'] = lines['neocrimson_mt_depo_ssv'] || {};
+lines['neocrimson_mt_depo_ssv']['config'] = {
+  wagonCount: 4,
+};
+lines['neocrimson_mt_depo_ssv']['2'] = [
+{
+  name: 'Метродрочителей',
+  arsDrawBreakpoint: 1,
+  trackLength: 840,
+  arsAllSteps: false,
+  tStay: 25,
+  K: 1,
+  interval: 33,
+  minInterval: 33,
+  slopes: {
+    0: 0,
+    170: 9,
+    370: 0,
+  },
+  curves: {
+    0: 0,
+  },
+  modes: {
+    0: 'H',
+    43: '0',
+    250: 'H',
+    290: '0',
+    460: 'T',
+    500: '0',
+    // 125: 'H',
+    // 160: '0',
+    750: 'T',
+  },
+  joints: [
+    { x: 0 - 5 - 12.5, name: '363', limit: 60 },
+    { x: 0 - 5 - 12.5 + 75, name: '365', limit: 40 },
+    { x: 0 - 5 - 12.5 + 75 + 80, name: '4', limit: 40 },
+    { x: 0 - 5 - 12.5 + 75 + 80 + 23.5, name: '4а', limit: 40 },
+    { x: 0 - 5 - 12.5 + 75 + 80 + 23.5 + 112.5 + 12.5, name: '12', limit: 60 },
+    { x: 0 - 5 - 12.5 + 75 + 80 + 23.5 + 112.5 + 112.5 - 12.5 - 25, name: '14', limit: 60 },
+    { x: 0 - 5 - 12.5 + 75 + 80 + 23.5 + 112.5 + 112.5 + 29 + 37.5 - 25, name: '16', limit: 60 },
+    { x: 0 - 5 - 12.5 + 75 + 80 + 23.5 + 112.5 + 112.5 + 75 + 50 + 29 - 25, name: '18', limit: 40 },
+    { x: 0 - 5 - 12.5 + 75 + 80 + 23.5 + 112.5 + 112.5 + 75 + 50 + 29 + 87.5 - 12.5 - 25, name: '20', limit: 0 },
+    { x: 0 - 5 - 12.5 + 75 + 80 + 23.5 + 112.5 + 112.5 + 75 + 50 + 29 + 87.5 + 37.5 - 25, name: '4СП', limit: 0 },
+    { x: 0 - 5 - 12.5 + 75 + 80 + 23.5 + 112.5 + 112.5 + 75 + 50 + 29 + 87.5 + 37.5 + 75 - 25, name: '6СП', limit: 0 },
+  ],
+  signals: [
+    { joint: '365', name: 'МТ367мГ', lenses: 'BWy-YYG-Rw', autostop: 1, guard: 60, y: '16', g: 'NEXT_y' },
+    { joint: '12', name: 'Вм', lenses: 'BYY-GRw', autostop: 1, shift: 5, guard: 50, y: '18', g: 'NEXT_yg' },
+    { joint: '16', name: 'Ч6', lenses: 'BYY-GRw', autostop: 1, guard: 60, yg: '20', double: true, left: true },
+    { joint: '20', name: 'Ч8', lenses: 'BYG-Rw', autostop: 1, y: '20', double: true, left: true },
+
+    { joint: '4СП', name: 'М8', lenses: 'WR-w', macht: true, shift: 0, row: -1 },
+    { joint: '4а', name: 'МТ-2', lenses: 'BYW-Rw', autostop: 1, shift: -14, back: true, left: true },
+    { joint: '14', name: 'МТ-4', lenses: 'BYY-GRw', autostop: 1, shift: 0, back: true, left: true },
+    { joint: '18', name: 'МТ-6', lenses: 'YYG-Rw', autostop: 1, shift: -22, back: true, left: true, row: -3.5 },
+    { joint: '4СП', name: 'Е4м', lenses: 'BY-GR-w', autostop: 1, shift: 0, back: true, left: true, row: -3.5 },
+  ],
+  mks: [
+  ],
+},
+{
+  name: 'Дупло',
+  arsDrawBreakpoint: 9,
+  trackLength: 2267,
+  arsAllSteps: false,
+  tStay: 25,
+  K: 1.5,
+  interval: 44,
+  modes: {
+    0: 'H',
+    100: '0',
+  },
+  slopes: {
+    0: 0,
+  },
+  curves: {
+    0: 0,
+  },
+  joints: [
+  ],
+  signals: [
+  ],
+  mks: [
+  ],
+}
+];

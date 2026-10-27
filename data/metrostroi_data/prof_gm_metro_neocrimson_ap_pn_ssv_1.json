@@ -1,0 +1,51 @@
+[
+	{
+		"ordinate": 0,
+		"endIndex": 56,
+		"length": 530.3575599803925,
+		"slope": 0,
+		"startIndex": 1
+	},
+	{
+		"ordinate": 530.3575599803925,
+		"endIndex": 67,
+		"length": 107.72556408691406,
+		"slope": -0.004,
+		"startIndex": 56
+	},
+	{
+		"ordinate": 638.0831240673065,
+		"endIndex": 78,
+		"length": 107.94812259521485,
+		"slope": -0.009,
+		"startIndex": 67
+	},
+	{
+		"ordinate": 746.0312466625213,
+		"endIndex": 100,
+		"length": 215.86677024536135,
+		"slope": -0.001,
+		"startIndex": 78
+	},
+	{
+		"ordinate": 961.8980169078827,
+		"endIndex": 122,
+		"length": 216.27263500671387,
+		"slope": -0.035,
+		"startIndex": 100
+	},
+	{
+		"ordinate": 1178.1706519145966,
+		"endIndex": 133,
+		"length": 108.09898780517578,
+		"slope": -0.004,
+		"startIndex": 122
+	},
+	{
+		"ordinate": 1286.2696397197724,
+		"endIndex": 189,
+		"length": 542.1987222381591,
+		"slope": 0,
+		"startIndex": 133
+	}
+]
