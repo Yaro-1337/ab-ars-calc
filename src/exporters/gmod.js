@@ -191,6 +191,10 @@ function applyWall(el, target) {
 }
 
 function applyArsCodes(el, target, result) {
+    if (el.back) {
+        target.Routes?.forEach(route => route.ARSCodes = '1');
+        return;
+    }
     if (el.mkSig || !target.Routes?.[0] || target.Routes[0].ARSCodes) return;
 
     const signalX = el.x;
@@ -218,7 +222,7 @@ function applyArsCodes(el, target, result) {
     }
 
     const ARSCode = arsCode(joint);
-    target.Routes[0].ARSCodes = ARSCode === 'N' ? '1' : ARSCode;
+    target.Routes[0].ARSCodes = ARSCode === 'N' ? '1' : (ARSCode || '1');
 }
 
 function trackPeregon() {
@@ -243,7 +247,7 @@ function trackPeregon() {
         const Routes = [
             {
                 NextSignal: '*',
-                ARSCodes: '1',
+                ARSCodes: ARSCodes || '1',
             },
         ];
 
@@ -280,7 +284,7 @@ function trackPeregon() {
             const isOdd = Number(el.name.replace(/\D/g, '')) % 2 === 1;
             result[origName + '_back'] = {
                 x: x,
-                Routes,
+                Routes: [{ NextSignal: '*', ARSCodes: '1' }],
                 Name: (`TC${rtl(el.name)}${isOdd ? 'CH' : 'N'}`).toUpperCase(),
                 ARSOnly: true,
                 LensesStr: '',
@@ -332,6 +336,7 @@ function trackPeregon() {
                 }
             }
 
+            applyArsCodes(el, result[joint + '_back'], result);
             applyMkSig(el, result[joint + '_back']);
             applyWall(el, result[joint + '_back']);
 

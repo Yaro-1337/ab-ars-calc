@@ -10,11 +10,11 @@
 					],
 					[
 						0,
-						222.41115419537778
+						222.41115419537775
 					],
 					[
 						5,
-						229.36137915395972,
+						229.3613791539597,
 						3
 					],
 					[
@@ -32,7 +32,7 @@
 					],
 					[
 						-35,
-						1837.6411894313171
+						1837.641189431317
 					],
 					[
 						0,
@@ -97,7 +97,7 @@
 					],
 					[
 						0,
-						5483.6798846371275
+						5483.679884637128
 					],
 					[
 						-35,
@@ -125,7 +125,7 @@
 					],
 					[
 						0,
-						7817.6053372695515
+						7817.6053372695505
 					],
 					[
 						-35,
@@ -145,7 +145,7 @@
 					],
 					[
 						0,
-						10004.908234447777
+						10004.908234447776
 					],
 					[
 						-30,
@@ -165,7 +165,7 @@
 					],
 					[
 						-25,
-						11689.446233160077
+						11689.446233160075
 					],
 					[
 						0,
@@ -173,23 +173,21 @@
 					],
 					[
 						-35,
-						12206.533016179737
+						12206.533016179736
 					],
 					[
 						0,
-						12373.171095706859
+						12373.17109570686
 					]
 				],
-				"slopeCurrent": 1297,
-				"signals": [],
-				"sensors": [],
 				"slope": [
 					[
 						12897.796634957249,
-						3.6700961525484868
+						3.670096152548487
 					]
 				],
-				"slopeLength": 0.15080111442296557,
+				"signals": [],
+				"sensors": [],
 				"stations": [
 					{
 						"path": 1,
@@ -247,7 +245,7 @@
 					{
 						"id": 705,
 						"path": 1,
-						"pos": 10158.920579679781,
+						"pos": 10158.92057967978,
 						"hasSwitches": true,
 						"isInWrong": false,
 						"name_last": "Северной",
@@ -266,7 +264,9 @@
 						"name": "Пр. Энергетиков",
 						"isLast": true
 					}
-				]
+				],
+				"slopeLength": 0.15080111442296557,
+				"slopeCurrent": 1297
 			},
 			12897.947436071672,
 			[]
@@ -364,7 +364,7 @@
 			"PAWrongPath": false,
 			"TrackPath": 1,
 			"PAStationHasSwtiches": true,
-			"TrackX": 10158.920579679781,
+			"TrackX": 10158.92057967978,
 			"PAStationRightDoors": false,
 			"PALastStation": true,
 			"PAStationID": 705,
@@ -389,6 +389,121 @@
 			"Pos": "[-3311.5349 3297.0974 -2130.613]",
 			"PAType": 1,
 			"PALastStationName": "Пр. Энергетиков"
+		},
+		{
+			"PAWrongPath": false,
+			"TrackPath": 2,
+			"PAStationHasSwtiches": false,
+			"PADeadlockEnd": false,
+			"TrackX": 479.8329894332127,
+			"PAStationRightDoors": true,
+			"PALastStation": false,
+			"PAStationID": 706,
+			"PADeadlockStart": false,
+			"PALineChangeStationID": false,
+			"PAStationPath": 2,
+			"Angles": "{0.0024 89.9999 0}",
+			"PAStationName": "Пр. Энергетиков",
+			"Pos": "[-3055.5808 9031.6787 -2130.6604]",
+			"PAType": 1,
+			"PALineChange": false,
+			"PALineChangeStationPath": false
+		},
+		{
+			"PAWrongPath": true,
+			"TrackPath": 2,
+			"PAStationHasSwtiches": true,
+			"TrackX": 2795.1884880744196,
+			"PAStationRightDoors": false,
+			"PALastStation": true,
+			"PAStationID": 705,
+			"PAStationPath": 2,
+			"Angles": "{359.9948 359.9944 0}",
+			"PAStationName": "Северная",
+			"Pos": "[7571.2725 13762.9521 -1404.2554]",
+			"PAType": 1,
+			"PALastStationName": "Северной"
+		},
+		{
+			"PAWrongPath": false,
+			"TrackPath": 2,
+			"PAStationHasSwtiches": false,
+			"PADeadlockEnd": false,
+			"TrackX": 4555.924252912546,
+			"PAStationRightDoors": false,
+			"PALastStation": false,
+			"PAStationID": 704,
+			"PADeadlockStart": false,
+			"PALineChangeStationID": false,
+			"PAStationPath": 2,
+			"Angles": "{0.0079 359.9882 0}",
+			"PAStationName": "Инженерная",
+			"Pos": "[7737.709 5032.0283 -684.848]",
+			"PAType": 1,
+			"PALineChange": false,
+			"PALineChangeStationPath": false
+		},
+		{
+			"PAWrongPath": false,
+			"TrackPath": 2,
+			"PAStationHasSwtiches": true,
+			"TrackX": 7392.646509399593,
+			"PAStationRightDoors": true,
+			"PALastStation": true,
+			"PAStationID": 703,
+			"PAStationPath": 2,
+			"Angles": "{0.0136 179.8974 0}",
+			"PAStationName": "Красный Маяк",
+			"Pos": "[-8146.812 14994.9238 106.7687]",
+			"PAType": 1,
+			"PALastStationName": "Красного Маяка"
+		},
+		{
+			"PAWrongPath": false,
+			"TrackPath": 2,
+			"PAStationHasSwtiches": false,
+			"PADeadlockEnd": false,
+			"TrackX": 8832.3663776735,
+			"PAStationRightDoors": true,
+			"PALastStation": false,
+			"PAStationID": 702,
+			"PADeadlockStart": false,
+			"PALineChangeStationID": false,
+			"PAStationPath": 2,
+			"Angles": "{359.9965 89.9653 0}",
+			"PAStationName": "Россошанская",
+			"Pos": "[15061.7549 -653.8226 699.5017]",
+			"PAType": 1,
+			"PALineChange": false,
+			"PALineChangeStationPath": false
+		},
+		{
+			"PAWrongPath": false,
+			"TrackPath": 2,
+			"PAStationHasSwtiches": true,
+			"TrackX": 10936.45734703719,
+			"PAStationRightDoors": false,
+			"PALastStation": true,
+			"PAStationID": 701,
+			"PAStationPath": 2,
+			"Angles": "{359.9922 90.007 0}",
+			"PAStationName": "Пр. Метростроителей",
+			"Pos": "[15363.6045 -3337.3984 1321.2255]",
+			"PAType": 1,
+			"PALastStationName": "Пр. Метростроителей"
+		},
+		{
+			"TrackPath": 2,
+			"PAStationHasSwtiches": true,
+			"TrackX": 12757.233502783822,
+			"PAStationRightDoors": true,
+			"PALastStation": true,
+			"PAStationID": 700,
+			"PAStationPath": 2,
+			"Angles": "{0.0037 356.5248 0}",
+			"PAStationName": "Касторская",
+			"Pos": "[6456.8853 -14637.3574 1886.1217]",
+			"PAType": 1
 		}
 	]
 }
