@@ -231,7 +231,7 @@ lines['imagine_line_redux']['2'] = [
       { x: 0 + 4 + 62.5 + 75 + 75 + 237.5 - 150, name: '38б', limit: 70, later: { 40: 2 }, bothDirections: true },
       { x: 0 + 4 + 62.5 + 75 + 75 + 237.5, name: '38в', limit: 70, later: { 70: 2, bothDirections: true } },
       { x: 0 + 4 + 62.5 + 75 + 75 + 237.5 + 37.5, name: '38г', limit: 70, later: { 70: 2 } },
-      { x: 0 + 4 + 62.5 + 75 + 75 + 237.5 + 37.5 + 300, name: '36', limit: 80, later: { 40: 1, 60: 1, 70: 1 } },
+      { x: 0 + 4 + 62.5 + 75 + 75 + 237.5 + 37.5 + 300, name: '36', limit: 80, later: { 40: 1, 60: 1, 70: 1 }, cra: { before: 'PM', after: 'K' } },
       // { x: 0 + 4 + 62.5 + 75 + 75 + 237.5 + 37.5 + 300 + 175, name: '36а', limit: 80 },
       // { x: 0 + 4 + 62.5 + 75 + 75 + 237.5 + 37.5 + 300 + 175 + 175, name: '34', limit: 80 },
 
@@ -263,7 +263,7 @@ lines['imagine_line_redux']['2'] = [
       { joint: '38', name: 'ДОП', gmod: { name: 'ПМ-ДОП' }, lenses: 'zR', back: true, row: -1.5 },
       { joint: '38б', name: 'ОП4', gmod: { name: 'ПМ-ОП4' }, autostop: 1, lenses: 'zR', back: true },
       { joint: '38г', name: 'ДОП4', gmod: { name: 'ПМ-ДОП4' }, lenses: 'zR', back: true, macht: true, row: -1.5 },
-      { joint: '32б', name: 'Д', gmod: { name: 'К-Д', RouteNumberSetup: 'W31G' }, autostop: 1, lenses: 'yW-YR', back: true, left: true },
+      { joint: '32б', name: 'Дм', gmod: { name: 'К-Д', RouteNumberSetup: 'W31G' }, autostop: 1, lenses: 'ZyW-YR', back: true, left: true },
       { joint: '28а', name: 'Е', gmod: { name: 'К-Е' }, autostop: 1, lenses: 'WR', back: true, left: true },
     ],
     mks: [
